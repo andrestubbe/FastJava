@@ -28,9 +28,9 @@ FastJava is a collection of **high-performance JNI-based Java libraries** that r
 
 | Aspect | JNI (FastJava) | JNA | Java Alone |
 |--------|---------------|-----|------------|
-| **Performance** | Fastest - direct native calls | 10-50× slower (libffi overhead) | Limited by JVM |
+| **Approach** | Direct native calls | libffi wrapper | JVM only |
 | **Global OS Integration** | ✅ Full Win32 API access | ✅ Full access | ❌ **Cannot** - sandboxed |
-| **Determinism** | Low latency, no GC jitter | Extra overhead | GC pauses |
+| **Latency** | Lowest | Higher (ffi overhead) | GC pauses |
 | **Development** | C++ per platform | Pure Java interfaces | Pure Java only |
 | **Deployment** | Bundle platform DLLs | Single JAR | Single JAR |
 
@@ -38,7 +38,7 @@ FastJava is a collection of **high-performance JNI-based Java libraries** that r
 
 ---
 
-## � License
+## 📄 License
 
 MIT License — See individual repositories for details.
 
