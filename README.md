@@ -22,6 +22,7 @@ FastJava is a collection of **high-performance JNI-based Java libraries** that u
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Released |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | 🚧 Beta |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated 2D rendering | **600% faster** than Graphics2D | 🚧 Beta |
+| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | 🚧 Beta |
 
 ---
 
