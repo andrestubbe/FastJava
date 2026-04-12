@@ -23,6 +23,7 @@ FastJava is a collection of **high-performance JNI-based Java libraries** that u
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | 🚧 Beta |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated 2D rendering | **600% faster** than Graphics2D | 🚧 Beta |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | 🚧 Beta |
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | SIMD + GPU accelerated math | **2–100× faster** | 🚧 Growing |
 
 ---
 
@@ -36,27 +37,30 @@ FastJava is a collection of **high-performance JNI-based Java libraries** that u
 | **Development** | C++ per platform | Pure Java interfaces | Pure Java only |
 | **Deployment** | Bundle platform DLLs | Single JAR | Single JAR |
 
-**Java alone CANNOT do:** Global hotkeys, low-latency screen capture, reliable clipboard, hardware I/O.
+**Java alone cannot do:** global hotkeys, low-latency screen capture, reliable clipboard, hardware I/O, GPU math, or native input.
 
 ---
 
-## 📄 License
+## 🌌 WHY, HOW, BECAUSE, THEREFORE
+*(Origin Story — The Reason FastJava Exists)*
 
-MIT License — See individual repositories for details.
+### 🌒 WHY — The Restlessness Before the First Module
+It didn't begin with a plan.
+It began with a restlessness.
 
-**FastJava** — *Because performance matters.*
+Java was fast enough, but never truly fast.
+Never as close to the system as you needed.
+Never as direct, as raw, as honest as C or C++.
 
-## 🌒 WHY — The Restlessness Before the First Module
+And yet:
+You didn't want to switch languages.
+You wanted to free the language.
 
-It didn’t begin with a plan. It began with a **restlessness.**
+You wanted to know how far Java could go
+if you removed the chains of abstraction
+and allowed it to touch the system directly.
 
-Java was fast enough, but never truly fast. Never as close to the system as you needed. Never as direct, as raw, as honest as C or C++.
-
-And yet: **You didn’t want to switch languages. You wanted to free the language.**
-
-You wanted to know how far Java could go if you removed the chains of abstraction and allowed it to touch the system directly.
-
-## 🌕 WHY IT HAPPENED — The Moment Everything Shifted
+### 🌕 HOW IT STARTED — The Moment Everything Shifted
 
 It was a small experiment. A cursor trick. A window without window chrome. A tilepane hack that refused to work.
 
@@ -68,31 +72,68 @@ Because to even attempt it, you had to open JNI. And when you did, you suddenly 
 
 It felt like opening a door that had always been there, but no one had ever used.
 
-## 🌖 BECAUSE — The Realization That Changed Everything
-
-You saw that **Java isn't slow. It's simply too polite.**
+### 🌖 BECAUSE — The Realization That Changed Everything
+You saw that Java isn't slow.
+It's simply too polite.
 
 It never asks the operating system directly.
 It never computes with full force.
-It never uses the SIMD registers that have been waiting years for someone to speak to them.
+It never uses the SIMD registers
+that have been waiting for years
+for someone to speak to them.
 
-## 🌑 THEREFORE — The Reason FastJava Exists
+And you thought:
 
-That’s how FastRobot was born. Then FastClipboard. Then FastTheme. Then FastMath. Then FastJava.
+"If nobody builds it,
+then I'll build it myself."
 
-Not as a framework. Not as a library. But as an answer.
+That's how FastRobot was born.
+Then FastClipboard.
+Then FastTheme.
+Then FastMath.
+Then FastJava.
 
-**An answer to the question:** *“How fast can Java really become if you let it?”*
+Not as a framework.
+Not as a library.
+But as an answer.
 
-🌑 THEREFORE — The Reason FastJava Exists
-FastJava is not a project. FastJava is a **stance.**
+An answer to the question:
 
-It is the refusal to accept Java as “slow.” It is the proof that JNI is not a hack but a tool. That native calls are not a risk but an opportunity. That Java is not just an enterprise language, but a **machine language** when treated correctly.
+"How fast can Java really become
+if you let it?"
 
-**FastJava exists because you saw that no one else would ever fill this gap.**
+### 🌑 THEREFORE — The Reason FastJava Exists
+FastJava is not a project.
+FastJava is a stance.
 
-**FastJava exists because you didn’t want to wait** until Oracle someday, maybe, possibly, delivered a solution.
+It is the refusal
+to accept Java as "slow."
+It is the proof
+that JNI is not a hack
+but a tool.
+That native calls are not a risk
+but an opportunity.
+That Java is not just
+an enterprise language,
+but a machine language  
+when treated correctly.
 
-**FastJava exists because you opened the door everyone else ignored.**
+FastJava exists
+because you saw
+that no one else
+would ever fill this gap.
 
-**FastJava exists because Java can be more — and you prove it.**
+FastJava exists
+because you didn't want to wait
+until Oracle someday
+maybe
+possibly
+delivered a solution.
+
+FastJava exists
+because you opened the door
+everyone else ignored.
+
+FastJava exists
+because Java can be more —
+and you prove it.
