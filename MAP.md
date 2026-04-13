@@ -212,16 +212,6 @@ FastJava, FastCore, FastPlugin
 
 ---
 
-## 🔧 Implementierte Module
-
-| Modul | Repo | Status |
-|-------|------|--------|
-| **FastRobot** | https://github.com/andrestubbe/fastrobot | ✅ Released |
-| **FastGraphics** | https://github.com/andrestubbe/FastGraphics | 🔄 WIP |
-| **FastTheme** | https://github.com/andrestubbe/FastTheme | 🔄 WIP |
-
----
-
 ## 🧠 Vision
 
 FastJava ist das Fundament für:
