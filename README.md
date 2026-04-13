@@ -29,6 +29,18 @@
 
 ---
 
+## 📚 Module Map
+
+**→ Vollständige Übersicht aller 62 Module mit Erklärungen:** [MAP.md](./MAP.md)
+
+Eine detaillierte Karte aller FastJava-Module mit:
+- Warum jedes Modul existiert (Java-Problem → FastJava-Lösung)
+- Architektur-Schichten von AI bis Platform
+- Dependency-Graph
+- Roadmap 2026–2028
+
+---
+
 ## 🎯 Philosophy
 
 | Aspect | JNI (FastJava) | JNA | Java Alone |
