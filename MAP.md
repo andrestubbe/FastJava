@@ -34,7 +34,7 @@ FastGraphics, FastImage, FastImageView, FastDisplay, FastColorSearch
 FastIO, FastMemoryScan, FastGPUCopy, FastIPC, FastClipboard
 
 ### Audio
-FastAudioCapture, FastAudio, FastOCR
+FastAudioCapture, FastAudio, FastTTS, FastSTT, FastOCR
 
 ### Algorithms & Utilities
 FastMath, FastSIMD, FastString, FastBytes, FastHash, FastJSON, FastParse, FastRegex, FastSort, FastCompress, FastPathfinder, FastEventBus, FastHookChain, FastDetour, FastThreading, FastBenchmark
@@ -104,6 +104,8 @@ FastJava, FastCore, FastPlugin
 |-------|-----------|
 | **FastAudioCapture** | WASAPI statt Java Sound für <10ms Latenz. Loopback-Capture für Audio-Trigger-Bots. |
 | **FastAudio** | Audio-Ausgabe für Feedback/Sprachausgabe. Gegenstück zu FastAudioCapture. |
+| **FastTTS** | Text-to-Speech für Sprachausgabe. Piper (lokal), Coqui, ElevenLabs API, System TTS. Für Voice-Bots und Accessibility. |
+| **FastSTT** | Speech-to-Text für Spracherkennung. Whisper (lokal), Vosk, System STT. Für Voice-Commands und Transcription. |
 | **FastOCR** | Text in Screenshots lesen für Quest-Logs, Chat-Nachrichten, UI-Elemente. |
 
 ### Algorithms & Utilities
@@ -153,7 +155,7 @@ FastJava, FastCore, FastPlugin
 
 | Modul | Erklärung |
 |-------|-----------|
-| **FastJava** | Das übergeordnete Ökosystem. Meta-Modul für alle 65 Module. |
+| **FastJava** | Das übergeordnete Ökosystem. Meta-Modul für alle 67 Module. |
 | **FastCore** | Unified JNI Loader. Lädt alle DLLs, managed Versions, Error-Translation. |
 | **FastPlugin** | Plugin-System für 3rd-Party Module. Hot-Reload und API-Registry. |
 
@@ -458,13 +460,13 @@ Komplette Seitenstruktur für `/docs`:
 | **System & Window** | 9 | 0 |
 | **Display & Graphics** | 5 | 1 (FastGraphics WIP) |
 | **Data & I/O** | 5 | 0 |
-| **Audio** | 2 | 0 |
+| **Audio** | 4 | 0 |
 | **Algorithms & Utils** | 15 | 0 |
 | **Debugging & Testing** | 4 | 0 |
 | **AI & ML** | 9 | 0 |
 | **Platform** | 3 | 0 |
-| **Gesamt** | **65** | **3** |
+| **Gesamt** | **67** | **3** |
 
 ---
 
-*Generated: 2026-04-13 | FastJava MAP v2.1 (65 Module)*
+*Generated: 2026-04-13 | FastJava MAP v2.2 (67 Module)*
