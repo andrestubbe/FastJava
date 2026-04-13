@@ -108,6 +108,26 @@ FastJava, FastCore, FastPlugin
 | **FastSTT** | Speech-to-Text für Spracherkennung. Whisper (lokal), Vosk, System STT. Für Voice-Commands und Transcription. |
 | **FastOCR** | Text in Screenshots lesen. Tesseract (lokal), ONNX Runtime (neural OCR), System OCR. Für Quest-Logs, Chat-Nachrichten, UI-Elemente, Formulare. |
 
+---
+
+### FastTTS (Details)
+
+**APIs:** `speak(text)`, `speak(text, voice)`, `setVoice(id)`, `setRate(speed)`, `setPitch(value)`, `saveToFile(text, path)`, `getVoices()`
+**Native:** Windows SAPI, macOS NSSpeechSynthesizer, Linux Speech Dispatcher, ONNX Runtime, ggml-TTS (Piper, Coqui)
+**Features:** Low-latency streaming, Voice selection, Local/offline TTS, File output (WAV/MP3)
+**Use-Cases:** Voice-Bots, Screenreader, Agent-Feedback, Audio-UI
+
+---
+
+### FastSTT (Details)
+
+**APIs:** `transcribe(audioBuffer)`, `transcribeFile(path)`, `startStreaming(callback)`, `stopStreaming()`, `setModel(model)`, `setLanguage(lang)`
+**Native:** Whisper.cpp (ggml), ONNX Runtime, Windows Speech API, macOS Speech Recognition, Vosk
+**Features:** Streaming STT, Real-time transcription, Multi-language, Noise-reduction
+**Use-Cases:** Voice-Commands, Dictation, Voice-Bots, Meeting-Transcription, Audio-Automation
+
+---
+
 ### Algorithms & Utilities
 
 | Modul | Erklärung |
