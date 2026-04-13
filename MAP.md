@@ -43,7 +43,7 @@ FastMath, FastSIMD, FastString, FastBytes, FastHash, FastJSON, FastParse, FastRe
 FastCallTrace, FastWatch, FastReplay, FastTest
 
 ### AI & ML
-FastAI, FastAIClient, FastEmbedding, FastVectorDB, FastToolBridge, FastContext, FastAIMemory, FastRAG, FastAIMCP
+FastAI, FastAIClient, FastEmbedding, FastVectorDB, FastToolBridge, FastContext, FastMemory, FastRAG, FastMCP
 
 ### Platform
 FastJava, FastCore, FastPlugin
@@ -145,9 +145,9 @@ FastJava, FastCore, FastPlugin
 | **FastVectorDB** | In-Process Vektordatenbank für KNN-Suche. Für Semantic Search und RAG-Retrieval. |
 | **FastToolBridge** | AI-Modelle können Fast*-Module direkt aufrufen. MCP-kompatibel für Agents. |
 | **FastContext** | Agent-Memory mit Profilen und Langzeitwissen. Für personalisierte AI-Agents. |
-| **FastAIMemory** | Persistenter Embedding-basierter Agent Memory. Speichert Fakten mit automatischer Summarisierung und Retrieval. Nutzt FastEmbedding + FastVectorDB. |
+| **FastMemory** | Persistenter Embedding-basierter Agent Memory. Speichert Fakten mit automatischer Summarisierung und Retrieval. Nutzt FastEmbedding + FastVectorDB. |
 | **FastRAG** | Komplette RAG-Pipeline für lokale und Cloud-Modelle. Chunking, Embedding, Vector Search, Context Injection in einem Modul. |
-| **FastAIMCP** | MCP (Model Context Protocol) für FastAI. Verbindet Tools, Memory, RAG, Files über MCP-Server mit FastAI als Model-Backend. |
+| **FastMCP** | MCP (Model Context Protocol) für FastAI. Verbindet Tools, Memory, RAG, Files über MCP-Server mit FastAI als Model-Backend. |
 
 ### Platform
 
