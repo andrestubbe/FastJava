@@ -43,7 +43,7 @@ FastMath, FastSIMD, FastString, FastBytes, FastHash, FastJSON, FastParse, FastRe
 FastCallTrace, FastWatch, FastReplay, FastTest
 
 ### AI & ML
-FastAI, FastAIClient, FastEmbedding, FastVectorDB, FastToolBridge, FastContext
+FastAI, FastAIClient, FastEmbedding, FastVectorDB, FastToolBridge, FastContext, FastAIMemory, FastRAG, FastAIMCP
 
 ### Platform
 FastJava, FastCore, FastPlugin
@@ -145,12 +145,15 @@ FastJava, FastCore, FastPlugin
 | **FastVectorDB** | In-Process Vektordatenbank für KNN-Suche. Für Semantic Search und RAG-Retrieval. |
 | **FastToolBridge** | AI-Modelle können Fast*-Module direkt aufrufen. MCP-kompatibel für Agents. |
 | **FastContext** | Agent-Memory mit Profilen und Langzeitwissen. Für personalisierte AI-Agents. |
+| **FastAIMemory** | Persistenter Embedding-basierter Agent Memory. Speichert Fakten mit automatischer Summarisierung und Retrieval. Nutzt FastEmbedding + FastVectorDB. |
+| **FastRAG** | Komplette RAG-Pipeline für lokale und Cloud-Modelle. Chunking, Embedding, Vector Search, Context Injection in einem Modul. |
+| **FastAIMCP** | MCP (Model Context Protocol) für FastAI. Verbindet Tools, Memory, RAG, Files über MCP-Server mit FastAI als Model-Backend. |
 
 ### Platform
 
 | Modul | Erklärung |
 |-------|-----------|
-| **FastJava** | Das übergeordnete Ökosystem. Meta-Modul für alle 62 Module. |
+| **FastJava** | Das übergeordnete Ökosystem. Meta-Modul für alle 65 Module. |
 | **FastCore** | Unified JNI Loader. Lädt alle DLLs, managed Versions, Error-Translation. |
 | **FastPlugin** | Plugin-System für 3rd-Party Module. Hot-Reload und API-Registry. |
 
@@ -458,10 +461,10 @@ Komplette Seitenstruktur für `/docs`:
 | **Audio** | 2 | 0 |
 | **Algorithms & Utils** | 15 | 0 |
 | **Debugging & Testing** | 4 | 0 |
-| **AI & ML** | 6 | 0 |
+| **AI & ML** | 9 | 0 |
 | **Platform** | 3 | 0 |
-| **Gesamt** | **62** | **3** |
+| **Gesamt** | **65** | **3** |
 
 ---
 
-*Generated: 2026-04-13 | FastJava README v2.0 (Bing Copilot Master-Drop)*
+*Generated: 2026-04-13 | FastJava MAP v2.1 (65 Module)*
