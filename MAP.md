@@ -106,7 +106,7 @@ FastJava, FastCore, FastPlugin
 | **FastAudio** | Audio-Ausgabe für Feedback/Sprachausgabe. Gegenstück zu FastAudioCapture. |
 | **FastTTS** | Text-to-Speech für Sprachausgabe. Piper (lokal), Coqui, ElevenLabs API, System TTS. Für Voice-Bots und Accessibility. |
 | **FastSTT** | Speech-to-Text für Spracherkennung. Whisper (lokal), Vosk, System STT. Für Voice-Commands und Transcription. |
-| **FastOCR** | Text in Screenshots lesen für Quest-Logs, Chat-Nachrichten, UI-Elemente. |
+| **FastOCR** | Text in Screenshots lesen. Tesseract (lokal), ONNX Runtime (neural OCR), System OCR. Für Quest-Logs, Chat-Nachrichten, UI-Elemente, Formulare. |
 
 ### Algorithms & Utilities
 
