@@ -50,6 +50,112 @@ FastJava, FastCore, FastPlugin
 
 ---
 
+## 📖 Module Details (Warum existiert jedes Modul?)
+
+### Core (Agent I/O)
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastRobot** | Java's Robot-Klasse ist zu langsam für Game-Bots. FastRobot nutzt native SendInput mit Batch-Processing für 1000+ Events in einem Call - sub-Millisekunden Reaktionszeiten. |
+| **FastScreen** | Screenshot mit Java.awt dauert 50-100ms. FastScreen nutzt DXGI Desktop Duplication für 500-2000 FPS zero-copy Capture - essentiell für Vision-Bots. |
+| **FastInputHook** | Java verarbeitet Events erst nach der JVM-Queue. FastInputHook nutzt SetWindowsHookEx für Low-Level Events VOR Java - für sofortige Hotkeys und Trigger. |
+| **FastVision** | Java2D ist zu langsam für Object Detection. FastVision nutzt GPU Compute Shaders für <10ms Template Matching und Feature Extraction. |
+| **FastHotkey** | Global Hotkeys ohne Keylogging-Verdacht. Nur registrierte Combos werden abgefangen - sicher für produktive Bots. |
+| **FastGamepad** | Kein nativer Controller-Support in Java. FastGamepad liest XInput/DirectInput für Racing/Fighting Game Bots. |
+| **FastHumanInput** | Vereint alle Input-Quellen (Keyboard, Mouse, Touch, Stylus, Gamepad) zu einem einheitlichen Stream. |
+
+### System & Window
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastWindow** | Java kann fremde Fenster nicht kontrollieren. FastWindow findet, fokussiert, verschiebt Fenster via Win32 - wichtig für Multi-Window-Bots. |
+| **FastProcess** | ProcessHandle ist zu limitiert. FastProcess liest Thread-IDs, Handle-Count, echte CPU-Affinity für Prozess-Isolation. |
+| **FastTheme** | Java kennt Dark Mode nicht. FastTheme liest Windows 11 Theming (Dark/Light, Accent, Mica) und passt Java-Apps an. |
+| **FastOverlay** | HUDs über Games brauchen transparente Overlay-Fenster. FastOverlay nutzt DirectX für ESPs, Debug-Visuals. |
+| **FastWindowEvents** | Java bekommt keine Events wenn Fenster verschoben werden. FastWindowEvents benachrichtigt wenn sich das Ziel-Fenster ändert. |
+| **FastSystemMetrics** | Mausgeschwindigkeit und Drag-Threshold sind nur via Win32 erreichbar. Wichtig für human-like Bot-Input. |
+| **FastDWM** | VSync und Frame-Latenz sind für frame-locked Rendering wichtig. FastDWM liest Desktop Window Manager Timing. |
+| **FastFileWatch** | Java's WatchService ist langsam und verliert Events. FastFileWatch nutzt ReadDirectoryChangesW für sofortige Benachrichtigungen. |
+| **FastProcessWatch** | Start/Stop von Prozesse beobachten für Trigger-Bots (z.B. "wenn Spiel startet, Bot aktivieren"). |
+
+### Display & Graphics
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastGraphics** | Java2D ist für 60+ FPS ungeeignet. FastGraphics nutzt DirectX/Vulkan für GPU-Rendering ohne JVM-Heap. |
+| **FastImage** | BufferedImage allokiert 200-300MB Heap. FastImage nutzt ByteBuffer off-heap für schnelle Pixel-Ops. |
+| **FastImageView** | JFrame mit Image ist langsam. FastImageView rendert 1:1 Pixel in 200ms Startup-Zeit für Debugging. |
+| **FastDisplay** | Zeigt Framebuffer direkt an ohne Kopie. Grundlage für alle GPU-Rendering-Module. |
+| **FastColorSearch** | Pixel-Loops in Java sind 100x zu langsam. FastColorSearch nutzt SIMD (SSE/AVX) für 10GB/s Pattern Matching. |
+
+### Data & I/O
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastIO** | Java NIO hat zu viel Overhead für Echtzeit. FastIO nutzt unbuffered I/O und IOCP für konstante Latenz. |
+| **FastMemoryScan** | Für Modding und Reverse-Engineering: liest fremde Prozess-Memory für Pattern-Scans und Pointer-Chains. |
+| **FastGPUCopy** | GPU↔CPU Transfers sind der Bottleneck in ML-Pipelines. FastGPUCopy nutzt DMA für zero-copy. |
+| **FastIPC** | Shared Memory und Named Pipes für Trennung von Bot-Engine und AI-Modell - beide laufen isoliert. |
+| **FastClipboard** | Java's Clipboard ist buggy. FastClipboard nutzt native APIs für stabiles Copy/Paste. |
+
+### Audio
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastAudioCapture** | WASAPI statt Java Sound für <10ms Latenz. Loopback-Capture für Audio-Trigger-Bots. |
+| **FastAudio** | Audio-Ausgabe für Feedback/Sprachausgabe. Gegenstück zu FastAudioCapture. |
+| **FastOCR** | Text in Screenshots lesen für Quest-Logs, Chat-Nachrichten, UI-Elemente. |
+
+### Algorithms & Utilities
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastMath** | Auto-Optimizer für Mathe-Funktionen - generiert Varianten, benchmarked, pickt schnellste. |
+| **FastSIMD** | SSE/AVX/NEON-Wrapper für Java. 10x schneller für Vector-Ops, Pixel-Processing, Physics. |
+| **FastString** | Java Strings sind immutable und UTF-16. FastString ist mutable, UTF-8, zero-copy - für Parsing. |
+| **FastBytes** | ByteBuffer mit String-API und SIMD-Ops. Für Binary-Parsing ohne GC. |
+| **FastHash** | xxHash3/BLAKE3 sind 100x schneller als SHA-256. Für Checksums in Echtzeit-Pipelines. |
+| **FastJSON** / **FastParse** | Jackson/Gson sind zu langsam für High-Freq. FastJSON ist zero-copy, 50x schneller. |
+| **FastRegex** | Java Regex hat Backtracking-Probleme. FastRegex nutzt Hyperscan-Engine für SIMD-Pattern-Matching. |
+| **FastSort** | Radix Sort ist O(n) für Integers. 10x schneller als Java's Dual-Pivot Quicksort für große Arrays. |
+| **FastCompress** | LZ4 ist 10x schneller als gzip. Für Netcode und Log-Compression wo Geschwindigkeit zählt. |
+| **FastPathfinder** | A* in Java ist zu langsam für große Grids. Native Implementation für Echtzeit-Navigation. |
+| **FastEventBus** | JNI-Callbacks sind teuer. FastEventBus batcht Events und nutzt Lock-Free Queues. |
+| **FastHookChain** | Ordnung von Hooks priorisieren: Input → PreProcess → AI → Action → PostProcess. |
+| **FastDetour** | Function Hooking für Modding und Instrumentation. Trampoline für Original-Call. |
+| **FastThreading** | Java Thread-Pools haben zu viel Overhead. Lock-Free Queues und Thread-Affinity für <1ms Latenz. |
+| **FastBenchmark** | Micro-Benchmarks mit QueryPerformanceCounter. Für Performance-Marketing und Optimierung. |
+
+### Debugging & Development
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastCallTrace** | Wer ruft mich an? Stack-Introspektion 10x schneller als Throwable.getStackTrace(). |
+| **FastWatch** | Variablen in Echtzeit beobachten (60-240 Hz) ohne Swing-Overhead. Für Game-Dev Debug. |
+| **FastReplay** | Input aufzeichnen und abspielen. Für UI-Testing und Bot-Validation. |
+| **FastTest** | Kombiniert FastScreen + FastRobot für visuelle Assertions. UI-Testing Engine. |
+
+### AI & ML
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastAI** | Ein Interface für alle AI-Provider (Ollama, OpenAI, Claude). Kein JSON-Hassle, nur Prompts. |
+| **FastAIClient** | Provider-spezifische Implementierungen hinter FastAI-Interface. |
+| **FastEmbedding** | Lokale Embeddings mit ggml. Für RAG ohne Cloud-Abhängigkeit. |
+| **FastVectorDB** | In-Process Vektordatenbank für KNN-Suche. Für Semantic Search und RAG-Retrieval. |
+| **FastToolBridge** | AI-Modelle können Fast*-Module direkt aufrufen. MCP-kompatibel für Agents. |
+| **FastContext** | Agent-Memory mit Profilen und Langzeitwissen. Für personalisierte AI-Agents. |
+
+### Platform
+
+| Modul | Erklärung |
+|-------|-----------|
+| **FastJava** | Das übergeordnete Ökosystem. Meta-Modul für alle 62 Module. |
+| **FastCore** | Unified JNI Loader. Lädt alle DLLs, managed Versions, Error-Translation. |
+| **FastPlugin** | Plugin-System für 3rd-Party Module. Hot-Reload und API-Registry. |
+
+---
+
 ## 🧩 Architektur
 
 ```
