@@ -21,7 +21,7 @@
 |---------|---------|-------------|--------|
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard access | **2-3× faster** than AWT | ✅ Released |
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | **10-17× faster** than Robot | ✅ Released |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | Ultra-fast file I/O & parsing | **5-20× faster** than NIO | ✅ Released |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | Ultra-fast file I/O & parsing | **5-20× faster** than NIO | 🚧 Beta |
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Released |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | 🚧 Beta |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated 2D rendering | **600% faster** than Graphics2D | 🚧 Beta |
