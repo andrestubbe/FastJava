@@ -474,18 +474,18 @@ Komplette Seitenstruktur für `/docs`:
 
 ## 📊 Gesamt-Statistik
 
-| Kategorie | Anzahl | Implementiert |
-|-----------|--------|---------------|
-| **Core (Agent I/O)** | 7 | 1 (FastRobot) |
-| **System & Window** | 9 | 0 |
-| **Display & Graphics** | 5 | 1 (FastGraphics WIP) |
-| **Data & I/O** | 5 | 0 |
-| **Audio** | 4 | 0 |
-| **Algorithms & Utils** | 15 | 0 |
-| **Debugging & Testing** | 4 | 0 |
-| **AI & ML** | 9 | 0 |
-| **Platform** | 3 | 0 |
-| **Gesamt** | **67** | **3** |
+| Kategorie | Anzahl | Released | WIP | Konzept |
+|-----------|--------|----------|-----|---------|
+| **Core (Agent I/O)** | 7 | 2 (FastRobot, FastHotkey) | 0 | 5 |
+| **System & Window** | 9 | 0 | 1 (FastTheme) | 8 |
+| **Display & Graphics** | 5 | 1 (FastClipboard) | 1 (FastGraphics) | 3 |
+| **Data & I/O** | 5 | 0 | 0 | 5 |
+| **Audio** | 4 | 0 | 0 | 4 |
+| **Algorithms & Utils** | 15 | 0 | 0 | 15 |
+| **Debugging & Testing** | 4 | 0 | 0 | 4 |
+| **AI & ML** | 9 | 0 | 0 | 9 |
+| **Platform** | 3 | 0 | 0 | 3 |
+| **Gesamt** | **67** | **3** | **2** | **62** |
 
 ---
 
