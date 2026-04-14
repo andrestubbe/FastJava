@@ -1,5 +1,7 @@
 # FastJava — Native Java Performance Ecosystem
 
+> 🚧 **WORK IN PROGRESS** — APIs may change. Not production-ready yet.
+
 **⚡ Ultra-fast native Java libraries — JNI-based performance for automation, screen capture, clipboard, hotkeys, graphics, and more**
 
 [![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
@@ -32,12 +34,12 @@
 
 ## 📚 Module Map
 
-**→ Vollständige Übersicht aller 62 Module mit Erklärungen:** [MAP.md](./MAP.md)
+**→ Complete overview of all 62 modules with explanations:** [MAP.md](./MAP.md)
 
-Eine detaillierte Karte aller FastJava-Module mit:
-- Warum jedes Modul existiert (Java-Problem → FastJava-Lösung)
-- Architektur-Schichten von AI bis Platform
-- Dependency-Graph
+A detailed map of all FastJava modules with:
+- Why each module exists (Java problem → FastJava solution)
+- Architecture layers from AI to Platform
+- Dependency graph
 - Roadmap 2026–2028
 
 ---
