@@ -2,9 +2,9 @@
 
 **Java's missing OS layer for AI, Bots & Automation.**
 
-FastJava ist ein natives Performance-Framework für Java, das die Lücke zwischen JVM und Betriebssystem schließt. Es liefert 60+ Module für ultra-low-latency Input, High-FPS Screen Capture, GPU-Rendering, System-Introspection, Vision, OCR, Audio, AI-Integration und native Utilities.
+FastJava is a native performance framework for Java that bridges the gap between JVM and operating system. It delivers 60+ modules for ultra-low-latency input, high-FPS screen capture, GPU rendering, system introspection, vision, OCR, audio, AI integration, and native utilities.
 
-FastJava ist **minimal, deterministisch, zero-bullshit** — gebaut für Bots, Automation, Vision-Pipelines und AI-Agents.
+FastJava is **minimal, deterministic, zero-bullshit** — built for bots, automation, vision pipelines, and AI agents.
 
 ---
 
@@ -12,10 +12,10 @@ FastJava ist **minimal, deterministisch, zero-bullshit** — gebaut für Bots, A
 
 - **Native Speed** — DirectX, Win32, DWM, IOCP, SIMD, CUDA
 - **Zero-Copy Everywhere** — Screen, Images, IPC, GPU
-- **Unified JNI Core** — FastCore als Fundament
+- **Unified JNI Core** — FastCore as foundation
 - **Agent-Friendly** — FastAI, FastToolBridge, FastContext
-- **Modular** — 62 Module, optional, kombinierbar
-- **Cross-Platform** — Windows, Linux, macOS (je nach Modul)
+- **Modular** — 62 modules, optional, combinable
+- **Cross-Platform** — Windows, Linux, macOS (module-dependent)
 
 ---
 
@@ -50,63 +50,63 @@ FastJava, FastCore, FastPlugin
 
 ---
 
-## 📖 Module Details (Warum existiert jedes Modul?)
+## 📖 Module Details (Why does each module exist?)
 
 ### Core (Agent I/O)
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastRobot** | Java's Robot-Klasse ist zu langsam für Game-Bots. FastRobot nutzt native SendInput mit Batch-Processing für 1000+ Events in einem Call - sub-Millisekunden Reaktionszeiten. |
-| **FastScreen** | Screenshot mit Java.awt dauert 50-100ms. FastScreen nutzt DXGI Desktop Duplication für 500-2000 FPS zero-copy Capture - essentiell für Vision-Bots. |
-| **FastInputHook** | Java verarbeitet Events erst nach der JVM-Queue. FastInputHook nutzt SetWindowsHookEx für Low-Level Events VOR Java - für sofortige Hotkeys und Trigger. |
-| **FastVision** | Java2D ist zu langsam für Object Detection. FastVision nutzt GPU Compute Shaders für <10ms Template Matching und Feature Extraction. |
-| **FastHotkey** | Global Hotkeys ohne Keylogging-Verdacht. Nur registrierte Combos werden abgefangen - sicher für produktive Bots. |
-| **FastGamepad** | Kein nativer Controller-Support in Java. FastGamepad liest XInput/DirectInput für Racing/Fighting Game Bots. |
-| **FastHumanInput** | Vereint alle Input-Quellen (Keyboard, Mouse, Touch, Stylus, Gamepad) zu einem einheitlichen Stream. |
+| Module | Explanation |
+|--------|-------------|
+| **FastRobot** | Java's Robot class is too slow for game bots. FastRobot uses native SendInput with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
+| **FastScreen** | Screenshots with Java.awt take 50-100ms. FastScreen uses DXGI Desktop Duplication for 500-2000 FPS zero-copy capture - essential for vision bots. |
+| **FastInputHook** | Java processes events only after the JVM queue. FastInputHook uses SetWindowsHookEx for low-level events BEFORE Java - for instant hotkeys and triggers. |
+| **FastVision** | Java2D is too slow for object detection. FastVision uses GPU compute shaders for <10ms template matching and feature extraction. |
+| **FastHotkey** | Global hotkeys without keylogging suspicion. Only registered combos are intercepted - safe for productive bots. |
+| **FastGamepad** | No native controller support in Java. FastGamepad reads XInput/DirectInput for racing/fighting game bots. |
+| **FastHumanInput** | Unifies all input sources (keyboard, mouse, touch, stylus, gamepad) into a single stream. |
 
 ### System & Window
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastWindow** | Java kann fremde Fenster nicht kontrollieren. FastWindow findet, fokussiert, verschiebt Fenster via Win32 - wichtig für Multi-Window-Bots. |
-| **FastProcess** | ProcessHandle ist zu limitiert. FastProcess liest Thread-IDs, Handle-Count, echte CPU-Affinity für Prozess-Isolation. |
-| **FastTheme** | Java kennt Dark Mode nicht. FastTheme liest Windows 11 Theming (Dark/Light, Accent, Mica) und passt Java-Apps an. |
-| **FastOverlay** | HUDs über Games brauchen transparente Overlay-Fenster. FastOverlay nutzt DirectX für ESPs, Debug-Visuals. |
-| **FastWindowEvents** | Java bekommt keine Events wenn Fenster verschoben werden. FastWindowEvents benachrichtigt wenn sich das Ziel-Fenster ändert. |
-| **FastSystemMetrics** | Mausgeschwindigkeit und Drag-Threshold sind nur via Win32 erreichbar. Wichtig für human-like Bot-Input. |
-| **FastDWM** | VSync und Frame-Latenz sind für frame-locked Rendering wichtig. FastDWM liest Desktop Window Manager Timing. |
-| **FastFileWatch** | Java's WatchService ist langsam und verliert Events. FastFileWatch nutzt ReadDirectoryChangesW für sofortige Benachrichtigungen. |
-| **FastProcessWatch** | Start/Stop von Prozesse beobachten für Trigger-Bots (z.B. "wenn Spiel startet, Bot aktivieren"). |
+| Module | Explanation |
+|--------|-------------|
+| **FastWindow** | Java cannot control foreign windows. FastWindow finds, focuses, moves windows via Win32 - important for multi-window bots. |
+| **FastProcess** | ProcessHandle is too limited. FastProcess reads thread IDs, handle count, real CPU affinity for process isolation. |
+| **FastTheme** | Java doesn't know Dark Mode. FastTheme reads Windows 11 theming (Dark/Light, Accent, Mica) and adapts Java apps. |
+| **FastOverlay** | HUDs over games need transparent overlay windows. FastOverlay uses DirectX for ESPs, debug visuals. |
+| **FastWindowEvents** | Java gets no events when windows are moved. FastWindowEvents notifies when the target window changes. |
+| **FastSystemMetrics** | Mouse speed and drag threshold are only accessible via Win32. Important for human-like bot input. |
+| **FastDWM** | VSync and frame latency are important for frame-locked rendering. FastDWM reads Desktop Window Manager timing. |
+| **FastFileWatch** | Java's WatchService is slow and loses events. FastFileWatch uses ReadDirectoryChangesW for immediate notifications. |
+| **FastProcessWatch** | Watch process start/stop for trigger bots (e.g., "when game starts, activate bot"). |
 
 ### Display & Graphics
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastGraphics** | Java2D ist für 60+ FPS ungeeignet. FastGraphics nutzt DirectX/Vulkan für GPU-Rendering ohne JVM-Heap. |
-| **FastImage** | BufferedImage allokiert 200-300MB Heap. FastImage nutzt ByteBuffer off-heap für schnelle Pixel-Ops. |
-| **FastImageView** | JFrame mit Image ist langsam. FastImageView rendert 1:1 Pixel in 200ms Startup-Zeit für Debugging. |
-| **FastDisplay** | Zeigt Framebuffer direkt an ohne Kopie. Grundlage für alle GPU-Rendering-Module. |
-| **FastColorSearch** | Pixel-Loops in Java sind 100x zu langsam. FastColorSearch nutzt SIMD (SSE/AVX) für 10GB/s Pattern Matching. |
+| Module | Explanation |
+|--------|-------------|
+| **FastGraphics** | Java2D is unsuitable for 60+ FPS. FastGraphics uses DirectX/Vulkan for GPU rendering without JVM heap. |
+| **FastImage** | BufferedImage allocates 200-300MB heap. FastImage uses ByteBuffer off-heap for fast pixel operations. |
+| **FastImageView** | JFrame with image is slow. FastImageView renders 1:1 pixels in 200ms startup time for debugging. |
+| **FastDisplay** | Displays framebuffer directly without copy. Foundation for all GPU rendering modules. |
+| **FastColorSearch** | Pixel loops in Java are 100x too slow. FastColorSearch uses SIMD (SSE/AVX) for 10GB/s pattern matching. |
 
 ### Data & I/O
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastIO** | Java NIO hat zu viel Overhead für Echtzeit. FastIO nutzt unbuffered I/O und IOCP für konstante Latenz. |
-| **FastMemoryScan** | Für Modding und Reverse-Engineering: liest fremde Prozess-Memory für Pattern-Scans und Pointer-Chains. |
-| **FastGPUCopy** | GPU↔CPU Transfers sind der Bottleneck in ML-Pipelines. FastGPUCopy nutzt DMA für zero-copy. |
-| **FastIPC** | Shared Memory und Named Pipes für Trennung von Bot-Engine und AI-Modell - beide laufen isoliert. |
-| **FastClipboard** | Java's Clipboard ist buggy. FastClipboard nutzt native APIs für stabiles Copy/Paste. |
+| Module | Explanation |
+|--------|-------------|
+| **FastIO** | Java NIO has too much overhead for real-time. FastIO uses unbuffered I/O and IOCP for constant latency. |
+| **FastMemoryScan** | For modding and reverse engineering: reads foreign process memory for pattern scans and pointer chains. |
+| **FastGPUCopy** | GPU↔CPU transfers are the bottleneck in ML pipelines. FastGPUCopy uses DMA for zero-copy. |
+| **FastIPC** | Shared memory and named pipes for separation of bot engine and AI model - both run isolated. |
+| **FastClipboard** | Java's Clipboard is buggy. FastClipboard uses native APIs for stable copy/paste. |
 
 ### Audio
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastAudioCapture** | WASAPI statt Java Sound für <10ms Latenz. Loopback-Capture für Audio-Trigger-Bots. |
-| **FastAudio** | Audio-Ausgabe für Feedback/Sprachausgabe. Gegenstück zu FastAudioCapture. |
-| **FastTTS** | Text-to-Speech für Sprachausgabe. Piper (lokal), Coqui, ElevenLabs API, System TTS. Für Voice-Bots und Accessibility. |
-| **FastSTT** | Speech-to-Text für Spracherkennung. Whisper (lokal), Vosk, System STT. Für Voice-Commands und Transcription. |
-| **FastOCR** | Text in Screenshots lesen. Tesseract (lokal), ONNX Runtime (neural OCR), System OCR. Für Quest-Logs, Chat-Nachrichten, UI-Elemente, Formulare. |
+| Module | Explanation |
+|--------|-------------|
+| **FastAudioCapture** | WASAPI instead of Java Sound for <10ms latency. Loopback capture for audio trigger bots. |
+| **FastAudio** | Audio output for feedback/voice output. Counterpart to FastAudioCapture. |
+| **FastTTS** | Text-to-Speech for voice output. Piper (local), Coqui, ElevenLabs API, System TTS. For voice bots and accessibility. |
+| **FastSTT** | Speech-to-Text for speech recognition. Whisper (local), Vosk, System STT. For voice commands and transcription. |
+| **FastOCR** | Read text in screenshots. Tesseract (local), ONNX Runtime (neural OCR), System OCR. For quest logs, chat messages, UI elements, forms. |
 
 ---
 
@@ -130,54 +130,54 @@ FastJava, FastCore, FastPlugin
 
 ### Algorithms & Utilities
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastMath** | Auto-Optimizer für Mathe-Funktionen - generiert Varianten, benchmarked, pickt schnellste. |
-| **FastSIMD** | SSE/AVX/NEON-Wrapper für Java. 10x schneller für Vector-Ops, Pixel-Processing, Physics. |
-| **FastString** | Java Strings sind immutable und UTF-16. FastString ist mutable, UTF-8, zero-copy - für Parsing. |
-| **FastBytes** | ByteBuffer mit String-API und SIMD-Ops. Für Binary-Parsing ohne GC. |
-| **FastHash** | xxHash3/BLAKE3 sind 100x schneller als SHA-256. Für Checksums in Echtzeit-Pipelines. |
-| **FastJSON** / **FastParse** | Jackson/Gson sind zu langsam für High-Freq. FastJSON ist zero-copy, 50x schneller. |
-| **FastRegex** | Java Regex hat Backtracking-Probleme. FastRegex nutzt Hyperscan-Engine für SIMD-Pattern-Matching. |
-| **FastSort** | Radix Sort ist O(n) für Integers. 10x schneller als Java's Dual-Pivot Quicksort für große Arrays. |
-| **FastCompress** | LZ4 ist 10x schneller als gzip. Für Netcode und Log-Compression wo Geschwindigkeit zählt. |
-| **FastPathfinder** | A* in Java ist zu langsam für große Grids. Native Implementation für Echtzeit-Navigation. |
-| **FastEventBus** | JNI-Callbacks sind teuer. FastEventBus batcht Events und nutzt Lock-Free Queues. |
-| **FastHookChain** | Ordnung von Hooks priorisieren: Input → PreProcess → AI → Action → PostProcess. |
-| **FastDetour** | Function Hooking für Modding und Instrumentation. Trampoline für Original-Call. |
-| **FastThreading** | Java Thread-Pools haben zu viel Overhead. Lock-Free Queues und Thread-Affinity für <1ms Latenz. |
-| **FastBenchmark** | Micro-Benchmarks mit QueryPerformanceCounter. Für Performance-Marketing und Optimierung. |
+| Module | Explanation |
+|--------|-------------|
+| **FastMath** | Auto-optimizer for math functions - generates variants, benchmarks, picks fastest. |
+| **FastSIMD** | SSE/AVX/NEON wrapper for Java. 10x faster for vector operations, pixel processing, physics. |
+| **FastString** | Java Strings are immutable and UTF-16. FastString is mutable, UTF-8, zero-copy - for parsing. |
+| **FastBytes** | ByteBuffer with String API and SIMD operations. For binary parsing without GC. |
+| **FastHash** | xxHash3/BLAKE3 are 100x faster than SHA-256. For checksums in real-time pipelines. |
+| **FastJSON** / **FastParse** | Jackson/Gson are too slow for high-frequency. FastJSON is zero-copy, 50x faster. |
+| **FastRegex** | Java Regex has backtracking problems. FastRegex uses Hyperscan engine for SIMD pattern matching. |
+| **FastSort** | Radix Sort is O(n) for integers. 10x faster than Java's Dual-Pivot Quicksort for large arrays. |
+| **FastCompress** | LZ4 is 10x faster than gzip. For netcode and log compression where speed matters. |
+| **FastPathfinder** | A* in Java is too slow for large grids. Native implementation for real-time navigation. |
+| **FastEventBus** | JNI callbacks are expensive. FastEventBus batches events and uses lock-free queues. |
+| **FastHookChain** | Order hooks by priority: Input → PreProcess → AI → Action → PostProcess. |
+| **FastDetour** | Function hooking for modding and instrumentation. Trampoline for original call. |
+| **FastThreading** | Java thread pools have too much overhead. Lock-free queues and thread affinity for <1ms latency. |
+| **FastBenchmark** | Micro-benchmarks with QueryPerformanceCounter. For performance marketing and optimization. |
 
 ### Debugging & Development
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastCallTrace** | Wer ruft mich an? Stack-Introspektion 10x schneller als Throwable.getStackTrace(). |
-| **FastWatch** | Variablen in Echtzeit beobachten (60-240 Hz) ohne Swing-Overhead. Für Game-Dev Debug. |
-| **FastReplay** | Input aufzeichnen und abspielen. Für UI-Testing und Bot-Validation. |
-| **FastTest** | Kombiniert FastScreen + FastRobot für visuelle Assertions. UI-Testing Engine. |
+| Module | Explanation |
+|--------|-------------|
+| **FastCallTrace** | Who is calling me? Stack introspection 10x faster than Throwable.getStackTrace(). |
+| **FastWatch** | Watch variables in real-time (60-240 Hz) without Swing overhead. For game dev debugging. |
+| **FastReplay** | Record and playback input. For UI testing and bot validation. |
+| **FastTest** | Combines FastScreen + FastRobot for visual assertions. UI testing engine. |
 
 ### AI & ML
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastAI** | Ein Interface für alle AI-Provider (Ollama, OpenAI, Claude). Kein JSON-Hassle, nur Prompts. |
-| **FastAIClient** | Provider-spezifische Implementierungen hinter FastAI-Interface. |
-| **FastEmbedding** | Lokale Embeddings mit ggml. Für RAG ohne Cloud-Abhängigkeit. |
-| **FastVectorDB** | In-Process Vektordatenbank für KNN-Suche. Für Semantic Search und RAG-Retrieval. |
-| **FastToolBridge** | AI-Modelle können Fast*-Module direkt aufrufen. MCP-kompatibel für Agents. |
-| **FastContext** | Agent-Memory mit Profilen und Langzeitwissen. Für personalisierte AI-Agents. |
-| **FastMemory** | Persistenter Embedding-basierter Agent Memory. Speichert Fakten mit automatischer Summarisierung und Retrieval. Nutzt FastEmbedding + FastVectorDB. |
-| **FastRAG** | Komplette RAG-Pipeline für lokale und Cloud-Modelle. Chunking, Embedding, Vector Search, Context Injection in einem Modul. |
-| **FastMCP** | MCP (Model Context Protocol) für FastAI. Verbindet Tools, Memory, RAG, Files über MCP-Server mit FastAI als Model-Backend. |
+| Module | Explanation |
+|--------|-------------|
+| **FastAI** | One interface for all AI providers (Ollama, OpenAI, Claude). No JSON hassle, just prompts. |
+| **FastAIClient** | Provider-specific implementations behind FastAI interface. |
+| **FastEmbedding** | Local embeddings with ggml. For RAG without cloud dependency. |
+| **FastVectorDB** | In-process vector database for KNN search. For semantic search and RAG retrieval. |
+| **FastToolBridge** | AI models can call Fast* modules directly. MCP-compatible for agents. |
+| **FastContext** | Agent memory with profiles and long-term knowledge. For personalized AI agents. |
+| **FastMemory** | Persistent embedding-based agent memory. Stores facts with automatic summarization and retrieval. Uses FastEmbedding + FastVectorDB. |
+| **FastRAG** | Complete RAG pipeline for local and cloud models. Chunking, embedding, vector search, context injection in one module. |
+| **FastMCP** | MCP (Model Context Protocol) for FastAI. Connects tools, memory, RAG, files via MCP servers with FastAI as model backend. |
 
 ### Platform
 
-| Modul | Erklärung |
-|-------|-----------|
-| **FastJava** | Das übergeordnete Ökosystem. Meta-Modul für alle 67 Module. |
-| **FastCore** | Unified JNI Loader. Lädt alle DLLs, managed Versions, Error-Translation. |
-| **FastPlugin** | Plugin-System für 3rd-Party Module. Hot-Reload und API-Registry. |
+| Module | Explanation |
+|--------|-------------|
+| **FastJava** | The overarching ecosystem. Meta-module for all 67 modules. |
+| **FastCore** | Unified JNI Loader. Loads all DLLs, manages versions, error translation. |
+| **FastPlugin** | Plugin system for 3rd-party modules. Hot-reload and API registry. |
 
 ---
 
@@ -239,30 +239,30 @@ FastJava, FastCore, FastPlugin
 
 ## 🧠 Vision
 
-FastJava ist das Fundament für:
+FastJava is the foundation for:
 
 - **Autonomous Agents**
-- **Game-Bots**
-- **Vision-Bots**
-- **UI-Automation**
-- **AI-Tools**
+- **Game Bots**
+- **Vision Bots**
+- **UI Automation**
+- **AI Tools**
 - **Native-Speed Java Apps**
 
-Java bekommt damit endlich das, was Python, C++ und Rust schon lange haben: **direkten Zugriff auf das Betriebssystem** — ohne Overhead.
+Java finally gets what Python, C++, and Rust have long had: **direct access to the operating system** — without overhead.
 
 ---
 
-## 📜 Lizenz
+## 📜 License
 
-MIT (geplant)
-
----
+MIT (planned)
 
 ---
 
-# 🏗️ GitHub-Pages Website Struktur
+---
 
-Komplette Seitenstruktur für `/docs`:
+# 🏗️ GitHub Pages Website Structure
+
+Complete page structure for `/docs`:
 
 ```
 /docs
@@ -278,18 +278,18 @@ Komplette Seitenstruktur für `/docs`:
     ai.md                           → FastAI, FastEmbedding, etc.
     platform.md                     → FastCore, FastPlugin
   architecture/
-    overview.md                     → Architektur-Überblick
-    diagrams.md                     → Diagramme
-    dependency-graph.md             → Modul-Dependencies
+    overview.md                     → Architecture overview
+    diagrams.md                     → Diagrams
+    dependency-graph.md             → Module dependencies
   guides/
-    installation.md                 → Setup & Installation
-    quickstart.md                   → 5-Minuten Quickstart
-    examples.md                     → Code-Beispiele
-    agent-integration.md            → AI-Agent Integration
+    installation.md                 → Setup & installation
+    quickstart.md                   → 5-minute quickstart
+    examples.md                     → Code examples
+    agent-integration.md            → AI agent integration
   api/
-    fastrobot.md                    → API-Doku FastRobot
-    fastgraphics.md                 → API-Doku FastGraphics
-    fasttheme.md                    → API-Doku FastTheme
+    fastrobot.md                    → API docs FastRobot
+    fastgraphics.md                 → API docs FastGraphics
+    fasttheme.md                    → API docs FastTheme
     ...
   roadmap/
     roadmap-2026.md                 → Foundation & Core
@@ -400,7 +400,7 @@ Komplette Seitenstruktur für `/docs`:
 
 # 🗺️ Roadmap 2026–2028
 
-**Priorisierung nach:** Impact × Dependencies × Difficulty × Marketing/SEO Value
+**Prioritized by:** Impact × Dependencies × Difficulty × Marketing/SEO Value
 
 ---
 
@@ -408,19 +408,19 @@ Komplette Seitenstruktur für `/docs`:
 
 ### 🔥 Highest Priority
 
-| Modul | Impact | Dependencies | Status |
-|-------|--------|--------------|--------|
-| FastCore | 10/10 | 0 | 🔄 Stabilisieren |
-| FastRobot | 10/10 | FastCore | ✅ Ausbauen |
-| FastGraphics | 10/10 | FastCore | 🔄 Fertigstellen |
-| FastTheme | 9/10 | FastWindow | 🔄 Fertigstellen |
-| FastScreen | 9/10 | FastGraphics | 📝 Extrahieren aus FastRobot |
+| Module | Impact | Dependencies | Status |
+|--------|--------|--------------|--------|
+| FastCore | 10/10 | 0 | 🔄 Stabilizing |
+| FastRobot | 10/10 | FastCore | ✅ Expanding |
+| FastGraphics | 10/10 | FastCore | 🔄 Completing |
+| FastTheme | 9/10 | FastWindow | 🔄 Completing |
+| FastScreen | 9/10 | FastGraphics | 📝 Extract from FastRobot |
 
 ### 🎯 Deliverables 2026
 
-- [ ] Offizielle FastJava Website (GitHub Pages)
+- [ ] Official FastJava Website (GitHub Pages)
 - [ ] 10+ Demos (Vision, Input, Rendering)
-- [ ] Erste AI-Integration (FastAI v0.1)
+- [ ] First AI Integration (FastAI v0.1)
 - [ ] FastJava 1.0 Release Candidate
 - [ ] JitPack / Maven Central Setup
 
@@ -430,19 +430,19 @@ Komplette Seitenstruktur für `/docs`:
 
 ### 🔥 Highest Priority
 
-| Modul | Impact | Dependencies | Use-Case |
-|-------|--------|--------------|----------|
+| Module | Impact | Dependencies | Use-Case |
+|--------|--------|--------------|----------|
 | FastVision | 10/10 | FastScreen, FastGraphics | GPU Vision Pipeline |
-| FastOCR | 8/10 | FastImage | UI-Text-Reading |
-| FastAudioCapture | 7/10 | FastCore | Audio-Trigger-Bots |
+| FastOCR | 8/10 | FastImage | UI Text Reading |
+| FastAudioCapture | 7/10 | FastCore | Audio Trigger Bots |
 | FastWindowEvents | 7/10 | FastCore | Adaptive Bots |
-| FastProcessWatch | 6/10 | FastProcess | Process-Monitoring |
-| FastGPUCopy | 8/10 | FastCore | ML-Pipelines |
+| FastProcessWatch | 6/10 | FastProcess | Process Monitoring |
+| FastGPUCopy | 8/10 | FastCore | ML Pipelines |
 
 ### 🎯 Deliverables 2027
 
-- [ ] Vision-Bots (Screen → AI → Action)
-- [ ] Audio-Trigger-Bots
+- [ ] Vision Bots (Screen → AI → Action)
+- [ ] Audio Trigger Bots
 - [ ] Full Agent Integration (FastToolBridge + FastContext)
 - [ ] FastJava 2.0 Release
 
@@ -452,19 +452,19 @@ Komplette Seitenstruktur für `/docs`:
 
 ### 🔥 Highest Priority
 
-| Modul | Impact | Dependencies | Use-Case |
-|-------|--------|--------------|----------|
-| FastPlugin | 9/10 | FastCore | Plugin-Ökosystem |
+| Module | Impact | Dependencies | Use-Case |
+|--------|--------|--------------|----------|
+| FastPlugin | 9/10 | FastCore | Plugin Ecosystem |
 | FastVectorDB | 8/10 | FastEmbedding | RAG in Java |
 | FastEmbedding | 7/10 | FastBytes | Local Embeddings |
 | FastDetour | 6/10 | FastCore | Function Hooking |
-| FastPathfinder | 6/10 | FastSIMD | Game-Bot Navigation |
-| FastReplay / FastTest | 7/10 | FastRobot, FastScreen | UI-Testing Engine |
+| FastPathfinder | 6/10 | FastSIMD | Game Bot Navigation |
+| FastReplay / FastTest | 7/10 | FastRobot, FastScreen | UI Testing Engine |
 
 ### 🎯 Deliverables 2028
 
-- [ ] Plugin-Ökosystem (3rd-Party Module)
-- [ ] AI-Agents mit Tool-Calling
+- [ ] Plugin Ecosystem (3rd-Party Modules)
+- [ ] AI Agents with Tool-Calling
 - [ ] Native-Speed RAG in Java
 - [ ] FastJava 3.0 Release
 
@@ -472,10 +472,10 @@ Komplette Seitenstruktur für `/docs`:
 
 ---
 
-## 📊 Gesamt-Statistik
+## 📊 Overall Statistics
 
-| Kategorie | Anzahl | Released | WIP | Konzept |
-|-----------|--------|----------|-----|---------|
+| Category | Count | Released | WIP | Concept |
+|----------|-------|----------|-----|---------|
 | **Core (Agent I/O)** | 7 | 2 (FastRobot, FastHotkey) | 0 | 5 |
 | **System & Window** | 9 | 0 | 1 (FastTheme) | 8 |
 | **Display & Graphics** | 5 | 1 (FastClipboard) | 1 (FastGraphics) | 3 |
@@ -485,7 +485,7 @@ Komplette Seitenstruktur für `/docs`:
 | **Debugging & Testing** | 4 | 0 | 0 | 4 |
 | **AI & ML** | 9 | 0 | 0 | 9 |
 | **Platform** | 3 | 0 | 0 | 3 |
-| **Gesamt** | **67** | **3** | **2** | **62** |
+| **Total** | **67** | **3** | **2** | **62** |
 
 ---
 
