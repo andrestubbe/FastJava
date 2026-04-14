@@ -181,7 +181,7 @@ FastJava, FastCore, FastPlugin
 
 ---
 
-## 🧩 Architektur
+## 🧩 Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -301,11 +301,11 @@ Complete page structure for `/docs`:
 
 ---
 
-# 🔗 Dependency-Graph (vollständig)
+# 🔗 Dependency-Graph (complete)
 
 ## Foundational Layer (0 deps)
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastCore | — |
 | FastJava | — |
@@ -313,7 +313,7 @@ Complete page structure for `/docs`:
 
 ## Low-Level Native Utils (1–2 deps)
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastString | FastBytes |
 | FastBytes | FastCore |
@@ -328,7 +328,7 @@ Complete page structure for `/docs`:
 
 ## System Layer (requires FastCore)
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastWindow | FastCore |
 | FastProcess | FastCore |
@@ -340,7 +340,7 @@ Complete page structure for `/docs`:
 
 ## Graphics Layer
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastGraphics | FastCore |
 | FastImage | FastBytes |
@@ -351,7 +351,7 @@ Complete page structure for `/docs`:
 
 ## I/O Layer
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastIO | FastCore |
 | FastMemoryScan | FastProcess |
@@ -361,7 +361,7 @@ Complete page structure for `/docs`:
 
 ## Input/Output Layer
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastRobot | FastCore |
 | FastScreen | FastGraphics |
@@ -376,7 +376,7 @@ Complete page structure for `/docs`:
 
 ## AI Layer
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastAI | FastCore |
 | FastAIClient | FastAI |
@@ -387,7 +387,7 @@ Complete page structure for `/docs`:
 
 ## Debug Layer
 
-| Modul | Dependencies |
+| Module | Dependencies |
 |-------|-------------|
 | FastCallTrace | FastCore |
 | FastWatch | FastGraphics |
