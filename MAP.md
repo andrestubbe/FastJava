@@ -413,7 +413,7 @@ Complete page structure for `/docs`:
 | FastCore | 10/10 | 0 | 🔄 Stabilizing |
 | FastRobot | 10/10 | FastCore | ✅ Expanding |
 | FastGraphics | 10/10 | FastCore | 🔄 Completing |
-| FastTheme | 9/10 | FastWindow | 🔄 Completing |
+| FastTheme | 9/10 | FastWindow | ✅ Released v1.2.0 |
 | FastScreen | 9/10 | FastGraphics | 📝 Extract from FastRobot |
 
 ### 🎯 Deliverables 2026
@@ -477,7 +477,7 @@ Complete page structure for `/docs`:
 | Category | Count | Released | WIP | Concept |
 |----------|-------|----------|-----|---------|
 | **Core (Agent I/O)** | 7 | 2 (FastRobot, FastHotkey) | 0 | 5 |
-| **System & Window** | 9 | 0 | 1 (FastTheme) | 8 |
+| **System & Window** | 9 | 1 (FastTheme) | 0 | 8 |
 | **Display & Graphics** | 5 | 1 (FastClipboard) | 1 (FastGraphics) | 3 |
 | **Data & I/O** | 5 | 0 | 0 | 5 |
 | **Audio** | 4 | 0 | 0 | 4 |
