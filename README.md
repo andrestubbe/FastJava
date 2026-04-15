@@ -27,6 +27,7 @@
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Released |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | ✅ Released v1.2.0 |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | ✅ Released v1.1.0 |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | **10-50× faster** than BufferedImage | 🚧 Beta v1.0.0 |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | Ultra-fast file I/O & parsing | **5-20× faster** than NIO | 🚧 Beta |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated 2D rendering | **600% faster** than Graphics2D | 🚧 Beta |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | SIMD + GPU accelerated math | **2–100× faster** | 🚧 Growing |

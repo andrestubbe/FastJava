@@ -354,6 +354,7 @@ Complete page structure for `/docs`:
 | Module | Dependencies |
 |-------|-------------|
 | FastIO | FastCore |
+| FastImage | FastCore |
 | FastMemoryScan | FastProcess |
 | FastGPUCopy | FastCore |
 | FastIPC | FastCore |
@@ -414,6 +415,7 @@ Complete page structure for `/docs`:
 | FastRobot | 10/10 | FastCore | ✅ Expanding |
 | FastGraphics | 10/10 | FastCore | 🔄 Completing |
 | FastTheme | 9/10 | FastWindow | ✅ Released v1.2.0 |
+| FastImage | 8/10 | FastCore | 🚧 Beta v1.0.0 |
 | FastScreen | 9/10 | FastGraphics | 📝 Extract from FastRobot |
 
 ### 🎯 Deliverables 2026
