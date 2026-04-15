@@ -410,7 +410,7 @@ Complete page structure for `/docs`:
 
 | Module | Impact | Dependencies | Status |
 |--------|--------|--------------|--------|
-| FastCore | 10/10 | 0 | 🔄 Stabilizing |
+| FastCore | 10/10 | 0 | ✅ Released v1.0.0 |
 | FastRobot | 10/10 | FastCore | ✅ Expanding |
 | FastGraphics | 10/10 | FastCore | 🔄 Completing |
 | FastTheme | 9/10 | FastWindow | ✅ Released v1.2.0 |
@@ -476,7 +476,7 @@ Complete page structure for `/docs`:
 
 | Category | Count | Released | WIP | Concept |
 |----------|-------|----------|-----|---------|
-| **Core (Agent I/O)** | 7 | 2 (FastRobot, FastHotkey) | 0 | 5 |
+| **Core (Agent I/O)** | 7 | 3 (FastCore, FastRobot, FastHotkey) | 0 | 4 |
 | **System & Window** | 9 | 1 (FastTheme) | 0 | 8 |
 | **Display & Graphics** | 5 | 1 (FastClipboard) | 1 (FastGraphics) | 3 |
 | **Data & I/O** | 5 | 0 | 0 | 5 |
@@ -485,7 +485,7 @@ Complete page structure for `/docs`:
 | **Debugging & Testing** | 4 | 0 | 0 | 4 |
 | **AI & ML** | 9 | 0 | 0 | 9 |
 | **Platform** | 3 | 0 | 0 | 3 |
-| **Total** | **67** | **3** | **2** | **62** |
+| **Total** | **67** | **4** | **1** | **62** |
 
 ---
 
