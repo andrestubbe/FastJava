@@ -1,4 +1,4 @@
-# FastJava — Native Java Performance Ecosystem
+# FastJava — Native Java Performance Ecosystem [ALPHA]
 
 > 🚧 **WORK IN PROGRESS** — APIs may change. Not production-ready yet.
 
