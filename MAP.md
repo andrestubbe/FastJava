@@ -12,7 +12,7 @@ FastJava is **minimal, deterministic, zero-bullshit** — built for bots, automa
 
 - **Native Speed** — [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx), [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list), [DWM](https://learn.microsoft.com/en-us/windows/win32/dwm/dwm-overview), [IOCP](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports), [SIMD](https://en.wikipedia.org/wiki/SIMD), [CUDA](https://developer.nvidia.com/cuda-zone)
 - **Zero-Copy Everywhere** — Screen, Images, IPC, GPU
-- **Unified JNI Core** — FastCore as foundation
+- **Unified [JNI](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) Core** — FastCore as foundation
 - **Agent-Friendly** — FastAI, FastToolBridge, FastContext
 - **Modular** — 62 modules, optional, combinable
 - **Cross-Platform** — Windows, Linux, macOS (module-dependent)
@@ -56,11 +56,11 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastRobot** | Java's Robot class is too slow for game bots. FastRobot uses native [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput) with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
-| **FastScreen** | Screenshots with Java.awt take 50-100ms. FastScreen uses [DXGI Desktop Duplication](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/desktop-duplication-api) for 500-2000 FPS zero-copy capture - essential for vision bots. |
-| **FastInput** | Read mouse, keyboard, and HID input via [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input) (non-hooking, non-invasive) for high-frequency input reading. |
+| **FastRobot** | Java's [Robot](https://docs.oracle.com/javase/8/docs/api/java/awt/Robot.html) class is too slow for game bots. FastRobot uses native [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput) with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
+| **FastScreen** | Screenshots with [Java.awt](https://docs.oracle.com/javase/8/docs/api/java/awt/package-summary.html) take 50-100ms. FastScreen uses [DXGI Desktop Duplication](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/desktop-duplication-api) for 500-2000 FPS zero-copy capture - essential for vision bots. |
+| **FastInput** | Read mouse, keyboard, and [HID](https://en.wikipedia.org/wiki/Human_interface_device) input via [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input) (non-hooking, non-invasive) for high-frequency input reading. |
 | **FastInputHook** | Global hook counterpart to FastInput — captures ALL low-level events ([SetWindowsHookEx](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa)) before they reach any application. |
-| **FastVision** | Java2D is too slow for object detection. FastVision uses GPU compute shaders for <10ms template matching and feature extraction. |
+| **FastVision** | [Java2D](https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-intro.html) is too slow for object detection. FastVision uses [GPU compute shaders](https://learn.microsoft.com/en-us/windows/win32/direct3d11/compute-shaders) for <10ms [template matching](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html) and [feature extraction](https://en.wikipedia.org/wiki/Feature_extraction). |
 | **FastHotkey** | Safe, filtered version — only registered combinations are intercepted, without the invasiveness of global hooks. |
 | **FastGamepad** | No native controller support in Java. FastGamepad reads [XInput](https://learn.microsoft.com/en-us/windows/win32/xinput/getting-started-with-xinput)/[DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) for racing/fighting game bots. |
 | **FastHumanInput** | Unifies all input sources into a single event stream optimized for AI agents and automation pipelines. |
@@ -76,14 +76,14 @@ FastJava, FastCore, FastPlugin
 | **FastWindowEvents** | Java gets no events when windows are moved. FastWindowEvents notifies when the target window changes. |
 | **FastSystemMetrics** | Mouse speed and drag threshold are only accessible via [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list). Important for human-like bot input. |
 | **FastDWM** | VSync and frame latency are important for frame-locked rendering. FastDWM reads [Desktop Window Manager](https://learn.microsoft.com/en-us/windows/win32/dwm/dwm-overview) timing. |
-| **FastFileWatch** | Java's WatchService is slow and loses events. FastFileWatch uses [ReadDirectoryChangesW](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-readdirectorychangesw) for immediate notifications. |
+| **FastFileWatch** | Java's WatchService is slow and loses events. FastFileWatch uses [ReadDirectoryChangesW](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-readdirectorychangesw) for immediate notifications (vs. slow [Java WatchService](https://docs.oracle.com/javase/8/docs/api/java/nio/file/WatchService.html)). |
 | **FastProcessWatch** | Watch process start/stop for trigger bots (e.g., "when game starts, activate bot"). |
 
 ### Display & Graphics
 
 | Module | Explanation |
 |--------|-------------|
-| **FastGraphics** | Java2D is unsuitable for 60+ FPS. FastGraphics uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx)/[Vulkan](https://www.vulkan.org/) for GPU rendering without JVM heap. |
+| **FastGraphics** | [Java2D](https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-intro.html) is unsuitable for 60+ FPS. FastGraphics uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx)/[Vulkan](https://www.vulkan.org/) for GPU rendering without JVM heap. |
 | **FastImage** | BufferedImage allocates 200-300MB heap. FastImage uses ByteBuffer off-heap for fast pixel operations. |
 | **FastImageView** | JFrame with image is slow. FastImageView renders 1:1 pixels in 200ms startup time for debugging. |
 | **FastDisplay** | Displays [framebuffer](https://en.wikipedia.org/wiki/Framebuffer) directly without copy. Foundation for all GPU rendering modules. |
@@ -103,7 +103,7 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastAudioCapture** | [WASAPI](https://learn.microsoft.com/en-us/windows/win32/coreaudio/wasapi) instead of Java Sound for <10ms latency. Loopback capture for audio trigger bots. |
+| **FastAudioCapture** | [WASAPI](https://learn.microsoft.com/en-us/windows/win32/coreaudio/wasapi) instead of [Java Sound](https://docs.oracle.com/javase/tutorial/sound/). Loopback capture for audio trigger bots. |
 | **FastAudio** | Audio output for feedback/voice output. Counterpart to FastAudioCapture. |
 | **FastTTS** | Text-to-Speech for voice output. [Piper](https://github.com/rhasspy/piper) (local), [Coqui](https://github.com/coqui-ai/TTS), [ElevenLabs API](https://elevenlabs.io/docs/api-reference), System TTS. For voice bots and accessibility. |
 | **FastSTT** | Speech-to-Text for speech recognition. Whisper (local), Vosk, System STT. For voice commands and transcription. |
