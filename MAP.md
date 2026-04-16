@@ -22,7 +22,7 @@ FastJava is **minimal, deterministic, zero-bullshit** — built for bots, automa
 ## 📦 Module Overview (62)
 
 ### Core (Agent I/O)
-FastRobot, FastScreen, FastInputHook, FastVision, FastHotkey, FastGamepad, FastHumanInput
+FastRobot, FastScreen, FastInput, FastInputHook, FastVision, FastHotkey, FastGamepad, FastHumanInput
 
 ### System & Window
 FastWindow, FastProcess, FastTheme, FastOverlay, FastWindowEvents, FastSystemMetrics, FastDWM, FastFileWatch, FastProcessWatch
@@ -58,11 +58,12 @@ FastJava, FastCore, FastPlugin
 |--------|-------------|
 | **FastRobot** | Java's Robot class is too slow for game bots. FastRobot uses native SendInput with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
 | **FastScreen** | Screenshots with Java.awt take 50-100ms. FastScreen uses DXGI Desktop Duplication for 500-2000 FPS zero-copy capture - essential for vision bots. |
-| **FastInputHook** | Java processes events only after the JVM queue. FastInputHook uses SetWindowsHookEx for low-level events BEFORE Java - for instant hotkeys and triggers. |
+| **FastInput** | Read mouse, keyboard, and HID input via RawInput (non-hooking, non-invasive) for high-frequency input reading. |
+| **FastInputHook** | Global hook counterpart to FastInput — captures ALL low-level events (SetWindowsHookEx) before they reach any application. |
 | **FastVision** | Java2D is too slow for object detection. FastVision uses GPU compute shaders for <10ms template matching and feature extraction. |
-| **FastHotkey** | Global hotkeys without keylogging suspicion. Only registered combos are intercepted - safe for productive bots. |
+| **FastHotkey** | Safe, filtered version — only registered combinations are intercepted, without the invasiveness of global hooks. |
 | **FastGamepad** | No native controller support in Java. FastGamepad reads XInput/DirectInput for racing/fighting game bots. |
-| **FastHumanInput** | Unifies all input sources (keyboard, mouse, touch, stylus, gamepad) into a single stream. |
+| **FastHumanInput** | Unifies all input sources into a single event stream optimized for AI agents and automation pipelines. |
 
 ### System & Window
 
@@ -181,7 +182,44 @@ FastJava, FastCore, FastPlugin
 
 ---
 
-## 🧩 Architecture
+## 🎯 Architecture Philosophy: Input vs Output
+
+FastJava separates modules by **direction**, not by device type:
+
+| Direction | Meaning | Modules |
+|-----------|---------|---------|
+| **Input** | "I read what the user does" | FastInput, FastScreen, FastTouch, FastStylus, FastGamepad |
+| **Output** | "I control the PC" | FastRobot |
+| **Both** | Bidirectional devices | FastTouch, FastStylus, FastGamepad |
+
+### Why mouse + keyboard stay together
+
+Windows **RawInput API** delivers mouse and keyboard in the **same callback loop**. Splitting them would require:
+- Two JNI bridges
+- Two message loops  
+- Two event queues
+- Double the maintenance
+
+**Violation of:** `minimal, deterministic, zero-bullshit`
+
+### Modules by technology, not device
+
+| Module | Technology | Why separate? |
+|--------|------------|---------------|
+| FastInput | RawInput, Hooks | Reads user input |
+| FastRobot | SendInput, DirectInput | Sends output to PC |
+| FastTouch | Windows Pointer API | Touch injection + multi-point |
+| FastStylus | Pointer API (Pen) | Pressure, tilt, eraser |
+| FastGamepad | XInput/DirectInput | Controller, rumble |
+| FastScreen | DXGI Desktop Duplication | Zero-copy capture |
+
+Only **fundamentally different technologies** get separate modules.
+
+---
+
+## 🧩 Architecture Layers
+
+> Architecture Layers list modules only. Detailed descriptions are in [Module Details](#-module-details).
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -191,7 +229,7 @@ FastJava, FastCore, FastPlugin
 
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                         HIGH-LEVEL AUTOMATION LAYER                         │
-│  FastRobot • FastInputHook • FastHotkey • FastGamepad • FastHumanInput      │
+│  FastRobot • FastInput • FastInputHook • FastHotkey • FastGamepad • FastHumanInput |
 │  FastScreen • FastVision • FastOCR • FastAudioCapture                       │
 └─────────────────────────────────────────────────────────────────────────────┘
 
