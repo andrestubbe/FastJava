@@ -10,7 +10,7 @@ FastJava is **minimal, deterministic, zero-bullshit** — built for bots, automa
 
 ## 🚀 Features
 
-- **Native Speed** — DirectX, Win32, DWM, IOCP, SIMD, CUDA
+- **Native Speed** — [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx), [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list), [DWM](https://learn.microsoft.com/en-us/windows/win32/dwm/dwm-overview), [IOCP](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports), [SIMD](https://en.wikipedia.org/wiki/SIMD), [CUDA](https://developer.nvidia.com/cuda-zone)
 - **Zero-Copy Everywhere** — Screen, Images, IPC, GPU
 - **Unified JNI Core** — FastCore as foundation
 - **Agent-Friendly** — FastAI, FastToolBridge, FastContext
@@ -69,52 +69,52 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastWindow** | Java cannot control foreign windows. FastWindow finds, focuses, moves windows via Win32 - important for multi-window bots. |
-| **FastProcess** | ProcessHandle is too limited. FastProcess reads thread IDs, handle count, real CPU affinity for process isolation. |
-| **FastTheme** | Java doesn't know Dark Mode. FastTheme reads Windows 11 theming (Dark/Light, Accent, Mica) and adapts Java apps. |
-| **FastOverlay** | HUDs over games need transparent overlay windows. FastOverlay uses DirectX for ESPs, debug visuals. |
+| **FastWindow** | Java cannot control foreign windows. FastWindow finds, focuses, moves windows via [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) - important for multi-window bots. |
+| **FastProcess** | ProcessHandle is too limited. FastProcess reads thread IDs, handle count, real [CPU affinity](https://learn.microsoft.com/en-us/windows/win32/procthread/setting-thread-affinity) for process isolation. |
+| **FastTheme** | Java doesn't know Dark Mode. FastTheme reads [Windows 11 theming](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/apply-windows-themes) (Dark/Light, Accent, Mica) and adapts Java apps. |
+| **FastOverlay** | HUDs over games need transparent overlay windows. FastOverlay uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx) for ESPs, debug visuals. |
 | **FastWindowEvents** | Java gets no events when windows are moved. FastWindowEvents notifies when the target window changes. |
-| **FastSystemMetrics** | Mouse speed and drag threshold are only accessible via Win32. Important for human-like bot input. |
-| **FastDWM** | VSync and frame latency are important for frame-locked rendering. FastDWM reads Desktop Window Manager timing. |
-| **FastFileWatch** | Java's WatchService is slow and loses events. FastFileWatch uses ReadDirectoryChangesW for immediate notifications. |
+| **FastSystemMetrics** | Mouse speed and drag threshold are only accessible via [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list). Important for human-like bot input. |
+| **FastDWM** | VSync and frame latency are important for frame-locked rendering. FastDWM reads [Desktop Window Manager](https://learn.microsoft.com/en-us/windows/win32/dwm/dwm-overview) timing. |
+| **FastFileWatch** | Java's WatchService is slow and loses events. FastFileWatch uses [ReadDirectoryChangesW](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-readdirectorychangesw) for immediate notifications. |
 | **FastProcessWatch** | Watch process start/stop for trigger bots (e.g., "when game starts, activate bot"). |
 
 ### Display & Graphics
 
 | Module | Explanation |
 |--------|-------------|
-| **FastGraphics** | Java2D is unsuitable for 60+ FPS. FastGraphics uses DirectX/Vulkan for GPU rendering without JVM heap. |
+| **FastGraphics** | Java2D is unsuitable for 60+ FPS. FastGraphics uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx)/[Vulkan](https://www.vulkan.org/) for GPU rendering without JVM heap. |
 | **FastImage** | BufferedImage allocates 200-300MB heap. FastImage uses ByteBuffer off-heap for fast pixel operations. |
 | **FastImageView** | JFrame with image is slow. FastImageView renders 1:1 pixels in 200ms startup time for debugging. |
-| **FastDisplay** | Displays framebuffer directly without copy. Foundation for all GPU rendering modules. |
-| **FastColorSearch** | Pixel loops in Java are 100x too slow. FastColorSearch uses SIMD (SSE/AVX) for 10GB/s pattern matching. |
+| **FastDisplay** | Displays [framebuffer](https://en.wikipedia.org/wiki/Framebuffer) directly without copy. Foundation for all GPU rendering modules. |
+| **FastColorSearch** | Pixel loops in Java are 100x too slow. FastColorSearch uses [SIMD](https://en.wikipedia.org/wiki/SIMD) ([SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/[AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions)) for 10GB/s pattern matching. |
 
 ### Data & I/O
 
 | Module | Explanation |
 |--------|-------------|
-| **FastIO** | Java NIO has too much overhead for real-time. FastIO uses unbuffered I/O and IOCP for constant latency. |
-| **FastMemoryScan** | For modding and reverse engineering: reads foreign process memory for pattern scans and pointer chains. |
-| **FastGPUCopy** | GPU↔CPU transfers are the bottleneck in ML pipelines. FastGPUCopy uses DMA for zero-copy. |
-| **FastIPC** | Shared memory and named pipes for separation of bot engine and AI model - both run isolated. |
+| **FastIO** | Java NIO has too much overhead for real-time. FastIO uses unbuffered I/O and [IOCP](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports) for constant latency. |
+| **FastMemoryScan** | For modding and reverse engineering: reads foreign process memory for [pattern scans](https://guidedhacking.com/threads/signature-scanning-tutorial.12132/) and [pointer chains](https://guidedhacking.com/threads/pointer-scanning-tutorial.12170/). |
+| **FastGPUCopy** | GPU↔CPU transfers are the bottleneck in ML pipelines. FastGPUCopy uses [DMA](https://en.wikipedia.org/wiki/Direct_memory_access) for [zero-copy](https://en.wikipedia.org/wiki/Zero-copy). |
+| **FastIPC** | [Shared memory](https://en.wikipedia.org/wiki/Shared_memory) and [named pipes](https://learn.microsoft.com/en-us/windows/win32/ipc/named-pipes) for separation of bot engine and AI model - both run isolated. |
 | **FastClipboard** | Java's Clipboard is buggy. FastClipboard uses native APIs for stable copy/paste. |
 
 ### Audio
 
 | Module | Explanation |
 |--------|-------------|
-| **FastAudioCapture** | WASAPI instead of Java Sound for <10ms latency. Loopback capture for audio trigger bots. |
+| **FastAudioCapture** | [WASAPI](https://learn.microsoft.com/en-us/windows/win32/coreaudio/wasapi) instead of Java Sound for <10ms latency. Loopback capture for audio trigger bots. |
 | **FastAudio** | Audio output for feedback/voice output. Counterpart to FastAudioCapture. |
-| **FastTTS** | Text-to-Speech for voice output. Piper (local), Coqui, ElevenLabs API, System TTS. For voice bots and accessibility. |
+| **FastTTS** | Text-to-Speech for voice output. [Piper](https://github.com/rhasspy/piper) (local), [Coqui](https://github.com/coqui-ai/TTS), [ElevenLabs API](https://elevenlabs.io/docs/api-reference), System TTS. For voice bots and accessibility. |
 | **FastSTT** | Speech-to-Text for speech recognition. Whisper (local), Vosk, System STT. For voice commands and transcription. |
-| **FastOCR** | Read text in screenshots. Tesseract (local), ONNX Runtime (neural OCR), System OCR. For quest logs, chat messages, UI elements, forms. |
+| **FastOCR** | Read text in screenshots. [Tesseract](https://github.com/tesseract-ocr/tesseract) (local), [ONNX Runtime](https://onnxruntime.ai/) (neural OCR), System OCR. For quest logs, chat messages, UI elements, forms. |
 
 ---
 
 ### FastTTS (Details)
 
 **APIs:** `speak(text)`, `speak(text, voice)`, `setVoice(id)`, `setRate(speed)`, `setPitch(value)`, `saveToFile(text, path)`, `getVoices()`
-**Native:** Windows SAPI, macOS NSSpeechSynthesizer, Linux Speech Dispatcher, ONNX Runtime, ggml-TTS (Piper, Coqui)
+**Native:** Windows SAPI, macOS NSSpeechSynthesizer, Linux Speech Dispatcher, [ONNX Runtime](https://onnxruntime.ai/), ggml-TTS ([Piper](https://github.com/rhasspy/piper), [Coqui](https://github.com/coqui-ai/TTS))
 **Features:** Low-latency streaming, Voice selection, Local/offline TTS, File output (WAV/MP3)
 **Use-Cases:** Voice-Bots, Screenreader, Agent-Feedback, Audio-UI
 
@@ -123,7 +123,7 @@ FastJava, FastCore, FastPlugin
 ### FastSTT (Details)
 
 **APIs:** `transcribe(audioBuffer)`, `transcribeFile(path)`, `startStreaming(callback)`, `stopStreaming()`, `setModel(model)`, `setLanguage(lang)`
-**Native:** Whisper.cpp (ggml), ONNX Runtime, Windows Speech API, macOS Speech Recognition, Vosk
+**Native:** [Whisper.cpp](https://github.com/ggerganov/whisper.cpp) (ggml), [ONNX Runtime](https://onnxruntime.ai/), Windows Speech API, macOS Speech Recognition, [Vosk](https://alphacephei.com/vosk/)
 **Features:** Streaming STT, Real-time transcription, Multi-language, Noise-reduction
 **Use-Cases:** Voice-Commands, Dictation, Voice-Bots, Meeting-Transcription, Audio-Automation
 
@@ -137,23 +137,23 @@ FastJava, FastCore, FastPlugin
 | **FastSIMD** | [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/[AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions)/[NEON](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon) wrapper for Java. 10x faster for vector operations, pixel processing, physics. |
 | **FastString** | Java Strings are immutable and UTF-16. FastString is mutable, UTF-8, zero-copy - for parsing. |
 | **FastBytes** | ByteBuffer with String API and SIMD operations. For binary parsing without GC. |
-| **FastHash** | xxHash3/BLAKE3 are 100x faster than SHA-256. For checksums in real-time pipelines. |
-| **FastJSON** / **FastParse** | Jackson/Gson are too slow for high-frequency. FastJSON is zero-copy, 50x faster. |
-| **FastRegex** | Java Regex has backtracking problems. FastRegex uses Hyperscan engine for SIMD pattern matching. |
-| **FastSort** | Radix Sort is O(n) for integers. 10x faster than Java's Dual-Pivot Quicksort for large arrays. |
-| **FastCompress** | LZ4 is 10x faster than gzip. For netcode and log compression where speed matters. |
-| **FastPathfinder** | A* in Java is too slow for large grids. Native implementation for real-time navigation. |
+| **FastHash** | [xxHash3](https://github.com/Cyan4973/xxHash)/[BLAKE3](https://github.com/BLAKE3-team/BLAKE3) are 100x faster than SHA-256. For checksums in real-time pipelines. |
+| **FastJSON** / **FastParse** | [Jackson](https://github.com/FasterXML/jackson)/[Gson](https://github.com/google/gson) are too slow for high-frequency. FastJSON is zero-copy, 50x faster. |
+| **FastRegex** | Java Regex has backtracking problems. FastRegex uses [Hyperscan](https://github.com/intel/hyperscan) engine for SIMD pattern matching. |
+| **FastSort** | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort) is O(n) for integers. 10x faster than Java's Dual-Pivot Quicksort for large arrays. |
+| **FastCompress** | [LZ4](https://github.com/lz4/lz4) is 10x faster than gzip. For netcode and log compression where speed matters. |
+| **FastPathfinder** | [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) in Java is too slow for large grids. Native implementation for real-time navigation. |
 | **FastEventBus** | JNI callbacks are expensive. FastEventBus batches events and uses lock-free queues. |
 | **FastHookChain** | Order hooks by priority: Input → PreProcess → AI → Action → PostProcess. |
-| **FastDetour** | Function hooking for modding and instrumentation. Trampoline for original call. |
+| **FastDetour** | [Function hooking](https://en.wikipedia.org/wiki/Hooking) for modding and instrumentation. [Trampoline](https://en.wikipedia.org/wiki/Hooking#Trampoline) for original call. |
 | **FastThreading** | Java thread pools have too much overhead. Lock-free queues and thread affinity for <1ms latency. |
-| **FastBenchmark** | Micro-benchmarks with QueryPerformanceCounter. For performance marketing and optimization. |
+| **FastBenchmark** | Micro-benchmarks with [QueryPerformanceCounter](https://learn.microsoft.com/en-us/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter). For performance marketing and optimization. |
 
 ### Debugging & Development
 
 | Module | Explanation |
 |--------|-------------|
-| **FastCallTrace** | Who is calling me? Stack introspection 10x faster than Throwable.getStackTrace(). |
+| **FastCallTrace** | Who is calling me? [Stack introspection](https://en.wikipedia.org/wiki/Stack_trace) 10x faster than Throwable.getStackTrace(). |
 | **FastWatch** | Watch variables in real-time (60-240 Hz) without Swing overhead. For game dev debugging. |
 | **FastReplay** | Record and playback input. For UI testing and bot validation. |
 | **FastTest** | Combines FastScreen + FastRobot for visual assertions. UI testing engine. |
@@ -164,13 +164,13 @@ FastJava, FastCore, FastPlugin
 |--------|-------------|
 | **FastAI** | One interface for all AI providers (Ollama, OpenAI, Claude). No JSON hassle, just prompts. |
 | **FastAIClient** | Provider-specific implementations behind FastAI interface. |
-| **FastEmbedding** | Local embeddings with ggml. For RAG without cloud dependency. |
-| **FastVectorDB** | In-process vector database for KNN search. For semantic search and RAG retrieval. |
+| **FastEmbedding** | Local embeddings with [ggml](https://github.com/ggerganov/ggml). For RAG without cloud dependency. |
+| **FastVectorDB** | In-process vector database for [KNN search](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm). For semantic search and RAG retrieval. |
 | **FastToolBridge** | AI models can call Fast* modules directly. MCP-compatible for agents. |
 | **FastContext** | Agent memory with profiles and long-term knowledge. For personalized AI agents. |
 | **FastMemory** | Persistent embedding-based agent memory. Stores facts with automatic summarization and retrieval. Uses FastEmbedding + FastVectorDB. |
-| **FastRAG** | Complete RAG pipeline for local and cloud models. Chunking, embedding, vector search, context injection in one module. |
-| **FastMCP** | MCP (Model Context Protocol) for FastAI. Connects tools, memory, RAG, files via MCP servers with FastAI as model backend. |
+| **FastRAG** | Complete [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) pipeline for local and cloud models. Chunking, embedding, vector search, context injection in one module. |
+| **FastMCP** | [MCP](https://modelcontextprotocol.io/) (Model Context Protocol) for FastAI. Connects tools, memory, RAG, files via MCP servers with FastAI as model backend. |
 
 ### Platform
 
