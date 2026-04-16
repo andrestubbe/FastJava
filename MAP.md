@@ -298,47 +298,6 @@ MIT (planned)
 
 ---
 
-# 🏗️ GitHub Pages Website Structure
-
-Complete page structure for `/docs`:
-
-```
-/docs
-  index.md                          → Landing Page
-  modules/
-    core.md                         → FastRobot, FastScreen, etc.
-    system.md                       → FastWindow, FastProcess, etc.
-    graphics.md                     → FastGraphics, FastImage, etc.
-    data.md                         → FastIO, FastMemoryScan, etc.
-    audio.md                        → FastAudioCapture, FastOCR
-    utils.md                        → FastMath, FastString, etc.
-    debug.md                        → FastCallTrace, FastWatch, etc.
-    ai.md                           → FastAI, FastEmbedding, etc.
-    platform.md                     → FastCore, FastPlugin
-  architecture/
-    overview.md                     → Architecture overview
-    diagrams.md                     → Diagrams
-    dependency-graph.md             → Module dependencies
-  guides/
-    installation.md                 → Setup & installation
-    quickstart.md                   → 5-minute quickstart
-    examples.md                     → Code examples
-    agent-integration.md            → AI agent integration
-  api/
-    fastrobot.md                    → API docs FastRobot
-    fastgraphics.md                 → API docs FastGraphics
-    fasttheme.md                    → API docs FastTheme
-    ...
-  roadmap/
-    roadmap-2026.md                 → Foundation & Core
-    roadmap-2027.md                 → Vision, AI, System
-    roadmap-2028.md                 → Ecosystem & Plugins
-```
-
----
-
----
-
 # 🔗 Dependency-Graph (complete)
 
 ## Foundational Layer (0 deps)
