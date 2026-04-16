@@ -56,12 +56,12 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastRobot** | Java's [Robot](https://docs.oracle.com/javase/8/docs/api/java/awt/Robot.html) class is too slow for game bots. FastRobot uses native [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput) with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
+| **[FastRobot](https://github.com/andrestubbe/FastRobot)** | Java's [Robot](https://docs.oracle.com/javase/8/docs/api/java/awt/Robot.html) class is too slow for game bots. FastRobot uses native [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput) with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
 | **FastScreen** | Screenshots with [Java.awt](https://docs.oracle.com/javase/8/docs/api/java/awt/package-summary.html) take 50-100ms. FastScreen uses [DXGI Desktop Duplication](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/desktop-duplication-api) for 500-2000 FPS zero-copy capture - essential for vision bots. |
 | **FastInput** | Read mouse, keyboard, and [HID](https://en.wikipedia.org/wiki/Human_interface_device) input via [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input) (non-hooking, non-invasive) for high-frequency input reading. |
 | **FastInputHook** | Global hook counterpart to FastInput — captures ALL low-level events ([SetWindowsHookEx](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa)) before they reach any application. |
 | **FastVision** | [Java2D](https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-intro.html) is too slow for object detection. FastVision uses [GPU compute shaders](https://learn.microsoft.com/en-us/windows/win32/direct3d11/compute-shaders) for <10ms [template matching](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html) and [feature extraction](https://en.wikipedia.org/wiki/Feature_extraction). |
-| **FastHotkey** | Safe, filtered version — only registered combinations are intercepted, without the invasiveness of global hooks. |
+| **[FastHotkey](https://github.com/andrestubbe/FastHotkey)** | Safe, filtered version — only registered combinations are intercepted, without the invasiveness of global hooks. |
 | **FastGamepad** | No native controller support in Java. FastGamepad reads [XInput](https://learn.microsoft.com/en-us/windows/win32/xinput/getting-started-with-xinput)/[DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) for racing/fighting game bots. |
 | **FastHumanInput** | Unifies all input sources into a single event stream optimized for AI agents and automation pipelines. |
 
@@ -71,7 +71,7 @@ FastJava, FastCore, FastPlugin
 |--------|-------------|
 | **FastWindow** | Java cannot control foreign windows. FastWindow finds, focuses, moves windows via [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) - important for multi-window bots. |
 | **FastProcess** | ProcessHandle is too limited. FastProcess reads thread IDs, handle count, real [CPU affinity](https://learn.microsoft.com/en-us/windows/win32/procthread/setting-thread-affinity) for process isolation. |
-| **FastTheme** | Java doesn't know Dark Mode. FastTheme reads [Windows 11 theming](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/apply-windows-themes) (Dark/Light, Accent, Mica) and adapts Java apps. |
+| **[FastTheme](https://github.com/andrestubbe/FastTheme)** | Java doesn't know Dark Mode. FastTheme reads [Windows 11 theming](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/apply-windows-themes) (Dark/Light, Accent, Mica) and adapts Java apps. |
 | **FastOverlay** | HUDs over games need transparent overlay windows. FastOverlay uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx) for ESPs, debug visuals. |
 | **FastWindowEvents** | Java gets no events when windows are moved. FastWindowEvents notifies when the target window changes. |
 | **FastSystemMetrics** | Mouse speed and drag threshold are only accessible via [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list). Important for human-like bot input. |
@@ -83,9 +83,9 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastGraphics** | [Java2D](https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-intro.html) is unsuitable for 60+ FPS. FastGraphics uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx)/[Vulkan](https://www.vulkan.org/) for GPU rendering without JVM heap. |
-| **FastImage** | BufferedImage allocates 200-300MB heap. FastImage uses ByteBuffer off-heap for fast pixel operations. |
-| **FastImageView** | JFrame with image is slow. FastImageView renders 1:1 pixels in 200ms startup time for debugging. |
+| **[FastGraphics](https://github.com/andrestubbe/FastGraphics)** | [Java2D](https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-intro.html) is unsuitable for 60+ FPS. FastGraphics uses [DirectX](https://learn.microsoft.com/en-us/windows/win32/directx)/[Vulkan](https://www.vulkan.org/) for GPU rendering without JVM heap. |
+| **[FastImage](https://github.com/andrestubbe/FastImage)** | BufferedImage allocates 200-300MB heap. FastImage uses ByteBuffer off-heap for fast pixel operations. |
+| **[FastImageView](https://github.com/andrestubbe/FastImageView)** | JFrame with image is slow. FastImageView renders 1:1 pixels in 200ms startup time for debugging. |
 | **FastDisplay** | Displays [framebuffer](https://en.wikipedia.org/wiki/Framebuffer) directly without copy. Foundation for all GPU rendering modules. |
 | **FastColorSearch** | Pixel loops in Java are 100x too slow. FastColorSearch uses [SIMD](https://en.wikipedia.org/wiki/SIMD) ([SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/[AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions)) for 10GB/s pattern matching. |
 
@@ -93,11 +93,11 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastIO** | Java NIO has too much overhead for real-time. FastIO uses unbuffered I/O and [IOCP](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports) for constant latency. |
+| **[FastIO](https://github.com/andrestubbe/FastIO)** | Java NIO has too much overhead for real-time. FastIO uses unbuffered I/O and [IOCP](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports) for constant latency. |
 | **FastMemoryScan** | For modding and reverse engineering: reads foreign process memory for [pattern scans](https://guidedhacking.com/threads/signature-scanning-tutorial.12132/) and [pointer chains](https://guidedhacking.com/threads/pointer-scanning-tutorial.12170/). |
 | **FastGPUCopy** | GPU↔CPU transfers are the bottleneck in ML pipelines. FastGPUCopy uses [DMA](https://en.wikipedia.org/wiki/Direct_memory_access) for [zero-copy](https://en.wikipedia.org/wiki/Zero-copy). |
 | **FastIPC** | [Shared memory](https://en.wikipedia.org/wiki/Shared_memory) and [named pipes](https://learn.microsoft.com/en-us/windows/win32/ipc/named-pipes) for separation of bot engine and AI model - both run isolated. |
-| **FastClipboard** | Java's Clipboard is buggy. FastClipboard uses native APIs for stable copy/paste. |
+| **[FastClipboard](https://github.com/andrestubbe/FastClipboard)** | Java's Clipboard is buggy. FastClipboard uses native APIs for stable copy/paste. |
 
 ### Audio
 
@@ -133,7 +133,7 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastMath** | Auto-optimizer for math functions - generates variants, benchmarks, picks fastest. |
+| **[FastMath](https://github.com/andrestubbe/FastMath)** | Auto-optimizer for math functions - generates variants, benchmarks, picks fastest. |
 | **FastSIMD** | [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/[AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions)/[NEON](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon) wrapper for Java. 10x faster for vector operations, pixel processing, physics. |
 | **FastString** | Java Strings are immutable and UTF-16. FastString is mutable, UTF-8, zero-copy - for parsing. |
 | **FastBytes** | ByteBuffer with String API and SIMD operations. For binary parsing without GC. |
@@ -177,7 +177,7 @@ FastJava, FastCore, FastPlugin
 | Module | Explanation |
 |--------|-------------|
 | **FastJava** | The overarching ecosystem. Meta-module for all 67 modules. |
-| **FastCore** | Unified JNI Loader. Loads all DLLs, manages versions, error translation. |
+| **[FastCore](https://github.com/andrestubbe/FastCore)** | Unified JNI Loader. Loads all DLLs, manages versions, error translation. |
 | **FastPlugin** | Plugin system for 3rd-party modules. Hot-reload and API registry. |
 
 ---
@@ -208,7 +208,7 @@ Windows **RawInput API** delivers mouse and keyboard in the **same callback loop
 |--------|------------|---------------|
 | FastInput | [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input), Hooks | Reads user input |
 | FastRobot | [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput), [DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) | Sends output to PC |
-| FastTouch | [Windows Pointer API](https://learn.microsoft.com/en-us/windows/win32/wintouch/windows-touch-gestures-overview) | Touch injection + multi-point |
+| **[FastTouch](https://github.com/andrestubbe/FastTouch)** | [Windows Pointer API](https://learn.microsoft.com/en-us/windows/win32/wintouch/windows-touch-gestures-overview) | Touch injection + multi-point |
 | FastStylus | [Pointer API](https://learn.microsoft.com/en-us/windows/win32/wintouch/windows-touch-gestures-overview) (Pen) | Pressure, tilt, eraser |
 | FastGamepad | [XInput](https://learn.microsoft.com/en-us/windows/win32/xinput/getting-started-with-xinput)/[DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) | Controller, rumble |
 | FastScreen | [DXGI Desktop Duplication](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/desktop-duplication-api) | Zero-copy capture |
