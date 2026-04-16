@@ -56,13 +56,13 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
-| **FastRobot** | Java's Robot class is too slow for game bots. FastRobot uses native SendInput with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
-| **FastScreen** | Screenshots with Java.awt take 50-100ms. FastScreen uses DXGI Desktop Duplication for 500-2000 FPS zero-copy capture - essential for vision bots. |
-| **FastInput** | Read mouse, keyboard, and HID input via RawInput (non-hooking, non-invasive) for high-frequency input reading. |
-| **FastInputHook** | Global hook counterpart to FastInput — captures ALL low-level events (SetWindowsHookEx) before they reach any application. |
+| **FastRobot** | Java's Robot class is too slow for game bots. FastRobot uses native [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput) with batch processing for 1000+ events in one call - sub-millisecond reaction times. |
+| **FastScreen** | Screenshots with Java.awt take 50-100ms. FastScreen uses [DXGI Desktop Duplication](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/desktop-duplication-api) for 500-2000 FPS zero-copy capture - essential for vision bots. |
+| **FastInput** | Read mouse, keyboard, and HID input via [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input) (non-hooking, non-invasive) for high-frequency input reading. |
+| **FastInputHook** | Global hook counterpart to FastInput — captures ALL low-level events ([SetWindowsHookEx](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa)) before they reach any application. |
 | **FastVision** | Java2D is too slow for object detection. FastVision uses GPU compute shaders for <10ms template matching and feature extraction. |
 | **FastHotkey** | Safe, filtered version — only registered combinations are intercepted, without the invasiveness of global hooks. |
-| **FastGamepad** | No native controller support in Java. FastGamepad reads XInput/DirectInput for racing/fighting game bots. |
+| **FastGamepad** | No native controller support in Java. FastGamepad reads [XInput](https://learn.microsoft.com/en-us/windows/win32/xinput/getting-started-with-xinput)/[DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) for racing/fighting game bots. |
 | **FastHumanInput** | Unifies all input sources into a single event stream optimized for AI agents and automation pipelines. |
 
 ### System & Window
@@ -134,7 +134,7 @@ FastJava, FastCore, FastPlugin
 | Module | Explanation |
 |--------|-------------|
 | **FastMath** | Auto-optimizer for math functions - generates variants, benchmarks, picks fastest. |
-| **FastSIMD** | SSE/AVX/NEON wrapper for Java. 10x faster for vector operations, pixel processing, physics. |
+| **FastSIMD** | [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/[AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions)/[NEON](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon) wrapper for Java. 10x faster for vector operations, pixel processing, physics. |
 | **FastString** | Java Strings are immutable and UTF-16. FastString is mutable, UTF-8, zero-copy - for parsing. |
 | **FastBytes** | ByteBuffer with String API and SIMD operations. For binary parsing without GC. |
 | **FastHash** | xxHash3/BLAKE3 are 100x faster than SHA-256. For checksums in real-time pipelines. |
@@ -206,12 +206,12 @@ Windows **RawInput API** delivers mouse and keyboard in the **same callback loop
 
 | Module | Technology | Why separate? |
 |--------|------------|---------------|
-| FastInput | RawInput, Hooks | Reads user input |
-| FastRobot | SendInput, DirectInput | Sends output to PC |
-| FastTouch | Windows Pointer API | Touch injection + multi-point |
-| FastStylus | Pointer API (Pen) | Pressure, tilt, eraser |
-| FastGamepad | XInput/DirectInput | Controller, rumble |
-| FastScreen | DXGI Desktop Duplication | Zero-copy capture |
+| FastInput | [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input), Hooks | Reads user input |
+| FastRobot | [SendInput](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput), [DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) | Sends output to PC |
+| FastTouch | [Windows Pointer API](https://learn.microsoft.com/en-us/windows/win32/wintouch/windows-touch-gestures-overview) | Touch injection + multi-point |
+| FastStylus | [Pointer API](https://learn.microsoft.com/en-us/windows/win32/wintouch/windows-touch-gestures-overview) (Pen) | Pressure, tilt, eraser |
+| FastGamepad | [XInput](https://learn.microsoft.com/en-us/windows/win32/xinput/getting-started-with-xinput)/[DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) | Controller, rumble |
+| FastScreen | [DXGI Desktop Duplication](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/desktop-duplication-api) | Zero-copy capture |
 
 Only **fundamentally different technologies** get separate modules.
 
