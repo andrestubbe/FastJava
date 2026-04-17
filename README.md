@@ -28,7 +28,9 @@
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Alpha |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | ✅ Alpha v1.2.0 |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Zero-copy screen capture | **500-2000 FPS** via DXGI | 🚧 Alpha |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | **10-50× faster** than BufferedImage | 🚧 Alpha |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Fast pixel-perfect image display | **200ms startup** vs JFrame | 🚧 Alpha |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | Ultra-fast file I/O & parsing | **5-20× faster** than NIO | 🚧 Alpha |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated 2D rendering | **600% faster** than Graphics2D | 🚧 Alpha |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | SIMD + GPU accelerated math | **2–100× faster** | 🚧 Alpha |
