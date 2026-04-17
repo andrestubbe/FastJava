@@ -26,7 +26,7 @@
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | **10-17× faster** than Robot | ✅ Alpha v2.1.0 |
 | **[FastStylus](https://github.com/andrestubbe/faststylus)** | Native stylus/pen input (pressure, tilt, eraser) | **Impossible** in pure Java | ✅ Alpha v1.0.0 |
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
-| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Real-time Windows theme, accent color & DPI monitoring | **Impossible** in pure Java | ✅ Alpha v1.2.0 |
+| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Real-time Windows theme detection, Resolution & DPI monitoring | **Impossible** in pure Java | ✅ Alpha v1.2.0 |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Zero-copy screen capture | **500-2000 FPS** via DXGI | 🚧 Alpha |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | **10-50× faster** than BufferedImage | 🚧 Alpha |
