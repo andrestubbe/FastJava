@@ -22,10 +22,10 @@
 | Library | Purpose | Performance | Status |
 |---------|---------|-------------|--------|
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | JNI loader & platform abstraction | **Required by all FastJava** | ✅ Alpha v1.0.0 |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard access | **2-3× faster** than AWT | ✅ Alpha |
-| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | **10-17× faster** than Robot | ✅ Alpha |
-| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Native stylus/pen input (pressure, tilt, eraser) | **Impossible** in pure Java | ✅ Alpha |
-| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Alpha |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard access | **2-3× faster** than AWT | ✅ Alpha v1.0 |
+| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | **10-17× faster** than Robot | ✅ Alpha v2.1.0 |
+| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Native stylus/pen input (pressure, tilt, eraser) | **Impossible** in pure Java | ✅ Alpha v1.0.0 |
+| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | ✅ Alpha v1.2.0 |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Zero-copy screen capture | **500-2000 FPS** via DXGI | 🚧 Alpha |
