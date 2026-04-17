@@ -24,6 +24,7 @@
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | JNI loader & platform abstraction | **Required by all FastJava** | ✅ Alpha Released v1.0.0 |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard access | **2-3× faster** than AWT | ✅ Alpha Released |
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | **10-17× faster** than Robot | ✅ Alpha Released |
+| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Native stylus/pen input (pressure, tilt, eraser) | **Impossible** in pure Java | ✅ Alpha Released |
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Alpha Released |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Windows dark/light theme detection | **Impossible** in pure Java | ✅ Alpha Released v1.2.0 |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | ✅ Alpha Released v1.1.0 |

@@ -22,7 +22,7 @@ FastJava is **minimal, deterministic, zero-bullshit** — built for bots, automa
 ## 📦 Module Overview (62)
 
 ### Core (Agent I/O)
-FastRobot, FastScreen, FastInput, FastInputHook, FastVision, FastHotkey, FastGamepad, FastHumanInput
+FastRobot, FastScreen, FastInput, FastInputHook, FastVision, FastHotkey, FastGamepad, FastStylus, FastHumanInput
 
 ### System & Window
 FastWindow, FastProcess, FastTheme, FastOverlay, FastWindowEvents, FastSystemMetrics, FastDWM, FastFileWatch, FastProcessWatch
@@ -63,6 +63,7 @@ FastJava, FastCore, FastPlugin
 | **FastVision** | [Java2D](https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-intro.html) is too slow for object detection. FastVision uses [GPU compute shaders](https://learn.microsoft.com/en-us/windows/win32/direct3d11/compute-shaders) for <10ms [template matching](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html) and [feature extraction](https://en.wikipedia.org/wiki/Feature_extraction). |
 | **[FastHotkey](https://github.com/andrestubbe/FastHotkey)** | Safe, filtered version — only registered combinations are intercepted, without the invasiveness of global hooks. |
 | **FastGamepad** | No native controller support in Java. FastGamepad reads [XInput](https://learn.microsoft.com/en-us/windows/win32/xinput/getting-started-with-xinput)/[DirectInput](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ee416842(v=vs.85)) for racing/fighting game bots. |
+| **[FastStylus](https://github.com/andrestubbe/FastStylus)** | Java's AWT only provides mouse emulation for pen input. FastStylus provides hardware-level stylus access via [Windows Pointer API](https://learn.microsoft.com/en-us/windows/win32/inputmsg/wm-pointerdown) — pressure, tilt, eraser, barrel buttons, and hover for Surface Pen, Wacom, and Windows Ink devices. |
 | **FastHumanInput** | Unifies all input sources into a single event stream optimized for AI agents and automation pipelines. |
 
 ### System & Window
