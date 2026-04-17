@@ -25,7 +25,7 @@ FastJava is **minimal, deterministic, zero-bullshit** — built for bots, automa
 FastRobot, FastScreen, FastInput, FastInputHook, FastVision, FastHotkey, FastGamepad, FastStylus, FastHumanInput
 
 ### System & Window
-FastWindow, FastProcess, FastTheme, FastOverlay, FastWindowEvents, FastSystemMetrics, FastDWM, FastFileWatch, FastProcessWatch
+FastNotifications, FastWindow, FastProcess, FastTheme, FastOverlay, FastWindowEvents, FastSystemMetrics, FastDWM, FastFileWatch, FastProcessWatch
 
 ### Display & Graphics
 FastGraphics, FastImage, FastImageView, FastDisplay, FastColorSearch
@@ -70,6 +70,7 @@ FastJava, FastCore, FastPlugin
 
 | Module | Explanation |
 |--------|-------------|
+| **FastNotifications** | Java's [SystemTray](https://docs.oracle.com/javase/8/docs/api/java/awt/SystemTray.html) notifications show an ugly coffee cup icon and use deprecated balloon APIs. FastNotifications uses native [WinRT Toast](https://learn.microsoft.com/en-us/windows/apps/design/shell/tiles-and-notifications/send-local-toast) (Windows 11), [UNUserNotificationCenter](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter) (macOS), and [DBus](https://specifications.freedesktop.org/notification-spec/notification-spec-latest.html) (Linux) for real native notifications with custom icons, action buttons, progress bars, and proper OS integration. |
 | **FastWindow** | Java cannot control foreign windows. FastWindow finds, focuses, moves windows via [Win32](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) - important for multi-window bots. |
 | **FastProcess** | ProcessHandle is too limited. FastProcess reads thread IDs, handle count, real [CPU affinity](https://learn.microsoft.com/en-us/windows/win32/procthread/setting-thread-affinity) for process isolation. |
 | **[FastTheme](https://github.com/andrestubbe/FastTheme)** | Java doesn't know Dark Mode. FastTheme reads [Windows 11 theming](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/apply-windows-themes) (Dark/Light, Accent, Mica) and adapts Java apps. |
@@ -328,6 +329,7 @@ MIT (planned)
 
 | Module | Dependencies |
 |-------|-------------|
+| FastNotifications | FastCore |
 | FastWindow | FastCore |
 | FastProcess | FastCore |
 | FastSystemMetrics | FastCore |
@@ -477,7 +479,7 @@ MIT (planned)
 | Category | Count | Released | WIP | Concept |
 |----------|-------|----------|-----|---------|
 | **Core (Agent I/O)** | 7 | 3 (FastCore, FastRobot, FastHotkey) | 0 | 4 |
-| **System & Window** | 9 | 1 (FastTheme) | 0 | 8 |
+| **System & Window** | 10 | 1 (FastTheme) | 0 | 9 |
 | **Display & Graphics** | 5 | 1 (FastClipboard) | 1 (FastGraphics) | 3 |
 | **Data & I/O** | 5 | 0 | 0 | 5 |
 | **Audio** | 4 | 0 | 0 | 4 |
@@ -485,7 +487,7 @@ MIT (planned)
 | **Debugging & Testing** | 4 | 0 | 0 | 4 |
 | **AI & ML** | 9 | 0 | 0 | 9 |
 | **Platform** | 3 | 0 | 0 | 3 |
-| **Total** | **67** | **4** | **1** | **62** |
+| **Total** | **68** | **4** | **1** | **63** |
 
 ---
 
