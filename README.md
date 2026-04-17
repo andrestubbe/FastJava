@@ -49,11 +49,6 @@ A detailed map of all FastJava modules with:
 
 ---
 
-## 📋 MAP.md v2.3 — FastJava Capability Map
-
-<details>
-<summary><b>🧭 FastJava – Native Java Automation, Vision & AI Ecosystem</b> (Klicken zum Aufklappen)</summary>
-
 FastJava ist ein modulares, natives Java‑Ökosystem für:
 
 - [High‑Performance](https://de.wikipedia.org/wiki/Hochleistungsrechnen) [Automation](https://de.wikipedia.org/wiki/Automatisierung)
