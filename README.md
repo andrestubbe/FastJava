@@ -47,20 +47,6 @@ A detailed map of all FastJava modules with:
 - Dependency graph
 - Roadmap 2026–2028
 
----
-
-FastJava ist ein modulares, natives Java‑Ökosystem für:
-
-- [High‑Performance](https://de.wikipedia.org/wiki/Hochleistungsrechnen) [Automation](https://de.wikipedia.org/wiki/Automatisierung)
-- [Vision](https://de.wikipedia.org/wiki/Computer_Vision)‑[Pipelines](https://de.wikipedia.org/wiki/Pipeline_(Informatik))
-- [AI](https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz)‑[Integration](https://de.wikipedia.org/wiki/Systemintegration)
-- [OS](https://de.wikipedia.org/wiki/Betriebssystem)‑Level [Interop](https://de.wikipedia.org/wiki/Interoperabilit%C3%A4t)
-- Native [Desktop](https://de.wikipedia.org/wiki/Desktop_(EDV))‑[Tools](https://de.wikipedia.org/wiki/Softwarewerkzeug)
-- High‑Speed [Image](https://de.wikipedia.org/wiki/Bildverarbeitung)/[Screen](https://de.wikipedia.org/wiki/Bildschirm) Processing
-- [Input](https://de.wikipedia.org/wiki/Eingabeger%C3%A4t)‑[Hooks](https://learn.microsoft.com/en-us/windows/win32/winmsg/hooks) & [System](https://de.wikipedia.org/wiki/Betriebssystem)‑[Events](https://de.wikipedia.org/wiki/Ereignis_(Programmierung))
-- [GPU](https://de.wikipedia.org/wiki/Grafikprozessor)‑beschleunigte [Workloads](https://de.wikipedia.org/wiki/Last_(Informatik))
-
-FastJava kombiniert [JNI](https://de.wikipedia.org/wiki/Java_Native_Interface), [Win32](https://de.wikipedia.org/wiki/Windows_API), [DXGI](https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/dx-graphics-dxgi), [RawInput](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input), [SSE/AVX](https://de.wikipedia.org/wiki/Streaming_SIMD_Extensions), [DirectX](https://de.wikipedia.org/wiki/DirectX), [IOCP](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports), [Whisper.cpp](https://github.com/ggerganov/whisper.cpp), [Ollama](https://ollama.com/), [OpenAI](https://openai.com/), [OpenCV](https://opencv.org/)‑ähnliche Pipelines und Java‑First APIs in einem einzigen, konsistenten Framework.
 
 ### 🧱 1. Architektur‑Stack
 
