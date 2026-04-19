@@ -111,7 +111,39 @@ dependencies {
 | Library | Purpose |
 |---------|---------|
 | [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation |
-| [FastAI](https://github.com/andrestubbe/fastai) | Unified AI client (Local + Cloud) |
+| FastAI | Unified AI client (Local + Cloud) — *Coming Q2 2026* |
+| FastGamepad | Controller support (XInput/DirectInput) — *Coming Q2 2026* |
+
+### 🎤 Audio (Coming Q3-Q4 2026)
+| Library | Purpose |
+|---------|---------|
+| FastAudio | Low-latency audio output |
+| FastAudioCapture | Real-time audio capture (WASAPI) |
+| FastTTS | Text-to-speech |
+| FastSTT | Speech-to-text |
+
+### 🔍 Vision & AI Pipeline (Coming 2026-2027)
+| Library | Purpose |
+|---------|---------|
+| FastVision | GPU template matching <10ms |
+| FastOCR | Optical character recognition |
+| FastEmbedding | Text embeddings |
+| FastVectorDB | In-memory vector search |
+| FastRAG | Retrieval-Augmented Generation |
+| FastMCP | Model Context Protocol |
+
+### 🛠️ Advanced System (Coming 2026-2027)
+| Library | Purpose |
+|---------|---------|
+| FastInput | Raw input reading (non-invasive) |
+| FastInputHook | Global low-level hooks |
+| FastWindow | Foreign window control |
+| FastProcess | Process introspection |
+| FastFileWatch | Instant file notifications |
+| FastOverlay | Transparent game overlays |
+| FastDWM | VSync & frame timing |
+| FastHash | SIMD hashing |
+| FastCompress | Fast compression |
 
 ---
 
@@ -165,10 +197,10 @@ Maximum performance through minimal overhead. JNI where it matters. Pure Java wh
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ 20+ Libraries available
-- ✅ Windows fully supported
-- 🔄 Linux/macOS in progress
-- 🔄 Maven Central coming soon
+- ✅ **20 Released** — Available now on GitHub & JitPack
+- 🚧 **15 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
+- 🔄 **27 Planned** — Full 62-module pipeline
+- ✅ Windows fully supported — Linux/macOS in progress
 
 ---
 
