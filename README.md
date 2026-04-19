@@ -12,26 +12,26 @@
 
 | Library | Category | Speed vs Standard Java | Key Metrics |
 |---------|----------|------------------------|-------------|
-| **FastJSON** | Data | **50×** | 50× faster than Jackson/Gson, zero-GC |
-| **FastString** | Text | **10-100×** | UTF-8 ops vs Java String, 50% less memory |
-| **FastScreen** | Graphics | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot |
-| **FastGraphics** | Graphics | **600%** | GPU DirectX vs Java2D software |
-| **FastFloat** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
-| **FastRobot** | Automation | **10-17×** | DirectX capture vs AWT Robot |
-| **FastImage** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
-| **FastIO** | System | **5-20×** | Memory-mapped vs java.nio |
-| **FastMath** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
-| **FastBytes** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
-| **FastClipboard** | System | **2-3×** | Native vs AWT, zero bugs |
-| **FastImageView** | Graphics | **10×** | 200ms startup vs 2s Swing |
-| FastCore | System | — | Cross-platform DLL loader |
-| FastHotkey | System | **❌ Java can't** | Global system-wide hotkeys — impossible in pure Java |
-| FastTouch | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
-| FastStylus | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
-| FastTheme | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
-| FastNotification | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
-| FastTween | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
-| FastAnimation | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Data | **50×** | 50× faster than Jackson/Gson, zero-GC |
+| **[FastString](https://github.com/andrestubbe/faststring)** | Text | **10-100×** | UTF-8 ops vs Java String, 50% less memory |
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Graphics | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot |
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | Graphics | **600%** | GPU DirectX vs Java2D software |
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
+| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Automation | **10-17×** | DirectX capture vs AWT Robot |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | System | **5-20×** | Memory-mapped vs java.nio |
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
+| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
+| [FastCore](https://github.com/andrestubbe/fastcore) | System | — | Cross-platform DLL loader |
+| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | System | **❌ Java can't** | Global system-wide hotkeys — impossible in pure Java |
+| [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
+| [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
+| [FastTheme](https://github.com/andrestubbe/fasttheme) | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
+| [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
+| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **❌ Java can't** | Native OCR — 10-50ms vs 500ms+ Tesseract4J |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
