@@ -8,16 +8,30 @@
 
 ---
 
-## 🚀 Performance First
+## 🚀 Performance Dashboard
 
-| Operation | Standard Java | FastJava | Speedup |
-|-----------|---------------|----------|---------|
-| Float Parsing | `Float.parseFloat()` | `FastFloat.parse()` | **5-12×** |
-| JSON Parsing | Jackson/Gson | `FastJSON.parse()` | **50×** |
-| Screen Capture | `java.awt.Robot` | `FastRobot.capture()` | **10-17×** |
-| String Operations | `java.lang.String` | `FastString` | **10-100×** |
-| File I/O | `java.nio` | `FastFileChannel` | **5-20×** |
-| Math (Trig) | `java.lang.Math` | `FastMath.sin()` | **3-8×** |
+| Library | Category | Speed vs Standard Java | Purpose |
+|---------|----------|------------------------|---------|
+| **FastJSON** | Data | **50×** | Zero-copy JSON parsing |
+| **FastString** | Text | **10-100×** | UTF-8 string operations |
+| **FastScreen** | Graphics | **500-2000 FPS** | Zero-copy screen capture |
+| **FastGraphics** | Graphics | **600%** | GPU-accelerated rendering |
+| **FastFloat** | Math | **5-12×** | SIMD float/double parsing |
+| **FastRobot** | Automation | **10-17×** | Screen capture & automation |
+| **FastImage** | Graphics | **10-50×** | SIMD image processing |
+| **FastIO** | System | **5-20×** | Memory-mapped file I/O |
+| **FastMath** | Math | **3-8×** | SIMD + GPU math |
+| **FastBytes** | Data | **2-50×** | Bulk byte operations |
+| **FastClipboard** | System | **2-3×** | Native clipboard access |
+| **FastImageView** | Graphics | **10×** | DirectX image viewer |
+| FastCore | System | — | JNI loader (Win/Linux/Mac) |
+| FastHotkey | System | — | Global system-wide hotkeys |
+| FastTouch | System | — | Multi-touch & pressure |
+| FastStylus | System | — | Pen input (Wacom/Surface) |
+| FastTheme | UI | — | Native Windows theming |
+| FastNotification | UI | — | Native toast notifications |
+| FastTween | Animation | — | Tweening engine |
+| FastAnimation | Animation | — | Timeline orchestration |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
@@ -59,33 +73,33 @@ dependencies {
 ## 🗺️ Ecosystem Overview
 
 ### 🔧 System & Native Access
-| Library | Speed | Purpose |
-|---------|-------|---------|
-| [FastCore](https://github.com/andrestubbe/fastcore) | — | Unified JNI loader for Windows/Linux/macOS |
-| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | 2-3× | Native clipboard access (no AWT bugs) |
-| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | — | Global system-wide hotkeys |
-| [FastTouch](https://github.com/andrestubbe/fasttouch) | — | Multi-touch & pressure input |
-| [FastStylus](https://github.com/andrestubbe/faststylus) | — | Pen pressure, tilt, eraser detection |
-| [FastIO](https://github.com/andrestubbe/fastio) | 5-20× | Memory-mapped file I/O |
+| Library | Purpose |
+|---------|---------|
+| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader for Windows/Linux/macOS |
+| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard access (no AWT bugs) |
+| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global system-wide hotkeys |
+| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure input |
+| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt, eraser detection |
+| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped file I/O |
 
 ### 🎨 Graphics & UI
-| Library | Speed | Purpose |
-|---------|-------|---------|
-| [FastScreen](https://github.com/andrestubbe/fastscreen) | 500-2000 FPS | Zero-copy screen capture (DXGI) |
-| [FastImage](https://github.com/andrestubbe/fastimage) | 10-50× | SIMD image processing |
-| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | 600% | GPU-accelerated Graphics2D |
-| [FastTheme](https://github.com/andrestubbe/fasttheme) | — | Native Windows theming |
-| [FastImageView](https://github.com/andrestubbe/fastimageview) | 10× | DirectX image viewer |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | — | Native Windows toast notifications |
+| Library | Purpose |
+|---------|---------|
+| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture (DXGI) |
+| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing |
+| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D |
+| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming |
+| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native Windows toast notifications |
 
 ### ⚡ Performance Libraries
-| Library | Speed | Purpose |
-|---------|-------|---------|
-| [FastFloat](https://github.com/andrestubbe/fastfloat) | 5-12× | SIMD float/double parsing |
-| [FastString](https://github.com/andrestubbe/faststring) | 10-100× | UTF-8 string operations |
-| [FastBytes](https://github.com/andrestubbe/fastbytes) | 2-50× | Bulk byte operations |
-| [FastJSON](https://github.com/andrestubbe/fastjson) | 50× | Zero-copy JSON parser |
-| [FastMath](https://github.com/andrestubbe/fastmath) | 3-8× | SIMD + GPU math acceleration |
+| Library | Purpose |
+|---------|---------|
+| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float/double parsing |
+| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string operations |
+| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte operations |
+| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON parser |
+| [FastMath](https://github.com/andrestubbe/fastmath) | SIMD + GPU math acceleration |
 
 ### 🎬 Animation
 | Library | Purpose |
