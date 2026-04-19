@@ -76,7 +76,7 @@ dependencies {
 ### 🔧 System & Native Access
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader | JNI, DLL loader | ✅ Stable |
+| **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | ✅ Stable |
 | [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API | ✅ Stable |
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks | ✅ Stable |
 | [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure | Win32 touch | ✅ Stable |
