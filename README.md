@@ -73,77 +73,77 @@ dependencies {
 ## 🗺️ Ecosystem Overview
 
 ### 🔧 System & Native Access
-| Library | Purpose |
-|---------|---------|
-| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader for Windows/Linux/macOS |
-| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard access (no AWT bugs) |
-| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global system-wide hotkeys |
-| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure input |
-| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt, eraser detection |
-| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped file I/O |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader | JNI, DLL loader |
+| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API |
+| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks |
+| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure | Win32 touch |
+| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt | WM_POINTER |
+| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped I/O | IOCP, mmap |
 
 ### 🎨 Graphics & UI
-| Library | Purpose |
-|---------|---------|
-| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture (DXGI) |
-| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing |
-| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D |
-| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming |
-| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native Windows toast notifications |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture | DXGI, DirectX |
+| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing | AVX2, SSE4 |
+| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D | DirectX, GPU |
+| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming | WinRT, DWM |
+| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer | DirectX |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native notifications | WinRT, Toast |
 
 ### ⚡ Performance Libraries
-| Library | Purpose |
-|---------|---------|
-| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float/double parsing |
-| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string operations |
-| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte operations |
-| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON parser |
-| [FastMath](https://github.com/andrestubbe/fastmath) | SIMD + GPU math acceleration |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float parsing | AVX2, SSE4 |
+| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string ops | SIMD, AVX2 |
+| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte ops | AVX2, SSE4 |
+| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON | SIMD parsing |
+| [FastMath](https://github.com/andrestubbe/fastmath) | Math acceleration | OpenCL, SIMD |
 
 ### 🎬 Animation
-| Library | Purpose |
-|---------|---------|
-| [FastTween](https://github.com/andrestubbe/fasttween) | Ultra-fast tweening engine |
-| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Timeline orchestration |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| [FastTween](https://github.com/andrestubbe/fasttween) | Ultra-fast tweening | Object pooling |
+| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Timeline orchestration | Zero-GC |
 
 ### 🤖 AI & Automation
-| Library | Purpose |
-|---------|---------|
-| [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation |
-| FastAI | Unified AI client (Local + Cloud) — *Coming Q2 2026* |
-| FastGamepad | Controller support (XInput/DirectInput) — *Coming Q2 2026* |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation | DirectX, SendInput |
+| FastAI | Unified AI client — *Coming Q2 2026* | Local + Cloud API |
+| FastGamepad | Controller support — *Coming Q2 2026* | XInput, DirectInput |
 
 ### 🎤 Audio (Coming Q3-Q4 2026)
-| Library | Purpose |
-|---------|---------|
-| FastAudio | Low-latency audio output |
-| FastAudioCapture | Real-time audio capture (WASAPI) |
-| FastTTS | Text-to-speech |
-| FastSTT | Speech-to-text |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastAudio | Low-latency audio | WASAPI |
+| FastAudioCapture | Real-time capture | WASAPI |
+| FastTTS | Text-to-speech | SAPI5, Azure |
+| FastSTT | Speech-to-text | Whisper, Cloud |
 
 ### 🔍 Vision & AI Pipeline (Coming 2026-2027)
-| Library | Purpose |
-|---------|---------|
-| FastVision | GPU template matching <10ms |
-| FastOCR | Optical character recognition |
-| FastEmbedding | Text embeddings |
-| FastVectorDB | In-memory vector search |
-| FastRAG | Retrieval-Augmented Generation |
-| FastMCP | Model Context Protocol |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastVision | GPU template matching | GPU shaders |
+| [FastOCR](https://github.com/andrestubbe/FastOCR) | OCR | WinRT OCR |
+| FastEmbedding | Text embeddings | Local/Cloud |
+| FastVectorDB | Vector search | SIMD |
+| FastRAG | RAG pipeline | AI orchestration |
+| FastMCP | Model Context Protocol | MCP Standard |
 
 ### 🛠️ Advanced System (Coming 2026-2027)
-| Library | Purpose |
-|---------|---------|
-| FastInput | Raw input reading (non-invasive) |
-| FastInputHook | Global low-level hooks |
-| FastWindow | Foreign window control |
-| FastProcess | Process introspection |
-| FastFileWatch | Instant file notifications |
-| FastOverlay | Transparent game overlays |
-| FastDWM | VSync & frame timing |
-| FastHash | SIMD hashing |
-| FastCompress | Fast compression |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastInput | Raw input reading | RawInput API |
+| FastInputHook | Global hooks | SetWindowsHookEx |
+| FastWindow | Window control | Win32 API |
+| FastProcess | Process introspection | Win32 API |
+| FastFileWatch | File notifications | ReadDirectoryChangesW |
+| FastOverlay | Game overlays | DirectX |
+| FastDWM | VSync & timing | DWM API |
+| FastHash | SIMD hashing | AVX2, SSE4 |
+| FastCompress | Fast compression | SIMD |
 
 ---
 
