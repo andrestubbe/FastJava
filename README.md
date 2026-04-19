@@ -74,7 +74,7 @@ dependencies {
 ## 🗺️ Ecosystem Overview
 
 ### 🔧 System & Native Access
-| Library | Purpose | Tech | Status |
+| Library <span style="visibility:hidden">xxxxxxxxxxxxxxxxxxxx</span> | Purpose <span style="visibility:hidden">xxxxxxxxxxxxxxxxxxxx</span> | Tech <span style="visibility:hidden">xxxxxxxxxxxxxxxxxxxx</span> | Status |
 |---------|---------|------|--------|
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | ✅ Stable |
 | [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API | ✅ Stable |
@@ -82,6 +82,7 @@ dependencies {
 | [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure | Win32 touch | ✅ Stable |
 | [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt | WM_POINTER | ✅ Stable |
 | [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped I/O | IOCP, mmap | ✅ Stable |
+
 
 ### 🎨 Graphics & UI
 | Library | Purpose | Tech | Status |
