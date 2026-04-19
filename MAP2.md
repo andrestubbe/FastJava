@@ -31,31 +31,16 @@
 
 ---
 
-## 🚧 Beta / Private
+## � Coming Soon (No Links Yet)
 
-| Module | Status | Tech Stack | Purpose | ETA |
-|--------|--------|------------|---------|-----|
-| **FastAI** | 🔒 Private | Unified API | Local + Cloud AI interface | Q2 2026 |
-| **FastInput** | 🔧 Beta | RawInput | Non-invasive input reading | Q2 2026 |
-| **FastGamepad** | 🔧 Beta | XInput | Controller support | Q2 2026 |
-
----
-
-## 📋 In Development
-
-| Module | Status | Tech Stack | Purpose | ETA |
-|--------|--------|------------|---------|-----|
-| **FastVision** | 🛠️ WIP | GPU shaders | Template matching <10ms | Q3 2026 |
-| **FastAudio** | 🛠️ WIP | WASAPI | Low-latency audio | Q3 2026 |
-| **FastWindow** | 🛠️ WIP | Win32 | Foreign window control | Q3 2026 |
-| **FastProcess** | 🛠️ WIP | Win32 API | Process introspection | Q3 2026 |
-| **FastFileWatch** | 🛠️ WIP | ReadDirectoryChangesW | Instant file notifications | Q3 2026 |
-| **FastOverlay** | 🛠️ WIP | DirectX | Transparent game overlays | Q4 2026 |
-| **FastDWM** | 🛠️ WIP | DWM API | VSync & frame timing | Q4 2026 |
+**Q2 2026:** FastAI (Unified AI), FastInput (RawInput), FastGamepad (XInput)  
+**Q3 2026:** FastVision (GPU shaders), FastAudio (WASAPI), FastWindow, FastProcess, FastFileWatch  
+**Q4 2026:** FastOverlay, FastDWM  
+**2027+:** FastHash, FastAudioCapture, FastTTS, FastSTT, FastVectorDB, FastRAG, FastMCP
 
 ---
 
-## 💡 Planned (Spec Phase)
+## 💡 Full Pipeline (42 More Modules)
 
 ### Input & Human Interface
 | Module | Purpose | Tech |
