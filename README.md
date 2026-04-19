@@ -74,77 +74,77 @@ dependencies {
 ## 🗺️ Ecosystem Overview
 
 ### 🔧 System & Native Access
-| Library | Purpose | Tech |
-|---------|---------|------|
-| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader | JNI, DLL loader |
-| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API |
-| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks |
-| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure | Win32 touch |
-| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt | WM_POINTER |
-| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped I/O | IOCP, mmap |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader | JNI, DLL loader | ✅ Stable |
+| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API | ✅ Stable |
+| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks | ✅ Stable |
+| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure | Win32 touch | ✅ Stable |
+| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt | WM_POINTER | ✅ Stable |
+| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped I/O | IOCP, mmap | ✅ Stable |
 
 ### 🎨 Graphics & UI
-| Library | Purpose | Tech |
-|---------|---------|------|
-| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture | DXGI, DirectX |
-| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing | AVX2, SSE4 |
-| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D | DirectX, GPU |
-| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming | WinRT, DWM |
-| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer | DirectX |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native notifications | WinRT, Toast |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture | DXGI, DirectX | ✅ Stable |
+| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing | AVX2, SSE4 | 🔧 Beta |
+| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D | DirectX, GPU | 🔧 Beta |
+| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming | WinRT, DWM | 🔧 Beta |
+| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer | DirectX | 🔧 Beta |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native notifications | WinRT, Toast | ✅ Stable |
 
 ### ⚡ Performance Libraries
-| Library | Purpose | Tech |
-|---------|---------|------|
-| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float parsing | AVX2, SSE4 |
-| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string ops | SIMD, AVX2 |
-| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte ops | AVX2, SSE4 |
-| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON | SIMD parsing |
-| [FastMath](https://github.com/andrestubbe/fastmath) | Math acceleration | OpenCL, SIMD |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float parsing | AVX2, SSE4 | ✅ Stable |
+| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string ops | SIMD, AVX2 | ✅ Stable |
+| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte ops | AVX2, SSE4 | ✅ Stable |
+| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON | SIMD parsing | ✅ Stable |
+| [FastMath](https://github.com/andrestubbe/fastmath) | Math acceleration | OpenCL, SIMD | 🔧 Beta |
 
 ### 🎬 Animation
-| Library | Purpose | Tech |
-|---------|---------|------|
-| [FastTween](https://github.com/andrestubbe/fasttween) | Ultra-fast tweening | Object pooling |
-| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Timeline orchestration | Zero-GC |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| [FastTween](https://github.com/andrestubbe/fasttween) | Ultra-fast tweening | Object pooling | ✅ Stable |
+| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Timeline orchestration | Zero-GC | ✅ Stable |
 
 ### 🤖 AI & Automation
-| Library | Purpose | Tech |
-|---------|---------|------|
-| [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation | DirectX, SendInput |
-| FastAI | Unified AI client — *Coming Q2 2026* | Local + Cloud API |
-| FastGamepad | Controller support — *Coming Q2 2026* | XInput, DirectInput |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation | DirectX, SendInput | ✅ Stable |
+| FastAI | Unified AI client | Local + Cloud API | 🚧 Q2 2026 |
+| FastGamepad | Controller support | XInput, DirectInput | 🚧 Q2 2026 |
 
 ### 🔍 Vision & AI Pipeline (Coming 2026-2027)
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastVision | GPU template matching | GPU shaders |
-| [FastOCR](https://github.com/andrestubbe/FastOCR) | OCR | WinRT OCR |
-| FastEmbedding | Text embeddings | Local/Cloud |
-| FastVectorDB | Vector search | SIMD |
-| FastRAG | RAG pipeline | AI orchestration |
-| FastMCP | Model Context Protocol | MCP Standard |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastVision | GPU template matching | GPU shaders | 🚧 Q3 2026 |
+| [FastOCR](https://github.com/andrestubbe/FastOCR) | OCR | WinRT OCR | 🔧 Beta |
+| FastEmbedding | Text embeddings | Local/Cloud | 🚧 Q4 2026 |
+| FastVectorDB | Vector search | SIMD | 🚧 2027 |
+| FastRAG | RAG pipeline | AI orchestration | 🚧 2027 |
+| FastMCP | Model Context Protocol | MCP Standard | 🚧 2027 |
 
 ### 🎤 Audio (Coming Q3-Q4 2026)
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastAudio | Low-latency audio | WASAPI |
-| FastAudioCapture | Real-time capture | WASAPI |
-| FastTTS | Text-to-speech | SAPI5, Azure |
-| FastSTT | Speech-to-text | Whisper, Cloud |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastAudio | Low-latency audio | WASAPI | 🚧 Q3 2026 |
+| FastAudioCapture | Real-time capture | WASAPI | 🚧 Q3 2026 |
+| FastTTS | Text-to-speech | SAPI5, Azure | 🚧 Q4 2026 |
+| FastSTT | Speech-to-text | Whisper, Cloud | 🚧 Q4 2026 |
 
 ### 🛠️ Advanced System (Coming 2026-2027)
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastInput | Raw input reading | RawInput API |
-| FastInputHook | Global hooks | SetWindowsHookEx |
-| FastWindow | Window control | Win32 API |
-| FastProcess | Process introspection | Win32 API |
-| FastFileWatch | File notifications | ReadDirectoryChangesW |
-| FastOverlay | Game overlays | DirectX |
-| FastDWM | VSync & timing | DWM API |
-| FastHash | SIMD hashing | AVX2, SSE4 |
-| FastCompress | Fast compression | SIMD |
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastInput | Raw input reading | RawInput API | 🚧 Q3 2026 |
+| FastInputHook | Global hooks | SetWindowsHookEx | 🚧 Q3 2026 |
+| FastWindow | Window control | Win32 API | 🚧 Q3 2026 |
+| FastProcess | Process introspection | Win32 API | 🚧 Q3 2026 |
+| FastFileWatch | File notifications | ReadDirectoryChangesW | 🚧 Q3 2026 |
+| FastOverlay | Game overlays | DirectX | 🚧 Q4 2026 |
+| FastDWM | VSync & timing | DWM API | 🚧 Q4 2026 |
+| FastHash | SIMD hashing | AVX2, SSE4 | 🚧 2027 |
+| FastCompress | Fast compression | SIMD | 🚧 2027 |
 
 ---
 
