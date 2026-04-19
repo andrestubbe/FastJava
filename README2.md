@@ -30,8 +30,8 @@
 | FastStylus | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
 | FastTheme | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
 | FastNotification | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
-| FastTween | Animation | **⚡ Zero-GC** | 8 easing functions, object pooling |
-| FastAnimation | Animation | **⚡ Zero-GC** | Timeline orchestration on FastTween |
+| FastTween | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
+| FastAnimation | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
