@@ -114,14 +114,6 @@ dependencies {
 | FastAI | Unified AI client — *Coming Q2 2026* | Local + Cloud API |
 | FastGamepad | Controller support — *Coming Q2 2026* | XInput, DirectInput |
 
-### 🎤 Audio (Coming Q3-Q4 2026)
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastAudio | Low-latency audio | WASAPI |
-| FastAudioCapture | Real-time capture | WASAPI |
-| FastTTS | Text-to-speech | SAPI5, Azure |
-| FastSTT | Speech-to-text | Whisper, Cloud |
-
 ### 🔍 Vision & AI Pipeline (Coming 2026-2027)
 | Library | Purpose | Tech |
 |---------|---------|------|
@@ -131,6 +123,14 @@ dependencies {
 | FastVectorDB | Vector search | SIMD |
 | FastRAG | RAG pipeline | AI orchestration |
 | FastMCP | Model Context Protocol | MCP Standard |
+
+### 🎤 Audio (Coming Q3-Q4 2026)
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastAudio | Low-latency audio | WASAPI |
+| FastAudioCapture | Real-time capture | WASAPI |
+| FastTTS | Text-to-speech | SAPI5, Azure |
+| FastSTT | Speech-to-text | Whisper, Cloud |
 
 ### 🛠️ Advanced System (Coming 2026-2027)
 | Library | Purpose | Tech |
