@@ -74,8 +74,9 @@ dependencies {
 ## 🗺️ Ecosystem Overview
 
 ### 🔧 System & Native Access
-| Library <span style="visibility:hidden">xxxxxxxxxxxxxxxxxxxx</span> | Purpose <span style="visibility:hidden">xxxxxxxxxxxxxxxxxxxx</span> | Tech <span style="visibility:hidden">xxxxxxxxxxxxxxxxxxxx</span> | Status |
+| Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
+| <br> | <br> | <br> | <br> |
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | ✅ Stable |
 | [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API | ✅ Stable |
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks | ✅ Stable |
