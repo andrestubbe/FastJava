@@ -32,6 +32,7 @@
 | FastNotification | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
 | FastTween | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
 | FastAnimation | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **❌ Java can't** | Native OCR — 10-50ms vs 500ms+ Tesseract4J |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
