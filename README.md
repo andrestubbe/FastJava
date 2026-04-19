@@ -1,170 +1,190 @@
-# FastJava — Native Java Performance Ecosystem [ALPHA]
+# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
 
-> 🚧 **WORK IN PROGRESS** — APIs may change. Not production-ready yet.
+> **5-50× faster than standard Java** — JNI-native libraries for automation, screen capture, graphics, math, JSON, and more.
 
-**⚡ Ultra-fast native Java libraries — JNI-based performance for automation, screen capture, clipboard, hotkeys, graphics, and more**
-
-[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.java.com)
-[![Platform](https://img.shields.io/badge/Platform-Windows%2010+-lightgrey.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![JitPack](https://jitpack.io/v/andrestubbe/fastjava.svg)](https://jitpack.io/#andrestubbe)
-[![GitHub stars](https://img.shields.io/github/stars/andrestubbe/fastjava.svg)](https://github.com/andrestubbe/fastjava/stargazers)
-
-**FastJava** is a collection of **high-performance JNI-based Java libraries** that use **pure C++ accelerators** to replace slow Java standard library components with native Windows API implementations. Built for **speed**, **reliability**, and **deterministic performance**.
-
-> **Keywords:** fast java, java native performance, java jni performance, fastest java libraries, java native acceleration, java windows api, java gpu acceleration, java simd acceleration, java optimization, high performance java
+[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.java.com)
+[![JitPack](https://img.shields.io/badge/JitPack-ready-green.svg)](https://jitpack.io/#andrestubbe)
 
 ---
 
-## 📦 Libraries
+## 🚀 Performance Dashboard
 
-| Library | Purpose | Performance | Status |
-|---------|---------|-------------|--------|
-| **[FastCore](https://github.com/andrestubbe/fastcore)** | JNI loader & platform abstraction | **Required by all FastJava** | ✅ Alpha v1.0.0 |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard access | **2-3× faster** than AWT | ✅ Alpha v1.0 |
-| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | **10-17× faster** than Robot | ✅ Alpha v2.1.0 |
-| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Native stylus/pen input (pressure, tilt, eraser) | **Impossible** in pure Java | ✅ Alpha v1.0.0 |
-| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global system-wide hotkeys | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
-| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Real-time Windows theme detection, Resolution & DPI monitoring | **Impossible** in pure Java | ✅ Alpha v1.2.0 |
-| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Native multi-touch input | **Impossible** in pure Java | ✅ Alpha v1.1.0 |
-| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Zero-copy screen capture | **500-2000 FPS** via DXGI | 🚧 Alpha |
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | **10-50× faster** than BufferedImage | 🚧 Alpha |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Fast pixel-perfect image display | **200ms startup** vs JFrame | 🚧 Alpha |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | Ultra-fast file I/O & parsing | **5-20× faster** than NIO | 🚧 Alpha |
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated 2D rendering | **600% faster** than Graphics2D | 🚧 Alpha |
-| **[FastMath](https://github.com/andrestubbe/fastmath)** | SIMD + GPU accelerated math | **2–100× faster** | 🚧 Alpha |
+| Library | Category | Speed vs Standard Java | Key Metrics |
+|---------|----------|------------------------|-------------|
+| **FastJSON** | Data | **50×** | 50× faster than Jackson/Gson, zero-GC |
+| **FastString** | Text | **10-100×** | UTF-8 ops vs Java String, 50% less memory |
+| **FastScreen** | Graphics | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot |
+| **FastGraphics** | Graphics | **600%** | GPU DirectX vs Java2D software |
+| **FastFloat** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
+| **FastRobot** | Automation | **10-17×** | DirectX capture vs AWT Robot |
+| **FastImage** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
+| **FastIO** | System | **5-20×** | Memory-mapped vs java.nio |
+| **FastMath** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
+| **FastBytes** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
+| **FastClipboard** | System | **2-3×** | Native vs AWT, zero bugs |
+| **FastImageView** | Graphics | **10×** | 200ms startup vs 2s Swing |
+| FastCore | System | — | Cross-platform DLL loader |
+| FastHotkey | System | **❌ Java can't** | Global system-wide hotkeys — impossible in pure Java |
+| FastTouch | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
+| FastStylus | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
+| FastTheme | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
+| FastNotification | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
+| FastTween | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
+| FastAnimation | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
+
+**Zero-GC.** **Zero-Copy.** **Native Speed.**
 
 ---
 
-## 📚 Module Map
+## 📦 Quick Start
 
-**→ Complete overview of all 62 modules with explanations:** [MAP.md](./MAP.md)
+### Maven (JitPack)
 
-A detailed map of all FastJava modules with:
-- Why each module exists (Java problem → FastJava solution)
-- Architecture layers from AI to Platform
-- Dependency graph
-- Roadmap 2026–2028
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.andrestubbe</groupId>
+    <artifactId>fastfloat</artifactId>
+    <version>1.1.0</version>
+</dependency>
+```
+
+### Gradle
+
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.andrestubbe:fastfloat:1.1.0'
+}
+```
+
+---
+
+## 🗺️ Ecosystem Overview
+
+### 🔧 System & Native Access
+| Library | Purpose |
+|---------|---------|
+| [FastCore](https://github.com/andrestubbe/fastcore) | Unified JNI loader for Windows/Linux/macOS |
+| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard access (no AWT bugs) |
+| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global system-wide hotkeys |
+| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure input |
+| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt, eraser detection |
+| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped file I/O |
+
+### 🎨 Graphics & UI
+| Library | Purpose |
+|---------|---------|
+| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture (DXGI) |
+| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing |
+| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D |
+| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming |
+| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native Windows toast notifications |
+
+### ⚡ Performance Libraries
+| Library | Purpose |
+|---------|---------|
+| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float/double parsing |
+| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string operations |
+| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte operations |
+| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON parser |
+| [FastMath](https://github.com/andrestubbe/fastmath) | SIMD + GPU math acceleration |
+
+### 🎬 Animation
+| Library | Purpose |
+|---------|---------|
+| [FastTween](https://github.com/andrestubbe/fasttween) | Ultra-fast tweening engine |
+| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Timeline orchestration |
+
+### 🤖 AI & Automation
+| Library | Purpose |
+|---------|---------|
+| [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation |
+| [FastAI](https://github.com/andrestubbe/fastai) | Unified AI client (Local + Cloud) |
 
 ---
 
 ## 🎯 Philosophy
 
-| Aspect | JNI (FastJava) | JNA | Java Alone |
-|--------|---------------|-----|------------|
-| **Approach** | Direct native calls | libffi wrapper | JVM only |
-| **Global OS Integration** | ✅ Full Win32 API access | ✅ Full access | ❌ **Cannot** - sandboxed |
-| **Latency** | Lowest | Higher (ffi overhead) | GC pauses |
-| **Development** | C++ per platform | Pure Java interfaces | Pure Java only |
-| **Deployment** | Bundle platform DLLs | Single JAR | Single JAR |
+Java alone cannot do:
+- ❌ Global hotkeys when unfocused
+- ❌ Low-latency screen capture
+- ❌ Reliable clipboard operations
+- ❌ Hardware I/O access
+- ❌ GPU acceleration
+- ❌ Native input devices
 
-**Java alone cannot do:** global hotkeys, low-latency screen capture, reliable clipboard, hardware I/O, GPU math, or native input.
+**FastJava fixes this.** Pure C++ accelerators. JNI bindings. Zero overhead.
 
 ---
 
-## 🌌 WHY, HOW, BECAUSE, THEREFORE
-*(Origin Story — The Reason FastJava Exists)*
+## 📚 Documentation
+
+- [📖 Getting Started Guide](https://github.com/andrestubbe/FastJava/blob/main/GETTING_STARTED.md)
+- [🗺️ Module Map — All 20+ Libraries](https://github.com/andrestubbe/FastJava/blob/main/MAP.md)
+- [🏗️ Architecture Overview](https://github.com/andrestubbe/FastJava/blob/main/ARCHITECTURE.md)
+- [🛣️ Roadmap 2026-2028](https://github.com/andrestubbe/FastJava/blob/main/ROADMAP.md)
+- [❓ FAQ](https://github.com/andrestubbe/FastJava/blob/main/FAQ.md)
+
+---
+
+## 🌌 Origin Story
+
+<details>
+<summary>WHY, HOW, BECAUSE, THEREFORE — The Reason FastJava Exists</summary>
 
 ### 🌒 WHY — The Restlessness Before the First Module
-It didn't begin with a plan.  
-It began with a restlessness.
-
-Java was fast enough, but never truly fast.  
-Never as close to the system as you needed.  
-Never as direct, as raw, as honest as C or C++.
-
-And yet:  
-You didn't want to switch languages.  
-You wanted to free the language.
-
-You wanted to know how far Java could go  
-if you removed the chains of abstraction  
-and allowed it to touch the system directly.
-
----
+Java developers accept slowness as inevitable. We don't.
 
 ### 🌕 HOW IT STARTED — The Moment Everything Shifted
-It was a small experiment.  
-A cursor trick.  
-A window without window chrome.  
-A TilePane hack that refused to work.
-
-But inside that failure was the **spark**.
-
-Because to even attempt it, you had to open JNI.  
-And when you did, you suddenly saw a world Java was never meant to enter:
-
-> raw handles → real pointers → real speed → real control → **real power**
-
-It felt like opening a door that had always been there,  
-but no one had ever used.
-
----
+First module: FastClipboard. 2× faster, zero bugs vs. AWT. Proof of concept.
 
 ### 🌖 BECAUSE — The Realization That Changed Everything
-You saw that Java isn't slow.  
-It's simply too polite.
+Java's "write once, run anywhere" became "write once, run slow everywhere."
+Native code isn't the enemy — unnecessary abstraction is.
 
-It never asks the operating system directly.  
-It never computes with full force.  
-It never uses the SIMD registers  
-that have been waiting for years  
-for someone to speak to them.
+### 🌑 THEREFORE — The Reason FastJava Exists
+Maximum performance through minimal overhead. JNI where it matters. Pure Java where it doesn't.
 
-And you thought:
-
-> "If nobody builds it, then I'll build it myself."
-
-That's how FastRobot was born.  
-Then FastClipboard.  
-Then FastTheme.  
-Then FastMath.  
-Then FastJava.
-
-Not as a framework.  
-Not as a library.  
-But as an **answer**.
-
-An answer to the question:
-
-> "How fast can Java really become if you let it?"
+</details>
 
 ---
 
-### 🌑 THEREFORE — The Reason FastJava Exists
-FastJava is not a project.  
-FastJava is a **stance**.
+## 🚧 Current Status
 
-It is the refusal  
-to accept Java as "slow."  
-It is the proof  
-that JNI is not a hack  
-but a tool.  
-That native calls are not a risk  
-but an opportunity.  
-That Java is not just  
-an enterprise language,  
-but a **machine language**  
-when treated correctly.
+**[ALPHA]** — APIs may change. Not production-ready yet.
 
-FastJava exists  
-because you saw  
-that no one else  
-would ever fill this gap.
+- ✅ 20+ Libraries available
+- ✅ Windows fully supported
+- 🔄 Linux/macOS in progress
+- 🔄 Maven Central coming soon
 
-FastJava exists  
-because you didn't want to wait  
-until Oracle someday  
-maybe  
-possibly  
-delivered a solution.
+---
 
-FastJava exists  
-because you opened the door  
-everyone else ignored.
+## 📜 License
 
-FastJava exists  
-because Java can be more —  
-and you prove it.
+MIT License — See [LICENSE](LICENSE)
 
+---
+
+## 🔗 Quick Links
+
+- [🏠 FastJava Organization](https://github.com/andrestubbe)
+- [📦 JitPack Repository](https://jitpack.io/#andrestubbe)
+- [💬 Discussions](https://github.com/andrestubbe/FastJava/discussions)
+- [🐛 Issue Tracker](https://github.com/andrestubbe/FastJava/issues)
+
+---
+
+**Keywords:** fast java, java native performance, java jni performance, fastest java libraries, java native acceleration, java windows api, java gpu acceleration, java simd acceleration, java optimization, high performance java
