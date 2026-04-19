@@ -161,16 +161,6 @@ Java alone cannot do:
 
 ---
 
-## 📚 Documentation
-
-- [📖 Getting Started Guide](https://github.com/andrestubbe/FastJava/blob/main/GETTING_STARTED.md)
-- [🗺️ Module Map — All 20+ Libraries](https://github.com/andrestubbe/FastJava/blob/main/MAP.md)
-- [🏗️ Architecture Overview](https://github.com/andrestubbe/FastJava/blob/main/ARCHITECTURE.md)
-- [🛣️ Roadmap 2026-2028](https://github.com/andrestubbe/FastJava/blob/main/ROADMAP.md)
-- [❓ FAQ](https://github.com/andrestubbe/FastJava/blob/main/FAQ.md)
-
----
-
 ## 🌌 Origin Story
 
 <details>
@@ -207,15 +197,6 @@ Maximum performance through minimal overhead. JNI where it matters. Pure Java wh
 ## 📜 License
 
 MIT License — See [LICENSE](LICENSE)
-
----
-
-## 🔗 Quick Links
-
-- [🏠 FastJava Organization](https://github.com/andrestubbe)
-- [📦 JitPack Repository](https://jitpack.io/#andrestubbe)
-- [💬 Discussions](https://github.com/andrestubbe/FastJava/discussions)
-- [🐛 Issue Tracker](https://github.com/andrestubbe/FastJava/issues)
 
 ---
 
