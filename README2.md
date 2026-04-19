@@ -25,13 +25,13 @@
 | **FastClipboard** | System | **2-3×** | Native vs AWT, zero bugs |
 | **FastImageView** | Graphics | **10×** | 200ms startup vs 2s Swing |
 | FastCore | System | — | Cross-platform DLL loader |
-| FastHotkey | System | — | Global hotkeys (impossible in pure Java) |
-| FastTouch | System | — | Multi-touch pressure (no Java equivalent) |
-| FastStylus | System | — | Pen tilt/eraser (no Java equivalent) |
-| FastTheme | UI | — | Native theming (no Java equivalent) |
-| FastNotification | UI | — | Native toasts vs SystemTray |
-| FastTween | Animation | — | Zero-allocation, object pooling |
-| FastAnimation | Animation | — | Built on FastTween engine |
+| FastHotkey | System | **❌ Java can't** | Global system-wide hotkeys — impossible in pure Java |
+| FastTouch | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
+| FastStylus | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
+| FastTheme | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
+| FastNotification | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
+| FastTween | Animation | **⚡ Zero-GC** | 8 easing functions, object pooling |
+| FastAnimation | Animation | **⚡ Zero-GC** | Timeline orchestration on FastTween |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
