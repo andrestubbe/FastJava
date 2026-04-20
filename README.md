@@ -43,130 +43,130 @@
 ## 🗺️ Ecosystem Overview — 13 Categories
 
 ### 1. Input
-| Library | Purpose | Tech |
-|---------|---------|------|
-| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks |
-| FastInput | Raw input reading | RawInput API |
-| FastInputHook | Global input hooks | SetWindowsHookEx |
-| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch |
-| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER |
-| FastMicrophone | Mic capture | WASAPI |
-| FastCamera | Webcam capture | DirectShow |
-| FastGamepad | Controller support | XInput, DirectInput |
-| FastSpeechInput | Speech-to-text input | Whisper |
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks | Alpha |
+| FastInput | Raw input reading | RawInput API | TODO |
+| FastInputHook | Global input hooks | SetWindowsHookEx | TODO |
+| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch | Alpha |
+| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER | Alpha |
+| FastMicrophone | Mic capture | WASAPI | TODO |
+| FastCamera | Webcam capture | DirectShow | TODO |
+| FastGamepad | Controller support | XInput, DirectInput | TODO |
+| FastSpeechInput | Speech-to-text input | Whisper | TODO |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR | Alpha |
 
 ### 2. Output
-| Library | Purpose | Tech |
-|---------|---------|------|
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX |
-| FastOverlay | Game overlays | DirectX |
-| FastSpeechOutput | Text-to-speech output | SAPI5, Azure |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU | Alpha |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX | Alpha |
+| FastOverlay | Game overlays | DirectX | TODO |
+| FastSpeechOutput | Text-to-speech output | SAPI5, Azure | TODO |
 
 ### 3. Automation
-| Library | Purpose | Tech |
-|---------|---------|------|
-| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput |
-| FastWindow | Window management | Win32 API |
-| FastWindowHook | Window hooks | Win32 |
-| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast |
-| FastFileWatch | File notifications | ReadDirectoryChangesW |
-| FastProcess | Process management | Win32 API |
-| FastScheduler | Task scheduler | Priority queue |
-| FastMonitor | System monitoring | WMI |
-| FastMetrics | Performance metrics | Zero-GC |
-| FastDWM | VSync & timing | DWM API |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput | Alpha |
+| FastWindow | Window management | Win32 API | TODO |
+| FastWindowHook | Window hooks | Win32 | TODO |
+| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | Alpha |
+| FastFileWatch | File notifications | ReadDirectoryChangesW | TODO |
+| FastProcess | Process management | Win32 API | TODO |
+| FastScheduler | Task scheduler | Priority queue | TODO |
+| FastMonitor | System monitoring | WMI | TODO |
+| FastMetrics | Performance metrics | Zero-GC | TODO |
+| FastDWM | VSync & timing | DWM API | TODO |
 
 ### 4. Parsing
-| Library | Purpose | Tech |
-|---------|---------|------|
-| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 |
-| **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 |
-| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing |
-| FastHTML | HTML parser | SIMD |
-| FastRegex | SIMD regex engine | AVX2 |
-| FastCSV | CSV parser | SIMD |
-| FastXML | XML parser | SAX/DOM |
-| FastURL | URL parser | Zero-copy |
-| FastHash | SIMD hashing | AVX2 |
-| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | SIMD float parsing | AVX2, SSE4 |
-| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math acceleration | OpenCL, SIMD |
-| FastSIMD | SIMD operations framework | AVX2/AVX-512 |
-| FastSpeechProcessing | Audio speech processing | DSP |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 | Alpha |
+| **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 | Alpha |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing | Alpha |
+| FastHTML | HTML parser | SIMD | TODO |
+| FastRegex | SIMD regex engine | AVX2 | TODO |
+| FastCSV | CSV parser | SIMD | TODO |
+| FastXML | XML parser | SAX/DOM | TODO |
+| FastURL | URL parser | Zero-copy | TODO |
+| FastHash | SIMD hashing | AVX2 | TODO |
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | SIMD float parsing | AVX2, SSE4 | Alpha |
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math acceleration | OpenCL, SIMD | Alpha |
+| FastSIMD | SIMD operations framework | AVX2/AVX-512 | TODO |
+| FastSpeechProcessing | Audio speech processing | DSP | TODO |
 
 ### 5. Compression
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastCompress | Fast compression | LZ4/zstd |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastCompress | Fast compression | LZ4/zstd | TODO |
 
 ### 6. Network
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastNet | Network operations | Zero-copy |
-| FastDNS | DNS resolver | Async |
-| FastTLS | TLS/HTTPS | OpenSSL |
-| FastCache | HTTP cache | LRU |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastNet | Network operations | Zero-copy | TODO |
+| FastDNS | DNS resolver | Async | TODO |
+| FastTLS | TLS/HTTPS | OpenSSL | TODO |
+| FastCache | HTTP cache | LRU | TODO |
 
 ### 7. Scraping
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastScrape | Web scraping | SIMD parsing |
-| FastSpider | Web crawler | Async I/O |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastScrape | Web scraping | SIMD parsing | TODO |
+| FastSpider | Web crawler | Async I/O | TODO |
 
 ### 8. System
-| Library | Purpose | Tech |
-|---------|---------|------|
-| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API |
-| FastPointer | Native pointer operations | JNI |
-| FastMemory | System/RAM access | Unsafe |
-| **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader |
-| FastEventLoop | Async event loop | epoll/kqueue |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | Alpha |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API | Alpha |
+| FastPointer | Native pointer operations | JNI | TODO |
+| FastMemory | System/RAM access | Unsafe | TODO |
+| **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | Alpha |
+| FastEventLoop | Async event loop | epoll/kqueue | TODO |
 
 ### 9. IPC
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastIPC | Inter-process comm | Shared memory |
-| FastSharedMemory | Shared memory | Memory-mapped |
-| FastProcess | Process management | Win32 API |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastIPC | Inter-process comm | Shared memory | TODO |
+| FastSharedMemory | Shared memory | Memory-mapped | TODO |
+| FastProcess | Process management | Win32 API | TODO |
 
 ### 10. Graphics
-| Library | Purpose | Tech |
-|---------|---------|------|
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 |
-| FastGPU | GPU compute | OpenCL/Vulkan |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 | Alpha |
+| FastGPU | GPU compute | OpenCL/Vulkan | TODO |
 
 ### 11. Audio
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastAudio | Audio processing | WASAPI |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Low-latency playback | Real WASAPI |
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Real-time capture | Real WASAPI + Loopback |
-| FastVideo | Video codec | FFmpeg |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastAudio | Audio processing | WASAPI | TODO |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Low-latency playback | Real WASAPI | Alpha |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Real-time capture | Real WASAPI + Loopback | Alpha |
+| FastVideo | Video codec | FFmpeg | TODO |
 
 ### 12. Security
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastCrypto | Encryption | AES/SIMD |
-| FastSecureRandom | Secure RNG | Hardware |
-| FastKeychain | Credential store | Windows |
-| FastSecurity | Security framework | Policy |
-| FastSandbox | Process sandbox | Win32 |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastCrypto | Encryption | AES/SIMD | TODO |
+| FastSecureRandom | Secure RNG | Hardware | TODO |
+| FastKeychain | Credential store | Windows | TODO |
+| FastSecurity | Security framework | Policy | TODO |
+| FastSandbox | Process sandbox | Win32 | TODO |
 
 ### 13. AI
-| Library | Purpose | Tech |
-|---------|---------|------|
-| FastAIService | Router/Orchestrator (lokal + Cloud) | API |
-| FastModel | Model-Runtime (llama.cpp, ONNX, etc.) | ONNX |
-| FastVision | Vision-Modelle / GPU-Kernels | GPU shaders |
-| FastEmbedding | Text → Vector | Local/Cloud |
-| FastVectorDB | Vector → Top-K (SIMD-Index) | SIMD |
-| FastRAG | RAG-Pipeline (Chunking, Retrieval, Kontext) | AI orchestration |
-| FastMCP | Model Context Protocol Adapter | MCP Standard |
-| FastMemoryAI | AI-Memory-Plugin (Embeddings, Recall) | Vector store |
-| FastTool | Einzelnes Tool | Function calling |
-| FastToolChaining | Tool-Sequenzen | Pipeline |
+| Library | Purpose | Tech | State |
+|---------|---------|------|-------|
+| FastAIService | Router/Orchestrator (lokal + Cloud) | API | TODO |
+| FastModel | Model-Runtime (llama.cpp, ONNX, etc.) | ONNX | TODO |
+| FastVision | Vision-Modelle / GPU-Kernels | GPU shaders | TODO |
+| FastEmbedding | Text → Vector | Local/Cloud | TODO |
+| FastVectorDB | Vector → Top-K (SIMD-Index) | SIMD | TODO |
+| FastRAG | RAG-Pipeline (Chunking, Retrieval, Kontext) | AI orchestration | TODO |
+| FastMCP | Model Context Protocol Adapter | MCP Standard | TODO |
+| FastMemoryAI | AI-Memory-Plugin (Embeddings, Recall) | Vector store | TODO |
+| FastTool | Einzelnes Tool | Function calling | TODO |
+| FastToolChaining | Tool-Sequenzen | Pipeline | TODO |
 
 ---
 
@@ -186,23 +186,33 @@ Java alone cannot do:
 
 ## 🌌 Origin Story
 
-<details>
-<summary>WHY, HOW, BECAUSE, THEREFORE — The Reason FastJava Exists</summary>
-
 ### 🌒 WHY — The Restlessness Before the First Module
-Java developers accept slowness as inevitable. We don't.
+**Junior:** "Java is slow… right? Everyone says that. Must be normal."
+**Senior:** "No. That's not a law of nature. That's just bad architecture."
+**Designer:** "I see friction. I see unnecessary layers. This feels wrong."
+A shift begins: acceptance → doubt → clarity.
+Java developers treat slowness like gravity: unavoidable, unquestioned, built into the universe. We refused that worldview. We wanted proof that "slow" wasn't a law of nature — just a habit.
 
 ### 🌕 HOW IT STARTED — The Moment Everything Shifted
-First module: FastClipboard. 2× faster, zero bugs vs. AWT. Proof of concept.
+**Junior:** "Let me try something small… maybe Clipboard?"
+**Senior:** "Do it native. No overhead. No framework weight."
+**Designer:** "If this is faster, it proves something bigger."
+FastClipboard appears. Twice as fast. Zero bugs.
+The mental state moves: experiment → proof → vision.
 
 ### 🌖 BECAUSE — The Realization That Changed Everything
-Java's "write once, run anywhere" became "write once, run slow everywhere."
-Native code isn't the enemy — unnecessary abstraction is.
+**Junior:** "Why does everything feel heavy?"
+**Senior:** "Because Java isn't slow — only the layers above it are."
+**Designer:** "The language isn't the problem. The design of the tools is."
+The shift continues: frustration → analysis → realization.
+Java's "write once, run anywhere" became "write once, run slow everywhere." Native code isn't the enemy — unnecessary abstraction is.
 
 ### 🌑 THEREFORE — The Reason FastJava Exists
+**Junior:** "Can't we just make this better?"
+**Senior:** "Yes. Minimal overhead. Native where it matters. Java where it makes sense."
+**Designer:** "This isn't a framework. It's a counter-design."
+The state settles: desire → decision → identity.
 Maximum performance through minimal overhead. JNI where it matters. Pure Java where it doesn't.
-
-</details>
 
 ---
 
