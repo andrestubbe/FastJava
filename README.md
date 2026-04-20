@@ -115,31 +115,122 @@
 | FastHash | SIMD hashing | AVX2, SSE4 | 🚧 2027 |
 | FastCompress | Fast compression | SIMD | 🚧 2027 |
 
-### 🆕 NICHT VORHANDEN - SINNVOLL:
+### 🆕 Geplante Module (Roadmap 2026-2027)
+
+#### 1. Core & Memory
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| FastScrape | Web scraping / HTML extraction | SIMD parsing | 🚧 Q2 2026 |
-| FastSpider | Web crawling | Async I/O | 🚧 Q2 2026 |
-| FastHTML | High-performance HTML parser | SIMD | 🚧 Q2 2026 |
-| FastURL | URL parsing & manipulation | Zero-copy | 🚧 Q2 2026 |
-| FastCSV | CSV parsing | SIMD | 🚧 Q2 2026 |
-| FastRegex | SIMD-accelerated regex | AVX2 | 🚧 Q2 2026 |
-| FastLog | Zero-GC high-performance logging | Lock-free | 🚧 Q2 2026 |
-| FastCache | In-memory cache (LRU/LFU) | SIMD lookup | 🚧 Q2 2026 |
-| FastConfig | Configuration management | YAML/JSON | 🚧 Q3 2026 |
-| FastCrypto | Encryption (AES, ChaCha20) | SIMD | 🚧 Q3 2026 |
-| FastSecureRandom | Cryptographically secure RNG | Hardware | 🚧 Q3 2026 |
-| FastDNS | DNS resolution | Async | 🚧 Q3 2026 |
+| FastMemory | Off-heap memory management | Unsafe | 🚧 Q2 2026 |
+| FastPointer | Native pointer operations | JNI | 🚧 Q2 2026 |
+
+#### 2. Math & SIMD
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastSIMD | SIMD operations framework | AVX2/AVX-512 | 🚧 Q2 2026 |
+
+#### 3. Bytes, Strings & Parsing
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastString | SIMD string operations | AVX2 | 🚧 Q2 2026 |
+| FastHTML | HTML parser | SIMD | 🚧 Q2 2026 |
+| FastRegex | SIMD regex engine | AVX2 | 🚧 Q2 2026 |
+| FastCSV | CSV parser | SIMD | 🚧 Q2 2026 |
+| FastXML | XML parser | SAX/DOM | 🚧 Q3 2026 |
+| FastJSONSchema | JSON Schema validation | SIMD | 🚧 Q3 2026 |
+| FastURL | URL parser | Zero-copy | 🚧 Q2 2026 |
+| FastHash | SIMD hashing | AVX2 | 🚧 Q3 2026 |
+
+#### 4. Compression
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastCompression | Fast compression | LZ4/zstd | 🚧 Q3 2026 |
+
+#### 5. Networking & Web
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
 | FastNet | Network operations | Zero-copy | 🚧 Q3 2026 |
-| FastTLS | TLS/HTTPS handling | OpenSSL | 🚧 Q3 2026 |
-| FastGPU | GPU compute | OpenCL/Vulkan | 🚧 Q4 2026 |
-| FastCamera | Webcam capture | DirectShow | 🚧 Q4 2026 |
-| FastVideo | Video encode/decode | FFmpeg | 🚧 Q4 2026 |
-| FastIPC | Inter-process communication | Shared mem | 🚧 Q4 2026 |
+| FastDNS | DNS resolver | Async | 🚧 Q3 2026 |
+| FastTLS | TLS/HTTPS | OpenSSL | 🚧 Q3 2026 |
+| FastCache | HTTP cache | LRU | 🚧 Q2 2026 |
+
+#### 6. Scraping & Crawling
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastScrape | Web scraping | SIMD parsing | 🚧 Q2 2026 |
+| FastSpider | Web crawler | Async I/O | 🚧 Q2 2026 |
+
+#### 7. System & OS
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastWindow | Window management | Win32 API | 🚧 Q3 2026 |
+| FastWindowHook | Window hooks | Win32 | 🚧 Q3 2026 |
 | FastEventLoop | Async event loop | epoll/kqueue | 🚧 2027 |
-| FastScheduler | Task scheduling | Priority queue | 🚧 2027 |
-| FastBenchmark | Performance benchmarking | Statistics | 🚧 2027 |
-| FastMetrics | Metrics & monitoring | Zero-GC | 🚧 2027 |
+| FastScheduler | Task scheduler | Priority queue | 🚧 2027 |
+| FastMonitor | System monitoring | WMI | 🚧 Q4 2026 |
+| FastMetrics | Performance metrics | Zero-GC | 🚧 2027 |
+
+#### 8. Processes & IPC
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastProcess | Process management | Win32 API | 🚧 Q3 2026 |
+| FastIPC | Inter-process comm | Shared memory | 🚧 Q4 2026 |
+| FastSharedMemory | Shared memory | Memory-mapped | 🚧 Q4 2026 |
+
+#### 9. Graphics
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastColor | Color operations | SIMD | 🚧 Q3 2026 |
+| FastFont | Font rendering | DirectWrite | 🚧 Q4 2026 |
+| FastLayout | UI layout engine | Constraint | 🚧 Q4 2026 |
+| FastGPU | GPU compute | OpenCL/Vulkan | 🚧 Q4 2026 |
+
+#### 10. UI
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastUI | UI components | DirectX | 🚧 Q4 2026 |
+| FastWidget | Widget toolkit | Native | 🚧 2027 |
+| FastThemeDesigner | Theme editor | DWM | 🚧 Q4 2026 |
+
+#### 11. Audio & Video
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastAudio | Audio processing | WASAPI | 🚧 Q3 2026 |
+| FastMicrophone | Mic capture | WASAPI | 🚧 Q3 2026 |
+| FastSpeech | Speech recognition | Whisper | 🚧 Q4 2026 |
+| FastCamera | Webcam capture | DirectShow | 🚧 Q4 2026 |
+| FastVideo | Video codec | FFmpeg | 🚧 Q4 2026 |
+
+#### 12. Security & Crypto
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastCrypto | Encryption | AES/SIMD | 🚧 Q3 2026 |
+| FastSecureRandom | Secure RNG | Hardware | 🚧 Q3 2026 |
+| FastKeychain | Credential store | Windows | 🚧 Q4 2026 |
+| FastSecurity | Security framework | Policy | 🚧 2027 |
+| FastSandbox | Process sandbox | Win32 | 🚧 2027 |
+
+#### 13. AI, Vision & Models
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastAI | AI client | Local/Cloud | 🚧 Q2 2026 |
+| FastModel | ML model runtime | ONNX | 🚧 Q3 2026 |
+| FastVision | Computer vision | GPU shaders | 🚧 Q3 2026 |
+| FastOCR | Text recognition | WinRT OCR | 🔧 Beta |
+
+#### 14. Tools, Logging & Config
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastLog | Zero-GC logging | Lock-free | 🚧 Q2 2026 |
+| FastConfig | Configuration | YAML/JSON | 🚧 Q3 2026 |
+| FastBenchmark | Benchmarking | Statistics | 🚧 2027 |
+| FastTest | Testing framework | Assert | 🚧 2027 |
+
+#### 15. Installer, Update & Services
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| FastInstaller | App installer | MSI/NSIS | 🚧 Q4 2026 |
+| FastUpdate | Auto-updater | Delta | 🚧 Q4 2026 |
+| FastService | Windows service | SCM | 🚧 Q4 2026 |
 
 ---
 
