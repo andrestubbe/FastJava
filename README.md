@@ -216,6 +216,21 @@ Maximum performance through minimal overhead. JNI where it matters. Pure Java wh
 
 ---
 
+## ⚡ The Truth About Speed
+
+I run the benchmarks myself. I don't negotiate with numbers. I don't sweet-talk performance. I don't pretend something is fast because I want it to be. Speed doesn't care about opinions — only measurements. I can't lie to myself, because the CPU won't lie back. Faster is faster. Slower is slower. Reality is binary at that level.
+
+This isn't about money.
+This isn't about hype.
+This isn't about selling anything.
+
+This is about quality — the kind you can't fake, can't market, can't decorate.
+The kind you can only prove.
+
+FastJava exists because truth shows up in microseconds, not in slogans.
+
+---
+
 ## 🚧 Current Status
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
