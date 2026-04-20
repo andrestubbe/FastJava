@@ -52,7 +52,6 @@
 | [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt | WM_POINTER | ✅ Stable |
 | [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped I/O | IOCP, mmap | ✅ Stable |
 
-
 ### 🎨 Graphics & UI
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
