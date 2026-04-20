@@ -40,160 +40,130 @@
 
 ---
 
-## 🗺️ Ecosystem Overview — 16 Categories
+## 🗺️ Ecosystem Overview — 13 Categories
 
-### 1. Core & Memory
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | 🔧 Alpha |
-| FastMemory | Off-heap memory management | Unsafe | - |
-| FastPointer | Native pointer operations | JNI | - |
+### 1. Input
+| Library | Purpose | Tech |
+|---------|---------|------|
+| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks |
+| FastInput | Raw input reading | RawInput API |
+| FastInputHook | Global input hooks | SetWindowsHookEx |
+| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch |
+| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER |
+| FastMicrophone | Mic capture | WASAPI |
+| FastCamera | Webcam capture | DirectShow |
+| FastGamepad | Controller support | XInput, DirectInput |
+| FastSpeechInput | Speech-to-text input | Whisper |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR |
 
-### 2. Math & SIMD
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math acceleration | OpenCL, SIMD | 🔧 Alpha |
-| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | SIMD float parsing | AVX2, SSE4 | 🔧 Alpha |
-| FastSIMD | SIMD operations framework | AVX2/AVX-512 | - |
+### 2. Output
+| Library | Purpose | Tech |
+|---------|---------|------|
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX |
+| FastOverlay | Game overlays | DirectX |
+| FastSpeechOutput | Text-to-speech output | SAPI5, Azure |
 
-### 3. Bytes, Strings & Parsing
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 | 🔧 Alpha |
-| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 | 🔧 Alpha |
-| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing | 🔧 Alpha |
-| FastHTML | HTML parser | SIMD | - |
-| FastRegex | SIMD regex engine | AVX2 | - |
-| FastCSV | CSV parser | SIMD | - |
-| FastXML | XML parser | SAX/DOM | - |
-| FastJSONSchema | JSON Schema validation | SIMD | - |
-| FastURL | URL parser | Zero-copy | - |
-| FastHash | SIMD hashing | AVX2 | - |
+### 3. Automation
+| Library | Purpose | Tech |
+|---------|---------|------|
+| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput |
+| FastWindow | Window management | Win32 API |
+| FastWindowHook | Window hooks | Win32 |
+| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast |
+| FastFileWatch | File notifications | ReadDirectoryChangesW |
+| FastProcess | Process management | Win32 API |
+| FastScheduler | Task scheduler | Priority queue |
+| FastMonitor | System monitoring | WMI |
+| FastMetrics | Performance metrics | Zero-GC |
+| FastDWM | VSync & timing | DWM API |
 
-### 4. Compression
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastCompress | Fast compression | LZ4/zstd | - |
+### 4. Parsing
+| Library | Purpose | Tech |
+|---------|---------|------|
+| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 |
+| **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing |
+| FastHTML | HTML parser | SIMD |
+| FastRegex | SIMD regex engine | AVX2 |
+| FastCSV | CSV parser | SIMD |
+| FastXML | XML parser | SAX/DOM |
+| FastURL | URL parser | Zero-copy |
+| FastHash | SIMD hashing | AVX2 |
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | SIMD float parsing | AVX2, SSE4 |
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math acceleration | OpenCL, SIMD |
+| FastSIMD | SIMD operations framework | AVX2/AVX-512 |
+| FastSpeechProcessing | Audio speech processing | DSP |
 
-### 5. Networking & Web
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastNet | Network operations | Zero-copy | - |
-| FastDNS | DNS resolver | Async | - |
-| FastTLS | TLS/HTTPS | OpenSSL | - |
-| FastCache | HTTP cache | LRU | - |
+### 5. Compression
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastCompress | Fast compression | LZ4/zstd |
 
-### 6. Scraping & Crawling
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastScrape | Web scraping | SIMD parsing | - |
-| FastSpider | Web crawler | Async I/O | - |
+### 6. Network
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastNet | Network operations | Zero-copy |
+| FastDNS | DNS resolver | Async |
+| FastTLS | TLS/HTTPS | OpenSSL |
+| FastCache | HTTP cache | LRU |
 
-### 7. Input & Devices
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks | 🔧 Alpha |
-| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch | 🔧 Alpha |
-| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER | 🔧 Alpha |
-| FastInput | Raw input reading | RawInput API | - |
-| FastInputHook | Global input hooks | SetWindowsHookEx | - |
-| FastHumanInput | Unified input event stream | Aggregation | - |
-| FastMouse | Mouse control & capture | Win32 API | - |
-| FastKeyboard | Keyboard hooks & input | Win32 API | - |
-| FastGamepad | Controller support | XInput, DirectInput | - |
+### 7. Scraping
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastScrape | Web scraping | SIMD parsing |
+| FastSpider | Web crawler | Async I/O |
 
-### 8. System & OS Integration
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | 🔧 Alpha |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API | 🔧 Alpha |
-| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | 🔧 Alpha |
-| FastWindow | Window management | Win32 API | - |
-| FastWindowHook | Window hooks | Win32 | - |
-| FastFileWatch | File notifications | ReadDirectoryChangesW | - |
-| FastEventLoop | Async event loop | epoll/kqueue | - |
-| FastScheduler | Task scheduler | Priority queue | - |
-| FastMonitor | System monitoring | WMI | - |
-| FastMetrics | Performance metrics | Zero-GC | - |
-| FastDWM | VSync & timing | DWM API | - |
+### 8. System
+| Library | Purpose | Tech |
+|---------|---------|------|
+| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API |
+| FastPointer | Native pointer operations | JNI |
+| FastMemory | Off-heap memory management | Unsafe |
+| **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader |
+| FastEventLoop | Async event loop | epoll/kqueue |
 
-### 9. Processes, IPC & Memory Sharing
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastProcess | Process management | Win32 API | - |
-| FastIPC | Inter-process comm | Shared memory | - |
-| FastSharedMemory | Shared memory | Memory-mapped | - |
+### 9. IPC
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastIPC | Inter-process comm | Shared memory |
+| FastSharedMemory | Shared memory | Memory-mapped |
+| FastProcess | Process management | Win32 API |
 
 ### 10. Graphics
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Zero-copy screen capture | DXGI, DirectX | 🔧 Alpha |
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 | 🔧 Alpha |
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU | 🔧 Alpha |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX | 🔧 Alpha |
-| FastColor | Color operations | SIMD | - |
-| FastFont | Font rendering | DirectWrite | - |
-| FastLayout | UI layout engine | Constraint | - |
-| FastGPU | GPU compute | OpenCL/Vulkan | - |
-| FastOverlay | Game overlays | DirectX | - |
+| Library | Purpose | Tech |
+|---------|---------|------|
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 |
+| FastGPU | GPU compute | OpenCL/Vulkan |
 
-### 11. UI
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Native Windows theming | WinRT, DWM | 🔧 Alpha |
-| FastUI | UI components | DirectX | - |
-| FastWidget | Widget toolkit | Native | - |
-| FastThemeDesigner | Theme editor | DWM | - |
+### 11. Audio
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastAudio | Audio processing | WASAPI |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Low-latency playback | Real WASAPI |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Real-time capture | Real WASAPI + Loopback |
+| FastVideo | Video codec | FFmpeg |
 
-### 12. Audio & Video
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Low-latency playback | Real WASAPI | 🔧 Alpha |
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Real-time capture | Real WASAPI + Loopback | 🔧 Alpha |
-| FastTTS | Text-to-speech | SAPI5, Azure | - |
-| FastSTT | Speech-to-text | Whisper, Cloud | - |
-| FastAudio | Audio processing | WASAPI | - |
-| FastMicrophone | Mic capture | WASAPI | - |
-| FastSpeech | Speech recognition | Whisper | - |
-| FastCamera | Webcam capture | DirectShow | - |
-| FastVideo | Video codec | FFmpeg | - |
+### 12. Security
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastCrypto | Encryption | AES/SIMD |
+| FastSecureRandom | Secure RNG | Hardware |
+| FastKeychain | Credential store | Windows |
+| FastSecurity | Security framework | Policy |
+| FastSandbox | Process sandbox | Win32 |
 
-### 13. Security & Crypto
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastCrypto | Encryption | AES/SIMD | - |
-| FastSecureRandom | Secure RNG | Hardware | - |
-| FastKeychain | Credential store | Windows | - |
-| FastSecurity | Security framework | Policy | - |
-| FastSandbox | Process sandbox | Win32 | - |
-
-### 14. AI, Vision & Models
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput | 🔧 Alpha |
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR | 🔧 Alpha |
-| FastAI | AI client | Local + Cloud API | - |
-| FastModel | ML model runtime | ONNX | - |
-| FastVision | Computer vision | GPU shaders | - |
-| FastEmbedding | Text embeddings | Local/Cloud | - |
-| FastVectorDB | Vector search | SIMD | - |
-| FastRAG | RAG pipeline | AI orchestration | - |
-| FastMCP | Model Context Protocol | MCP Standard | - |
-
-### 15. Tools, Logging & Config
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastLog | Zero-GC logging | Lock-free | - |
-| FastConfig | Configuration | YAML/JSON | - |
-| FastBenchmark | Benchmarking | Statistics | - |
-| FastTest | Testing framework | Assert | - |
-
-### 16. Installer, Update & Services
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastInstaller | App installer | MSI/NSIS | - |
-| FastUpdate | Auto-updater | Delta | - |
-| FastService | Windows service | SCM | - |
+### 13. AI
+| Library | Purpose | Tech |
+|---------|---------|------|
+| FastAI | AI client | Local + Cloud API |
+| FastModel | ML model runtime | ONNX |
+| FastVision | Computer vision | GPU shaders |
+| FastEmbedding | Text embeddings | Local/Cloud |
+| FastVectorDB | Vector search | SIMD |
+| FastRAG | RAG pipeline | AI orchestration |
+| FastMCP | Model Context Protocol | MCP Standard |
 
 ---
 
