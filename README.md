@@ -181,13 +181,7 @@
 | FastBenchmark | Benchmarking | Statistics | 🚧 2027 |
 | FastTest | Testing framework | Assert | 🚧 2027 |
 
-### 15. Animation
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| **[FastTween](https://github.com/andrestubbe/fasttween)** | Ultra-fast tweening | Object pooling | ✅ Stable |
-| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | Timeline orchestration | Zero-GC | ✅ Stable |
-
-### 16. Installer, Update & Services
+### 15. Installer, Update & Services
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastInstaller | App installer | MSI/NSIS | 🚧 Q4 2026 |
