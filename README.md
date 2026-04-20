@@ -40,112 +40,42 @@
 
 ---
 
-## 🗺️ Ecosystem Overview
+## 🗺️ Ecosystem Overview — 15 Categories
 
-### 🔧 System & Native Access
+### 1. Core & Memory
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | ✅ Stable |
-| [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API | ✅ Stable |
-| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks | ✅ Stable |
-| [FastTouch](https://github.com/andrestubbe/fasttouch) | Multi-touch & pressure | Win32 touch | ✅ Stable |
-| [FastStylus](https://github.com/andrestubbe/faststylus) | Pen pressure, tilt | WM_POINTER | ✅ Stable |
-| [FastIO](https://github.com/andrestubbe/fastio) | Memory-mapped I/O | IOCP, mmap | ✅ Stable |
-
-### 🎨 Graphics & UI
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| [FastScreen](https://github.com/andrestubbe/fastscreen) | Zero-copy screen capture | DXGI, DirectX | ✅ Stable |
-| [FastImage](https://github.com/andrestubbe/fastimage) | SIMD image processing | AVX2, SSE4 | 🔧 Beta |
-| [FastGraphics](https://github.com/andrestubbe/fastgraphics) | GPU-accelerated Graphics2D | DirectX, GPU | 🔧 Beta |
-| [FastTheme](https://github.com/andrestubbe/fasttheme) | Native Windows theming | WinRT, DWM | 🔧 Beta |
-| [FastImageView](https://github.com/andrestubbe/fastimageview) | DirectX image viewer | DirectX | 🔧 Beta |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | Native notifications | WinRT, Toast | ✅ Stable |
-
-### ⚡ Performance Libraries
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| [FastFloat](https://github.com/andrestubbe/fastfloat) | SIMD float parsing | AVX2, SSE4 | ✅ Stable |
-| [FastString](https://github.com/andrestubbe/faststring) | UTF-8 string ops | SIMD, AVX2 | ✅ Stable |
-| [FastBytes](https://github.com/andrestubbe/fastbytes) | Bulk byte ops | AVX2, SSE4 | ✅ Stable |
-| [FastJSON](https://github.com/andrestubbe/fastjson) | Zero-copy JSON | SIMD parsing | ✅ Stable |
-| [FastMath](https://github.com/andrestubbe/fastmath) | Math acceleration | OpenCL, SIMD | 🔧 Beta |
-
-### 🎬 Animation
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| [FastTween](https://github.com/andrestubbe/fasttween) | Ultra-fast tweening | Object pooling | ✅ Stable |
-| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Timeline orchestration | Zero-GC | ✅ Stable |
-
-### 🤖 AI & Automation
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| [FastRobot](https://github.com/andrestubbe/fastrobot) | Screen capture & automation | DirectX, SendInput | ✅ Stable |
-| FastAI | Unified AI client | Local + Cloud API | 🚧 Q2 2026 |
-| FastGamepad | Controller support | XInput, DirectInput | 🚧 Q2 2026 |
-
-### 🔍 Vision & AI Pipeline (Coming 2026-2027)
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastVision | GPU template matching | GPU shaders | 🚧 Q3 2026 |
-| [FastOCR](https://github.com/andrestubbe/FastOCR) | OCR | WinRT OCR | 🔧 Beta |
-| FastEmbedding | Text embeddings | Local/Cloud | 🚧 Q4 2026 |
-| FastVectorDB | Vector search | SIMD | 🚧 2027 |
-| FastRAG | RAG pipeline | AI orchestration | 🚧 2027 |
-| FastMCP | Model Context Protocol | MCP Standard | 🚧 2027 |
-
-### 🎤 Audio
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| [FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer) | Low-latency playback | Real WASAPI | 🔧 Beta |
-| [FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture) | Real-time capture | Real WASAPI + Loopback | 🔧 Beta |
-| FastTTS | Text-to-speech | SAPI5, Azure | 🚧 Q4 2026 |
-| FastSTT | Speech-to-text | Whisper, Cloud | 🚧 Q4 2026 |
-
-### 🛠️ Advanced System (Coming 2026-2027)
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
-| FastInput | Raw input reading | RawInput API | 🚧 Q3 2026 |
-| FastInputHook | Global hooks | SetWindowsHookEx | 🚧 Q3 2026 |
-| FastWindow | Window control | Win32 API | 🚧 Q3 2026 |
-| FastProcess | Process introspection | Win32 API | 🚧 Q3 2026 |
-| FastFileWatch | File notifications | ReadDirectoryChangesW | 🚧 Q3 2026 |
-| FastOverlay | Game overlays | DirectX | 🚧 Q4 2026 |
-| FastDWM | VSync & timing | DWM API | 🚧 Q4 2026 |
-| FastHash | SIMD hashing | AVX2, SSE4 | 🚧 2027 |
-| FastCompress | Fast compression | SIMD | 🚧 2027 |
-
-### 🆕 Geplante Module (Roadmap 2026-2027)
-
-#### 1. Core & Memory
-| Library | Purpose | Tech | Status |
-|---------|---------|------|--------|
 | FastMemory | Off-heap memory management | Unsafe | 🚧 Q2 2026 |
 | FastPointer | Native pointer operations | JNI | 🚧 Q2 2026 |
 
-#### 2. Math & SIMD
+### 2. Math & SIMD
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math acceleration | OpenCL, SIMD | 🔧 Beta |
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | SIMD float parsing | AVX2, SSE4 | ✅ Stable |
 | FastSIMD | SIMD operations framework | AVX2/AVX-512 | 🚧 Q2 2026 |
 
-#### 3. Bytes, Strings & Parsing
+### 3. Bytes, Strings & Parsing
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| FastString | SIMD string operations | AVX2 | 🚧 Q2 2026 |
+| **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 | ✅ Stable |
+| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 | ✅ Stable |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing | ✅ Stable |
 | FastHTML | HTML parser | SIMD | 🚧 Q2 2026 |
 | FastRegex | SIMD regex engine | AVX2 | 🚧 Q2 2026 |
 | FastCSV | CSV parser | SIMD | 🚧 Q2 2026 |
 | FastXML | XML parser | SAX/DOM | 🚧 Q3 2026 |
 | FastJSONSchema | JSON Schema validation | SIMD | 🚧 Q3 2026 |
 | FastURL | URL parser | Zero-copy | 🚧 Q2 2026 |
-| FastHash | SIMD hashing | AVX2 | 🚧 Q3 2026 |
+| FastHash | SIMD hashing | AVX2 | 🚧 2027 |
 
-#### 4. Compression
+### 4. Compression
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| FastCompression | Fast compression | LZ4/zstd | 🚧 Q3 2026 |
+| FastCompress | Fast compression | LZ4/zstd | 🚧 2027 |
 
-#### 5. Networking & Web
+### 5. Networking & Web
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastNet | Network operations | Zero-copy | 🚧 Q3 2026 |
@@ -153,54 +83,74 @@
 | FastTLS | TLS/HTTPS | OpenSSL | 🚧 Q3 2026 |
 | FastCache | HTTP cache | LRU | 🚧 Q2 2026 |
 
-#### 6. Scraping & Crawling
+### 6. Scraping & Crawling
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastScrape | Web scraping | SIMD parsing | 🚧 Q2 2026 |
 | FastSpider | Web crawler | Async I/O | 🚧 Q2 2026 |
 
-#### 7. System & OS
+### 7. System & OS Integration
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
+| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | ✅ Stable |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API | ✅ Stable |
+| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks | ✅ Stable |
+| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch | ✅ Stable |
+| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER | ✅ Stable |
+| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | ✅ Stable |
 | FastWindow | Window management | Win32 API | 🚧 Q3 2026 |
 | FastWindowHook | Window hooks | Win32 | 🚧 Q3 2026 |
+| FastInput | Raw input reading | RawInput API | 🚧 Q3 2026 |
+| FastInputHook | Global hooks | SetWindowsHookEx | 🚧 Q3 2026 |
+| FastFileWatch | File notifications | ReadDirectoryChangesW | 🚧 Q3 2026 |
 | FastEventLoop | Async event loop | epoll/kqueue | 🚧 2027 |
 | FastScheduler | Task scheduler | Priority queue | 🚧 2027 |
 | FastMonitor | System monitoring | WMI | 🚧 Q4 2026 |
 | FastMetrics | Performance metrics | Zero-GC | 🚧 2027 |
+| FastDWM | VSync & timing | DWM API | 🚧 Q4 2026 |
 
-#### 8. Processes & IPC
+### 8. Processes, IPC & Memory Sharing
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastProcess | Process management | Win32 API | 🚧 Q3 2026 |
 | FastIPC | Inter-process comm | Shared memory | 🚧 Q4 2026 |
 | FastSharedMemory | Shared memory | Memory-mapped | 🚧 Q4 2026 |
 
-#### 9. Graphics
+### 9. Graphics
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Zero-copy screen capture | DXGI, DirectX | ✅ Stable |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 | 🔧 Beta |
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU | 🔧 Beta |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX | 🔧 Beta |
 | FastColor | Color operations | SIMD | 🚧 Q3 2026 |
 | FastFont | Font rendering | DirectWrite | 🚧 Q4 2026 |
 | FastLayout | UI layout engine | Constraint | 🚧 Q4 2026 |
 | FastGPU | GPU compute | OpenCL/Vulkan | 🚧 Q4 2026 |
+| FastOverlay | Game overlays | DirectX | 🚧 Q4 2026 |
 
-#### 10. UI
+### 10. UI
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
+| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | Native Windows theming | WinRT, DWM | 🔧 Beta |
 | FastUI | UI components | DirectX | 🚧 Q4 2026 |
 | FastWidget | Widget toolkit | Native | 🚧 2027 |
 | FastThemeDesigner | Theme editor | DWM | 🚧 Q4 2026 |
 
-#### 11. Audio & Video
+### 11. Audio & Video
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Low-latency playback | Real WASAPI | 🔧 Beta |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Real-time capture | Real WASAPI + Loopback | 🔧 Beta |
+| FastTTS | Text-to-speech | SAPI5, Azure | 🚧 Q4 2026 |
+| FastSTT | Speech-to-text | Whisper, Cloud | 🚧 Q4 2026 |
 | FastAudio | Audio processing | WASAPI | 🚧 Q3 2026 |
 | FastMicrophone | Mic capture | WASAPI | 🚧 Q3 2026 |
 | FastSpeech | Speech recognition | Whisper | 🚧 Q4 2026 |
 | FastCamera | Webcam capture | DirectShow | 🚧 Q4 2026 |
 | FastVideo | Video codec | FFmpeg | 🚧 Q4 2026 |
 
-#### 12. Security & Crypto
+### 12. Security & Crypto
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastCrypto | Encryption | AES/SIMD | 🚧 Q3 2026 |
@@ -209,15 +159,21 @@
 | FastSecurity | Security framework | Policy | 🚧 2027 |
 | FastSandbox | Process sandbox | Win32 | 🚧 2027 |
 
-#### 13. AI, Vision & Models
+### 13. AI, Vision & Models
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| FastAI | AI client | Local/Cloud | 🚧 Q2 2026 |
+| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput | ✅ Stable |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR | 🔧 Beta |
+| FastAI | AI client | Local + Cloud API | 🚧 Q2 2026 |
 | FastModel | ML model runtime | ONNX | 🚧 Q3 2026 |
 | FastVision | Computer vision | GPU shaders | 🚧 Q3 2026 |
-| FastOCR | Text recognition | WinRT OCR | 🔧 Beta |
+| FastGamepad | Controller support | XInput, DirectInput | 🚧 Q2 2026 |
+| FastEmbedding | Text embeddings | Local/Cloud | 🚧 Q4 2026 |
+| FastVectorDB | Vector search | SIMD | 🚧 2027 |
+| FastRAG | RAG pipeline | AI orchestration | 🚧 2027 |
+| FastMCP | Model Context Protocol | MCP Standard | 🚧 2027 |
 
-#### 14. Tools, Logging & Config
+### 14. Tools, Logging & Config
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastLog | Zero-GC logging | Lock-free | 🚧 Q2 2026 |
@@ -225,7 +181,13 @@
 | FastBenchmark | Benchmarking | Statistics | 🚧 2027 |
 | FastTest | Testing framework | Assert | 🚧 2027 |
 
-#### 15. Installer, Update & Services
+### 15. Animation
+| Library | Purpose | Tech | Status |
+|---------|---------|------|--------|
+| **[FastTween](https://github.com/andrestubbe/fasttween)** | Ultra-fast tweening | Object pooling | ✅ Stable |
+| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | Timeline orchestration | Zero-GC | ✅ Stable |
+
+### 16. Installer, Update & Services
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
 | FastInstaller | App installer | MSI/NSIS | 🚧 Q4 2026 |
