@@ -33,6 +33,8 @@
 | [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
 | [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **❌ Java can't** | Native OCR — 10-50ms vs 500ms+ Tesseract4J |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ Java can't** | Native WASAPI playback — impossible in pure Java |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ Java can't** | Real-time WASAPI capture — no Java API exists |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
