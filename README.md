@@ -120,7 +120,7 @@
 | **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API |
 | FastPointer | Native pointer operations | JNI |
-| FastMemory | Off-heap memory management | Unsafe |
+| FastMemory | System/RAM access | Unsafe |
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader |
 | FastEventLoop | Async event loop | epoll/kqueue |
 
@@ -157,13 +157,16 @@
 ### 13. AI
 | Library | Purpose | Tech |
 |---------|---------|------|
-| FastAI | AI client | Local + Cloud API |
-| FastModel | ML model runtime | ONNX |
-| FastVision | Computer vision | GPU shaders |
-| FastEmbedding | Text embeddings | Local/Cloud |
-| FastVectorDB | Vector search | SIMD |
-| FastRAG | RAG pipeline | AI orchestration |
-| FastMCP | Model Context Protocol | MCP Standard |
+| FastAIService | Router/Orchestrator (lokal + Cloud) | API |
+| FastModel | Model-Runtime (llama.cpp, ONNX, etc.) | ONNX |
+| FastVision | Vision-Modelle / GPU-Kernels | GPU shaders |
+| FastEmbedding | Text → Vector | Local/Cloud |
+| FastVectorDB | Vector → Top-K (SIMD-Index) | SIMD |
+| FastRAG | RAG-Pipeline (Chunking, Retrieval, Kontext) | AI orchestration |
+| FastMCP | Model Context Protocol Adapter | MCP Standard |
+| FastMemoryAI | AI-Memory-Plugin (Embeddings, Recall) | Vector store |
+| FastTool | Einzelnes Tool | Function calling |
+| FastToolChaining | Tool-Sequenzen | Pipeline |
 
 ---
 
