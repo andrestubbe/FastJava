@@ -40,45 +40,11 @@
 
 ---
 
-## 📦 Quick Start
-
-### Maven (JitPack)
-
-```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-
-<dependency>
-    <groupId>com.github.andrestubbe</groupId>
-    <artifactId>fastfloat</artifactId>
-    <version>1.1.0</version>
-</dependency>
-```
-
-### Gradle
-
-```groovy
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-
-dependencies {
-    implementation 'com.github.andrestubbe:fastfloat:1.1.0'
-}
-```
-
----
-
 ## 🗺️ Ecosystem Overview
 
 ### 🔧 System & Native Access
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| <br> | <br> | <br> | <br> |
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | ✅ Stable |
 | [FastClipboard](https://github.com/andrestubbe/fastclipboard) | Native clipboard | Win32 API | ✅ Stable |
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | Global hotkeys | Win32 hooks | ✅ Stable |
