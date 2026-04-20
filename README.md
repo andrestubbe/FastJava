@@ -30,8 +30,8 @@
 | [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
 | [FastTheme](https://github.com/andrestubbe/fasttheme) | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
 | [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Java can't** | Native toast notifications — SystemTray is broken |
-| [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **❌ Java can't** | No built-in Java tweening — 8 easings + pooling |
-| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **❌ Java can't** | No built-in Java timelines — sequences + keyframes |
+| [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **❌ Java can't** | Tweening — no Java API |
+| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **❌ Java can't** | Timelines — no Java API |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **❌ Java can't** | Native OCR — 10-50ms vs 500ms+ Tesseract4J |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ Java can't** | WASAPI playback — no Java API |
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ Java can't** | WASAPI capture — no Java API |
