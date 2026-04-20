@@ -216,9 +216,9 @@ Maximum performance through minimal overhead. JNI where it matters. Pure Java wh
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **20 Released** — Available now on GitHub & JitPack
-- 🚧 **15 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
-- 🔄 **27 Planned** — Full 62-module pipeline
+- ✅ **23 Released** — Available now on GitHub & JitPack
+- 🚧 **18 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
+- 🔄 **37 Planned** — Full 78-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress
 
 ---
