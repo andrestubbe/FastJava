@@ -130,8 +130,8 @@ dependencies {
 ### 🎤 Audio
 | Library | Purpose | Tech | Status |
 |---------|---------|------|--------|
-| [FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer) | Low-latency playback | Real WASAPI | � Beta |
-| [FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture) | Real-time capture | Real WASAPI + Loopback | � Beta |
+| [FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer) | Low-latency playback | Real WASAPI | 🔧 Beta |
+| [FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture) | Real-time capture | Real WASAPI + Loopback | 🔧 Beta |
 | FastTTS | Text-to-speech | SAPI5, Azure | 🚧 Q4 2026 |
 | FastSTT | Speech-to-text | Whisper, Cloud | 🚧 Q4 2026 |
 
