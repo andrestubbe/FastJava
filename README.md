@@ -29,7 +29,7 @@
 | [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
 | [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
 | [FastTheme](https://github.com/andrestubbe/fasttheme) | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray deprecated/broken — need native WinRT |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray deprecated/broken → native WinRT |
 | [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
 | [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **Zero overhead** | No built-in timelines — pure Java, zero-GC |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J is slow — native WinRT OCR is instant |
