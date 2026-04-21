@@ -29,12 +29,12 @@
 | [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
 | [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
 | [FastTheme](https://github.com/andrestubbe/fasttheme) | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Java can't** | Native toast notifications — SystemTray broken |
-| [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **❌ Java can't** | Tweening — no Java API |
-| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **❌ Java can't** | Timelines — no Java API |
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **❌ Java can't** | Native OCR — 10-50ms vs 500ms+ Tesseract4J |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ Java can't** | WASAPI playback — no Java API |
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ Java can't** | WASAPI capture — no Java API |
+| [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray is deprecated/broken — need native toasts |
+| [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
+| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **Zero overhead** | No built-in animation timelines — pure Java library |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J is slow — native WinRT OCR is instant |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
