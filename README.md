@@ -32,7 +32,7 @@
 | [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray deprecated/broken → native WinRT |
 | [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
 | [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **Zero overhead** | No built-in timelines — pure Java, zero-GC |
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J is slow — native WinRT OCR is instant |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
 
