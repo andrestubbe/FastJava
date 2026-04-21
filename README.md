@@ -137,7 +137,7 @@
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 | Alpha |
 | FastGPU | GPU compute | OpenCL/Vulkan | TODO |
 
-### 11. Audio
+### 11. Audio & Video
 | Library | Purpose | Tech | State |
 |---------|---------|------|-------|
 | FastAudio | Audio processing | WASAPI | TODO |
