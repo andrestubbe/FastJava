@@ -24,6 +24,10 @@
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
+| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | Filesystem | **8×** | Native mmap scan vs Files.walk() |
+| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | Filesystem | **100-1000×** | Indexed trie vs linear search |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **❌ Java can't** | USN Journal instant events — no Java API |
+| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Filesystem | **Unified** | Index + Search + Watch in one API |
 | [FastCore](https://github.com/andrestubbe/fastcore) | System | — | Cross-platform DLL loader |
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | System | **❌ Java can't** | Global hotkeys — no Java API |
 | [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
@@ -119,6 +123,10 @@
 |---------|---------|------|-------|
 | **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | Alpha |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API | Alpha |
+| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | File indexing | mmap, native scan | Alpha |
+| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | File search | Prefix trie, N-gram | Alpha |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | File monitoring | USN Journal | Alpha |
+| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Unified file system | Index + Search + Watch | Alpha |
 | FastPointer | Native pointer operations | JNI | TODO |
 | FastMemory | System/RAM access | Unsafe | TODO |
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | Alpha |
