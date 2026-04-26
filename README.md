@@ -26,7 +26,7 @@
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | Filesystem | **8×** | Native mmap scan vs Files.walk() |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | Filesystem | **100-1000×** | Indexed trie vs linear search |
-| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **❌ Java can't** | USN Journal instant events — no Java API |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **10-100×** | USN Journal vs Java WatchService polling |
 | **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Filesystem | **Unified** | Index + Search + Watch in one API |
 | [FastCore](https://github.com/andrestubbe/fastcore) | System | — | Cross-platform DLL loader |
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | System | **❌ Java can't** | Global hotkeys — no Java API |
@@ -243,8 +243,8 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **23 Released** — Available now on GitHub & JitPack
-- 🚧 **18 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
+- ✅ **27 Released** — Available now on GitHub & JitPack
+- 🚧 **14 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
 - 🔄 **37 Planned** — Full 78-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress
 
