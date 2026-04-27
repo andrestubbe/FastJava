@@ -20,7 +20,6 @@
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Automation | **10-17×** | DirectX capture vs AWT Robot |
 | **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display | **Instant** | Native DPI/resolution/refresh-rate monitoring |
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | Overlay | **120Hz GPU** | Secondary mouse overlay — DirectComposition |
-| **[FastAI](https://github.com/andrestubbe/FastAI)** | AI | **5min setup** | Unified LLM client — Ollama, OpenAI, Claude |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | System | **5-20×** | Memory-mapped vs java.nio |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
@@ -248,7 +247,7 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **30 Released** — Available now on GitHub & JitPack
+- ✅ **29 Released** — Available now on GitHub & JitPack
 - 🚧 **14 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
 - 🔄 **37 Planned** — Full 78-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress

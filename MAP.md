@@ -22,7 +22,6 @@
 | **FastRobot** | ✅ Stable | DirectX, SendInput | Automation & screen capture | [→](https://github.com/andrestubbe/FastRobot) |
 | **FastDisplay** | 🔧 Beta | Win32, DWM | Native DPI/resolution/refresh-rate monitoring | [→](https://github.com/andrestubbe/FastDisplay) |
 | **FastGhostMouse** | 🔧 Beta | DirectComposition, D2D | 120Hz GPU secondary mouse overlay | [→](https://github.com/andrestubbe/FastGhostMouse) |
-| **FastAI** | 🔧 Beta | REST API | Unified LLM client (Ollama, OpenAI, Claude) | [→](https://github.com/andrestubbe/FastAI) |
 | **FastFloat** | ✅ Stable | SIMD, AVX2 | Float/double parsing (5-12×) | [→](https://github.com/andrestubbe/FastFloat) |
 | **FastString** | ✅ Stable | SIMD, UTF-8 | String ops (10-100×) | [→](https://github.com/andrestubbe/FastString) |
 | **FastBytes** | ✅ Stable | SIMD, AVX2 | Byte operations (2-50×) | [→](https://github.com/andrestubbe/FastBytes) |
@@ -150,11 +149,11 @@
 
 ## 📊 Stats
 
-- **Released:** 23 modules
+- **Released:** 22 modules
 - **Beta/Private:** 3 modules
 - **In Development:** 7 modules
 - **Planned:** 32 modules
-- **Total:** 65 modules
+- **Total:** 64 modules
 
 ---
 
