@@ -18,6 +18,9 @@
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | Graphics | **600%** | GPU DirectX vs Java2D software |
 | **[FastFloat](https://github.com/andrestubbe/fastfloat)** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Automation | **10-17×** | DirectX capture vs AWT Robot |
+| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display | **Instant** | Native DPI/resolution/refresh-rate monitoring |
+| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | Overlay | **120Hz GPU** | Secondary mouse overlay — DirectComposition |
+| **[FastAI](https://github.com/andrestubbe/FastAI)** | AI | **5min setup** | Unified LLM client — Ollama, OpenAI, Claude |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | System | **5-20×** | Memory-mapped vs java.nio |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
@@ -72,6 +75,8 @@
 | Library | Purpose | Tech | State |
 |---------|---------|------|-------|
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput | Alpha |
+| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | GPU secondary mouse overlay | DirectComposition, D2D | Alpha |
+| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display/DPI monitoring | Win32, DWM | Alpha |
 | FastWindow | Window management | Win32 API | TODO |
 | FastWindowHook | Window hooks | Win32 | TODO |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | Alpha |
@@ -243,7 +248,7 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **27 Released** — Available now on GitHub & JitPack
+- ✅ **30 Released** — Available now on GitHub & JitPack
 - 🚧 **14 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
 - 🔄 **37 Planned** — Full 78-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress
