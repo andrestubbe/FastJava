@@ -52,14 +52,16 @@
 | Library | Purpose | Tech | State |
 |---------|---------|------|-------|
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks | Alpha |
-| FastInput | Raw input reading | RawInput API | TODO |
+| FastMouse | Raw mouse reading | RawInput API | TODO |
+| FastKeyboard | Raw keyboard reading | RawInput API | TODO |
 | FastInputHook | Global input hooks | SetWindowsHookEx | TODO |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch | Alpha |
 | **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER | Alpha |
 | FastMicrophone | Mic capture | WASAPI | TODO |
 | FastCamera | Webcam capture | DirectShow | TODO |
 | FastGamepad | Controller support | XInput, DirectInput | TODO |
-| FastSpeechInput | Speech-to-text input | Whisper | TODO |
+| FastSTT | Speech-to-text | Whisper/Cloud | TODO |
+| FastWakeWord | Wake word detection | ONNX | TODO |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR | Alpha |
 
 ### 2. Output
@@ -68,7 +70,7 @@
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU | Alpha |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX | Alpha |
 | FastOverlay | Game overlays | DirectX | TODO |
-| FastSpeechOutput | Text-to-speech output | SAPI5, Azure | TODO |
+| FastTTS | Text-to-speech output | Piper/Cloud | TODO |
 
 ### 3. Automation
 | Library | Purpose | Tech | State |
@@ -82,8 +84,7 @@
 | FastFileWatch | File notifications | ReadDirectoryChangesW | TODO |
 | FastProcess | Process management | Win32 API | TODO |
 | FastScheduler | Task scheduler | Priority queue | TODO |
-| FastMonitor | System monitoring | WMI | TODO |
-| FastMetrics | Performance metrics | Zero-GC | TODO |
+| FastHardware | Global hardware telemetry | PDH/WMI | TODO |
 | FastDWM | VSync & timing | DWM API | TODO |
 
 ### 4. Parsing

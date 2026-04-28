@@ -35,7 +35,7 @@
 
 ## � Coming Soon (No Links Yet)
 
-**Q2 2026:** FastAI (Unified AI), FastInput (RawInput), FastGamepad (XInput)  
+**Q2 2026:** FastAI (Unified AI), FastMouse & FastKeyboard (RawInput), FastGamepad (XInput)  
 **Q3 2026:** FastVision (GPU shaders), FastAudio (WASAPI), FastWindow, FastProcess, FastFileWatch  
 **Q4 2026:** FastOverlay, FastDWM  
 **2027+:** FastHash, FastAudioCapture, FastTTS, FastSTT, FastVectorDB, FastRAG, FastMCP
@@ -56,6 +56,7 @@
 | FastProcessWatch | Process start/stop triggers | Win32 Events |
 | FastWindowEvents | Window move/resize events | Win32 Hooks |
 | FastSystemMetrics | Mouse speed, drag threshold | Win32 API |
+| FastHardware | Global CPU/RAM/Disk/Thermal stats | PDH/WMI |
 | FastNotifications (Linux) | Linux native notifications | DBus |
 | FastNotifications (macOS) | macOS native notifications | UNUserNotificationCenter |
 
@@ -63,7 +64,7 @@
 | Module | Purpose | Tech |
 |--------|---------|------|
 | FastDisplay | Direct framebuffer access | GPU |
-| FastColorSearch | SIMD pixel pattern matching | AVX2/SSE4 |
+| FastImageSearch | SIMD pixel pattern matching | AVX2/SSE4 |
 | FastGPUCopy | Zero-copy GPU↔CPU transfers | DMA |
 
 ### Data & Algorithms
@@ -115,8 +116,8 @@
 │  FastTouch      │  FastClipboard │  FastImage    │  FastJSON  │
 │  FastStylus     │  FastTheme     │  FastGraphics │  FastFloat │
 │  FastRobot      │  FastWindow    │  FastDisplay  │  FastString│
-│  FastInput      │  FastProcess   │  FastOverlay  │  FastBytes │
-│  FastGamepad    │  FastFileWatch │  FastColor    │  FastHash  │
+│  FastMouse      │  FastProcess   │  FastOverlay  │  FastBytes │
+│  FastKeyboard   │  FastFileWatch │  FastImageSearch│  FastHash  │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
