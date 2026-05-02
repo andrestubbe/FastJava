@@ -30,13 +30,15 @@
 | **FastIO** | ✅ Stable | IOCP, Memory-mapped | File I/O (5-20×) | [→](https://github.com/andrestubbe/FastIO) |
 | **FastTween** | ✅ Stable | Object pooling | Tweening engine | [→](https://github.com/andrestubbe/FastTween) |
 | **FastAnimation** | ✅ Stable | Timeline | Animation orchestration | [→](https://github.com/andrestubbe/FastAnimation) |
+| **FastWindow** | 🔧 Alpha | Win32, JNI | Native window management engine | [→](https://github.com/andrestubbe/FastWindow) |
+| **FastKeyboard** | 🔧 Alpha | RawInput, JNI | Low-latency keyboard capture | [→](https://github.com/andrestubbe/FastKeyboard) |
 
 ---
 
 ## � Coming Soon (No Links Yet)
 
-**Q2 2026:** FastAI (Unified AI), FastMouse & FastKeyboard (RawInput), FastGamepad (XInput)  
-**Q3 2026:** FastVision (GPU shaders), FastAudio (WASAPI), FastWindow, FastProcess, FastFileWatch  
+**Q2 2026:** FastAI (Unified AI), FastMouse, FastGamepad (XInput)  
+**Q3 2026:** FastVision (GPU shaders), FastAudio (WASAPI), FastProcess, FastFileWatch  
 **Q4 2026:** FastOverlay, FastDWM  
 **2027+:** FastHash, FastAudioCapture, FastTTS, FastSTT, FastVectorDB, FastRAG, FastMCP
 

@@ -27,6 +27,8 @@
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | Filesystem | **8×** | Native mmap scan vs Files.walk() |
+| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | UI/Engine | **8×** | Flicker-free native resize vs standard JFrame |
+| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | Input | **16×** | RawInput vs standard AWT KeyListener |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | Filesystem | **100-1000×** | Indexed trie vs linear search |
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **10-100×** | USN Journal vs Java WatchService polling |
 | **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Filesystem | **Unified** | Index + Search + Watch in one API |
@@ -34,13 +36,64 @@
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | System | **❌ Java can't** | Global hotkeys — no Java API |
 | [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
 | [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
-| [FastTheme](https://github.com/andrestubbe/fasttheme) | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
+| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
 | [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray deprecated/broken → native WinRT |
 | [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
 | [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **Zero overhead** | No built-in timelines — pure Java, zero-GC |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
+
+## Installation
+
+### Option 1: Maven (Recommended)
+Add the JitPack repository and the dependencies to your `pom.xml`:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <!-- FastJava Umbrella Library -->
+    <dependency>
+        <groupId>io.github.andrestubbe</groupId>
+        <artifactId>fastjava</artifactId>
+        <version>v0.1.0</version>
+    </dependency>
+
+    <!-- FastCore (Required Native Loader) -->
+    <dependency>
+        <groupId>com.github.andrestubbe</groupId>
+        <artifactId>fastcore</artifactId>
+        <version>v1.0.0</version>
+    </dependency>
+</dependencies>
+```
+
+### Option 2: Gradle (via JitPack)
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'io.github.andrestubbe:fastjava:v0.1.0'
+    implementation 'com.github.andrestubbe:fastcore:v1.0.0'
+}
+```
+
+### Option 3: Direct Download (No Build Tool)
+Download the latest JARs directly to add them to your classpath:
+
+1.  📦 **[fastjava-v0.1.0.jar](https://github.com/andrestubbe/fastjava/releases)** (The Core Library)
+2.  ⚙️ **[fastcore-v1.0.0.jar](https://github.com/andrestubbe/FastCore/releases)** (The Mandatory Native Loader)
+
+> [!IMPORTANT]
+> Both JARs must be in your classpath for the native JNI calls to function correctly.
 
 **Zero-GC.** **Zero-Copy.** **Native Speed.**
 
@@ -52,8 +105,8 @@
 | Library | Purpose | Tech | State |
 |---------|---------|------|-------|
 | **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks | Alpha |
-| FastMouse | Raw mouse reading | RawInput API | TODO |
-| FastKeyboard | Raw keyboard reading | RawInput API | TODO |
+| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | Raw keyboard reading | RawInput API | Alpha |
+| **[FastMouse](https://github.com/andrestubbe/FastMouse)** | Raw mouse reading | RawInput API | TODO |
 | FastInputHook | Global input hooks | SetWindowsHookEx | TODO |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch | Alpha |
 | **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER | Alpha |
@@ -78,7 +131,7 @@
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput | Alpha |
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | GPU secondary mouse overlay | DirectComposition, D2D | Alpha |
 | **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display/DPI monitoring | Win32, DWM | Alpha |
-| FastWindow | Window management | Win32 API | TODO |
+| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | Window management | Win32 API | Alpha |
 | FastWindowHook | Window hooks | Win32 | TODO |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | Alpha |
 | FastFileWatch | File notifications | ReadDirectoryChangesW | TODO |
