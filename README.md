@@ -21,7 +21,7 @@
 | **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display | **Instant** | Native DPI/resolution/refresh-rate monitoring |
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | Overlay | **120Hz GPU** | Secondary mouse overlay — DirectComposition |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | System | **5-20×** | Memory-mapped vs java.nio |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | System | **2.5-11×** | AVX2 Search, DMA Copy, mmap |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
@@ -43,59 +43,6 @@
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
-
-## Installation
-
-### Option 1: Maven (Recommended)
-Add the JitPack repository and the dependencies to your `pom.xml`:
-
-```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-
-<dependencies>
-    <!-- FastJava Umbrella Library -->
-    <dependency>
-        <groupId>io.github.andrestubbe</groupId>
-        <artifactId>fastjava</artifactId>
-        <version>v0.1.0</version>
-    </dependency>
-
-    <!-- FastCore (Required Native Loader) -->
-    <dependency>
-        <groupId>com.github.andrestubbe</groupId>
-        <artifactId>fastcore</artifactId>
-        <version>v1.0.0</version>
-    </dependency>
-</dependencies>
-```
-
-### Option 2: Gradle (via JitPack)
-```groovy
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-
-dependencies {
-    implementation 'io.github.andrestubbe:fastjava:v0.1.0'
-    implementation 'com.github.andrestubbe:fastcore:v1.0.0'
-}
-```
-
-### Option 3: Direct Download (No Build Tool)
-Download the latest JARs directly to add them to your classpath:
-
-1.  📦 **[fastjava-v0.1.0.jar](https://github.com/andrestubbe/fastjava/releases)** (The Core Library)
-2.  ⚙️ **[fastcore-v1.0.0.jar](https://github.com/andrestubbe/FastCore/releases)** (The Mandatory Native Loader)
-
-> [!IMPORTANT]
-> Both JARs must be in your classpath for the native JNI calls to function correctly.
-
-**Zero-GC.** **Zero-Copy.** **Native Speed.**
 
 ---
 
@@ -179,7 +126,7 @@ Download the latest JARs directly to add them to your classpath:
 ### 8. System
 | Library | Purpose | Tech | State |
 |---------|---------|------|-------|
-| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | Alpha |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | Released |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API | Alpha |
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | File indexing | mmap, native scan | Alpha |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | File search | Prefix trie, N-gram | Alpha |
