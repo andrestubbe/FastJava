@@ -43,6 +43,9 @@
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
+| **[FastUIA](https://github.com/andrestubbe/fastuia)** | Automation | **Real-time** | Direct UIA access vs slow polling |
+| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Data | **O(n)** | Deterministic code analysis, zero-dependency |
+| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Graphics | **Off-heap** | Native PDF/HTML/SVG rasterization |
 
 ---
 
@@ -69,6 +72,7 @@
 |---------|---------|------|-------|
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU | Alpha |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX | Alpha |
+| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Native content preview | PDFium, WebView2 | Alpha |
 | FastOverlay | Game overlays | DirectX | TODO |
 | FastTTS | Text-to-speech output | Piper/Cloud | TODO |
 
@@ -79,9 +83,9 @@
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | GPU secondary mouse overlay | DirectComposition, D2D | Alpha |
 | **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display/DPI monitoring | Win32, DWM | Alpha |
 | **[FastWindow](https://github.com/andrestubbe/FastWindow)** | Window management | Win32 API | Alpha |
+| **[FastUIA](https://github.com/andrestubbe/fastuia)** | UI Automation | Native UIA | Alpha |
 | FastWindowHook | Window hooks | Win32 | TODO |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | Alpha |
-| FastFileWatch | File notifications | ReadDirectoryChangesW | TODO |
 | FastProcess | Process management | Win32 API | TODO |
 | FastScheduler | Task scheduler | Priority queue | TODO |
 | FastHardware | Global hardware telemetry | PDH/WMI | TODO |
@@ -93,6 +97,7 @@
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 | Alpha |
 | **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 | Alpha |
 | **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing | Alpha |
+| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Code analysis | Deterministic | Alpha |
 | FastHTML | HTML parser | SIMD | TODO |
 | FastRegex | SIMD regex engine | AVX2 | TODO |
 | FastCSV | CSV parser | SIMD | TODO |
@@ -254,10 +259,6 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 - ✅ Windows fully supported — Linux/macOS in progress
 
 ---
-
-## 📜 License
-
-MIT License — See [LICENSE](LICENSE)
 
 ---
 
