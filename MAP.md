@@ -32,6 +32,9 @@
 | **FastAnimation** | ✅ Stable | Timeline | Animation orchestration | [→](https://github.com/andrestubbe/FastAnimation) |
 | **FastWindow** | 🔧 Alpha | Win32, JNI | Native window management engine | [→](https://github.com/andrestubbe/FastWindow) |
 | **FastKeyboard** | 🔧 Alpha | RawInput, JNI | Low-latency keyboard capture | [→](https://github.com/andrestubbe/FastKeyboard) |
+| **FastUIA** | 🔧 Alpha | Native UIA | Native Windows UI Automation | [→](https://github.com/andrestubbe/FastUIA) |
+| **FastTokenizer** | 🔧 Alpha | Deterministic | Lightweight code analysis | [→](https://github.com/andrestubbe/FastTokenizer) |
+| **FastPreview** | 🔧 Alpha | PDFium, WV2 | High-speed content rendering | [→](https://github.com/andrestubbe/FastPreview) |
 
 ---
 
@@ -111,16 +114,16 @@
 ## 🎯 Module Categories
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  INPUT          │  SYSTEM        │  DISPLAY      │  DATA      │
-├─────────────────────────────────────────────────────────────┤
-│  FastHotkey     │  FastCore      │  FastScreen   │  FastIO    │
-│  FastTouch      │  FastClipboard │  FastImage    │  FastJSON  │
-│  FastStylus     │  FastTheme     │  FastGraphics │  FastFloat │
-│  FastRobot      │  FastWindow    │  FastDisplay  │  FastString│
-│  FastMouse      │  FastProcess   │  FastOverlay  │  FastBytes │
-│  FastKeyboard   │  FastFileWatch │  FastImageSearch│  FastHash  │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  INPUT          │  SYSTEM          │  DISPLAY          │  DATA              │
+├─────────────────┼──────────────────┼───────────────────┼────────────────────┤
+│  FastHotkey     │  FastCore        │  FastScreen       │  FastIO            │
+│  FastTouch      │  FastClipboard   │  FastImage        │  FastJSON          │
+│  FastStylus     │  FastTheme       │  FastGraphics     │  FastFloat         │
+│  FastRobot      │  FastWindow      │  FastDisplay      │  FastString        │
+│  FastMouse      │  FastUIA         │  FastOverlay      │  FastBytes         │
+│  FastKeyboard   │  FastFileWatch   │  FastPreview      │  FastTokenizer     │
+└─────────────────┴──────────────────┴───────────────────┴────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
 │  AUDIO          │  AI            │  UTILS        │  DEBUG   │
@@ -152,10 +155,10 @@
 
 ## 📊 Stats
 
-- **Released:** 22 modules
+- **Released:** 25 modules
 - **Beta/Private:** 3 modules
 - **In Development:** 7 modules
-- **Planned:** 32 modules
+- **Planned:** 29 modules
 - **Total:** 64 modules
 
 ---
