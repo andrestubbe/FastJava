@@ -43,9 +43,9 @@
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
-| **[FastUIA](https://github.com/andrestubbe/fastuia)** | Automation | **Real-time** | Direct UIA access vs slow polling |
-| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Data | **O(n)** | Deterministic code analysis, zero-dependency |
-| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Graphics | **Off-heap** | Native PDF/HTML/SVG rasterization |
+| **[FastUIA](https://github.com/andrestubbe/fastuia)** | Automation | **❌ Java can't** | Native UIA vs slow polling |
+| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Data | **10-25×** | O(n) SIMD scanner vs slow Scanner/Regex |
+| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Graphics | **❌ Java can't** | Native rasterization vs slow Swing/Batik |
 
 ---
 
