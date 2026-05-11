@@ -12,40 +12,40 @@
 
 | Library | Category | Speed vs Standard Java | Key Metrics |
 |---------|----------|------------------------|-------------|
-| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Data | **50×** | 50× faster than Jackson/Gson, zero-GC |
-| **[FastString](https://github.com/andrestubbe/faststring)** | Text | **10-100×** | UTF-8 ops vs Java String, 50% less memory |
-| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Graphics | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot |
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | Graphics | **600%** | GPU DirectX vs Java2D software |
-| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
+| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | Animation | **Zero overhead** | No built-in timelines — pure Java, zero-GC |
+| **[FastTween](https://github.com/andrestubbe/fasttween)** | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Automation | **10-17×** | DirectX capture vs AWT Robot |
-| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display | **Instant** | Native DPI/resolution/refresh-rate monitoring |
-| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | Overlay | **120Hz GPU** | Secondary mouse overlay — DirectComposition |
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | System | **2.5-11×** | AVX2 Search, DMA Copy, mmap |
-| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
+| **[FastUIA](https://github.com/andrestubbe/fastuia)** | Automation | **❌ Java can't** | Native UIA vs slow polling |
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Data | **50×** | 50× faster than Jackson/Gson, zero-GC |
+| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Data | **10-25×** | O(n) SIMD scanner vs slow Scanner/Regex |
+| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display | **Instant** | Native DPI/resolution/refresh-rate monitoring |
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | Filesystem | **8×** | Native mmap scan vs Files.walk() |
-| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | UI/Engine | **8×** | Flicker-free native resize vs standard JFrame |
-| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | Input | **16×** | RawInput vs standard AWT KeyListener |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | Filesystem | **100-1000×** | Indexed trie vs linear search |
-| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **10-100×** | USN Journal vs Java WatchService polling |
 | **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Filesystem | **Unified** | Index + Search + Watch in one API |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **10-100×** | USN Journal vs Java WatchService polling |
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | Graphics | **600%** | GPU DirectX vs Java2D software |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
+| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Graphics | **❌ Java can't** | Native rasterization vs slow Swing/Batik |
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Graphics | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot |
+| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | Input | **16×** | RawInput vs standard AWT KeyListener |
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
+| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | Overlay | **120Hz GPU** | Secondary mouse overlay — DirectComposition |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
 | [FastCore](https://github.com/andrestubbe/fastcore) | System | — | Cross-platform DLL loader |
 | [FastHotkey](https://github.com/andrestubbe/fasthotkey) | System | **❌ Java can't** | Global hotkeys — no Java API |
-| [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | System | **2.5-11×** | AVX2 Search, DMA Copy, mmap |
 | [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
-| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
+| [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
+| **[FastString](https://github.com/andrestubbe/faststring)** | Text | **10-100×** | UTF-8 ops vs Java String, 50% less memory |
 | [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray deprecated/broken → native WinRT |
-| [FastTween](https://github.com/andrestubbe/fasttween) | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
-| [FastAnimation](https://github.com/andrestubbe/fastanimation) | Animation | **Zero overhead** | No built-in timelines — pure Java, zero-GC |
+| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
+| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | UI/Engine | **8×** | Flicker-free native resize vs standard JFrame |
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
-| **[FastUIA](https://github.com/andrestubbe/fastuia)** | Automation | **❌ Java can't** | Native UIA vs slow polling |
-| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Data | **10-25×** | O(n) SIMD scanner vs slow Scanner/Regex |
-| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Graphics | **❌ Java can't** | Native rasterization vs slow Swing/Batik |
 
 ---
 
