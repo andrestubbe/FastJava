@@ -8,28 +8,28 @@
 
 | Module | Status | Tech Stack | Purpose | Link |
 |--------|--------|------------|---------|------|
-| **FastCore** | ✅ Stable | JNI, DLL loader | Cross-platform native lib loader | [→](https://github.com/andrestubbe/FastCore) |
-| **FastClipboard** | ✅ Stable | Win32, JNI | Native clipboard (2-3× faster) | [→](https://github.com/andrestubbe/FastClipboard) |
-| **FastHotkey** | ✅ Stable | Win32 hooks, JNI | Global system-wide hotkeys | [→](https://github.com/andrestubbe/FastHotkey) |
-| **FastTouch** | ✅ Stable | Win32 touch, JNI | Multi-touch & pressure input | [→](https://github.com/andrestubbe/FastTouch) |
-| **FastStylus** | ✅ Stable | WM_POINTER, JNI | Pen pressure, tilt, eraser | [→](https://github.com/andrestubbe/FastStylus) |
-| **FastTheme** | 🔧 Beta | WinRT, DWM | Native Windows theming | [→](https://github.com/andrestubbe/FastTheme) |
-| **FastScreen** | ✅ Stable | DXGI, DirectX | 500-2000 FPS screen capture | [→](https://github.com/andrestubbe/FastScreen) |
-| **FastImage** | 🔧 Beta | SIMD, AVX2 | SIMD image processing | [→](https://github.com/andrestubbe/FastImage) |
-| **FastImageView** | 🔧 Beta | DirectX | DirectX image viewer | [→](https://github.com/andrestubbe/FastImageView) |
-| **FastGraphics** | 🔧 Beta | DirectX, GPU | GPU-accelerated Graphics2D | [→](https://github.com/andrestubbe/FastGraphics) |
-| **FastNotification** | ✅ Stable | WinRT, Toast | Native Windows notifications | [→](https://github.com/andrestubbe/FastNotification) |
-| **FastRobot** | ✅ Stable | DirectX, SendInput | Automation & screen capture | [→](https://github.com/andrestubbe/FastRobot) |
-| **FastDisplay** | 🔧 Beta | Win32, DWM | Native DPI/resolution/refresh-rate monitoring | [→](https://github.com/andrestubbe/FastDisplay) |
-| **FastGhostMouse** | 🔧 Beta | DirectComposition, D2D | 120Hz GPU secondary mouse overlay | [→](https://github.com/andrestubbe/FastGhostMouse) |
-| **FastFloat** | ✅ Stable | SIMD, AVX2 | Float/double parsing (5-12×) | [→](https://github.com/andrestubbe/FastFloat) |
-| **FastString** | ✅ Stable | SIMD, UTF-8 | String ops (10-100×) | [→](https://github.com/andrestubbe/FastString) |
-| **FastBytes** | ✅ Stable | SIMD, AVX2 | Byte operations (2-50×) | [→](https://github.com/andrestubbe/FastBytes) |
-| **FastJSON** | ✅ Stable | SIMD, Zero-copy | JSON parser (50×) | [→](https://github.com/andrestubbe/FastJSON) |
-| **FastMath** | 🔧 Beta | OpenCL, SIMD | GPU + SIMD math (3-8×) | [→](https://github.com/andrestubbe/FastMath) |
-| **FastIO** | ✅ Stable | AVX2, DMA, mmap | SIMD-Search & Fast I/O (2-11×) | [→](https://github.com/andrestubbe/FastIO) |
-| **FastTween** | ✅ Stable | Object pooling | Tweening engine | [→](https://github.com/andrestubbe/FastTween) |
-| **FastAnimation** | ✅ Stable | Timeline | Animation orchestration | [→](https://github.com/andrestubbe/FastAnimation) |
+| **FastCore** | 🔧 Alpha | JNI, DLL loader | Cross-platform native lib loader | [→](https://github.com/andrestubbe/FastCore) |
+| **FastClipboard** | 🔧 Alpha | Win32, JNI | Native clipboard (2-3× faster) | [→](https://github.com/andrestubbe/FastClipboard) |
+| **FastHotkey** | 🔧 Alpha | Win32 hooks, JNI | Global system-wide hotkeys | [→](https://github.com/andrestubbe/FastHotkey) |
+| **FastTouch** | 🔧 Alpha | Win32 touch, JNI | Multi-touch & pressure input | [→](https://github.com/andrestubbe/FastTouch) |
+| **FastStylus** | 🔧 Alpha | WM_POINTER, JNI | Pen pressure, tilt, eraser | [→](https://github.com/andrestubbe/FastStylus) |
+| **FastTheme** | 🔧 Alpha | WinRT, DWM | Native Windows theming | [→](https://github.com/andrestubbe/FastTheme) |
+| **FastScreen** | 🔧 Alpha | DXGI, DirectX | 500-2000 FPS screen capture | [→](https://github.com/andrestubbe/FastScreen) |
+| **FastImage** | 🔧 Alpha | SIMD, AVX2 | SIMD image processing | [→](https://github.com/andrestubbe/FastImage) |
+| **FastImageView** | 🔧 Alpha | DirectX | DirectX image viewer | [→](https://github.com/andrestubbe/FastImageView) |
+| **FastGraphics** | 🔧 Alpha | DirectX, GPU | GPU-accelerated Graphics2D | [→](https://github.com/andrestubbe/FastGraphics) |
+| **FastNotification** | 🔧 Alpha | WinRT, Toast | Native Windows notifications | [→](https://github.com/andrestubbe/FastNotification) |
+| **FastRobot** | 🔧 Alpha | DirectX, SendInput | Automation & screen capture | [→](https://github.com/andrestubbe/FastRobot) |
+| **FastDisplay** | 🔧 Alpha | Win32, DWM | Native DPI/resolution/refresh-rate monitoring | [→](https://github.com/andrestubbe/FastDisplay) |
+| **FastGhostMouse** | 🔧 Alpha | DirectComposition, D2D | 120Hz GPU secondary mouse overlay | [→](https://github.com/andrestubbe/FastGhostMouse) |
+| **FastFloat** | 🔧 Alpha | SIMD, AVX2 | Float/double parsing (5-12×) | [→](https://github.com/andrestubbe/FastFloat) |
+| **FastString** | 🔧 Alpha | SIMD, UTF-8 | String ops (10-100×) | [→](https://github.com/andrestubbe/FastString) |
+| **FastBytes** | 🔧 Alpha | SIMD, AVX2 | Byte operations (2-50×) | [→](https://github.com/andrestubbe/FastBytes) |
+| **FastJSON** | 🔧 Alpha | SIMD, Zero-copy | JSON parser (50×) | [→](https://github.com/andrestubbe/FastJSON) |
+| **FastMath** | 🔧 Alpha | OpenCL, SIMD | GPU + SIMD math (3-8×) | [→](https://github.com/andrestubbe/FastMath) |
+| **FastIO** | 🔧 Alpha | AVX2, DMA, mmap | SIMD-Search & Fast I/O (2-11×) | [→](https://github.com/andrestubbe/FastIO) |
+| **FastTween** | 🔧 Alpha | Object pooling | Tweening engine | [→](https://github.com/andrestubbe/FastTween) |
+| **FastAnimation** | 🔧 Alpha | Timeline | Animation orchestration | [→](https://github.com/andrestubbe/FastAnimation) |
 | **FastWindow** | 🔧 Alpha | Win32, JNI | Native window management engine | [→](https://github.com/andrestubbe/FastWindow) |
 | **FastKeyboard** | 🔧 Alpha | RawInput, JNI | Low-latency keyboard capture | [→](https://github.com/andrestubbe/FastKeyboard) |
 | **FastUIA** | 🔧 Alpha | Native UIA | Native Windows UI Automation | [→](https://github.com/andrestubbe/FastUIA) |
@@ -155,9 +155,9 @@
 
 ## 📊 Stats
 
-- **Released:** 25 modules
-- **Beta/Private:** 3 modules
-- **In Development:** 7 modules
+- **Released (Alpha):** 25 modules
+- **Beta/Private:** 0 modules
+- **In Development:** 10 modules
 - **Planned:** 29 modules
 - **Total:** 64 modules
 
@@ -167,7 +167,6 @@
 
 - [🏠 FastJava Organization](https://github.com/andrestubbe)
 - [⚡ Main README](https://github.com/andrestubbe/FastJava/blob/main/README.md)
-- [🚀 New README2](https://github.com/andrestubbe/FastJava/blob/main/README2.md)
 - [📦 JitPack Repository](https://jitpack.io/#andrestubbe)
 
 ---

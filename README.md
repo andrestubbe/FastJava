@@ -8,183 +8,128 @@
 
 ---
 
-## 🚀 Performance Dashboard
+## 🗺️ The Ecosystem Map
 
-| Library | Category | Speed vs Standard Java | Key Metrics |
-|---------|----------|------------------------|-------------|
-| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | Animation | **Zero overhead** | No built-in timelines — pure Java, zero-GC |
-| **[FastTween](https://github.com/andrestubbe/fasttween)** | Animation | **Zero overhead** | No built-in tweening — roll your own or use this |
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Audio | **❌ No WASAPI** | Java Sound API only — no system audio capture |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Audio | **❌ No WASAPI** | Java Sound API only — no low-latency audio |
-| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Automation | **10-17×** | DirectX capture vs AWT Robot |
-| **[FastUIA](https://github.com/andrestubbe/fastuia)** | Automation | **❌ Java can't** | Native UIA vs slow polling |
-| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Data | **2-50×** | AVX2 bulk ops vs standard Java |
-| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Data | **50×** | 50× faster than Jackson/Gson, zero-GC |
-| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Data | **10-25×** | O(n) SIMD scanner vs slow Scanner/Regex |
-| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display | **Instant** | Native DPI/resolution/refresh-rate monitoring |
-| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | Filesystem | **8×** | Native mmap scan vs Files.walk() |
-| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | Filesystem | **100-1000×** | Indexed trie vs linear search |
-| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Filesystem | **Unified** | Index + Search + Watch in one API |
-| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | Filesystem | **10-100×** | USN Journal vs Java WatchService polling |
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | Graphics | **600%** | GPU DirectX vs Java2D software |
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | Graphics | **10-50×** | SIMD resize/blur vs BufferedImage |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | Graphics | **10×** | 200ms startup vs 2s Swing |
-| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Graphics | **❌ Java can't** | Native rasterization vs slow Swing/Batik |
-| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | Graphics | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot |
-| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | Input | **16×** | RawInput vs standard AWT KeyListener |
-| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | Math | **5-12×** | SIMD parsing vs Float.parseFloat() |
-| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math |
-| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | Overlay | **120Hz GPU** | Secondary mouse overlay — DirectComposition |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | System | **2-3×** | Native vs AWT, zero bugs |
-| [FastCore](https://github.com/andrestubbe/fastcore) | System | — | Cross-platform DLL loader |
-| [FastHotkey](https://github.com/andrestubbe/fasthotkey) | System | **❌ Java can't** | Global hotkeys — no Java API |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | System | **2.5-11×** | AVX2 Search, DMA Copy, mmap |
-| [FastStylus](https://github.com/andrestubbe/faststylus) | System | **❌ Java can't** | Pen tilt/eraser — no Java API exists |
-| [FastTouch](https://github.com/andrestubbe/fasttouch) | System | **❌ Java can't** | Multi-touch pressure — no Java API exists |
-| **[FastString](https://github.com/andrestubbe/faststring)** | Text | **10-100×** | UTF-8 ops vs Java String, 50% less memory |
-| [FastNotification](https://github.com/andrestubbe/fastnotification) | UI | **❌ Broken in Java** | SystemTray deprecated/broken → native WinRT |
-| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | UI | **❌ Java can't** | Native Windows theming — no Java API exists |
-| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | UI/Engine | **8×** | Flicker-free native resize vs standard JFrame |
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Vision | **10× faster** | Tesseract4J slow → native WinRT OCR instant |
-
----
-
-## 🗺️ Ecosystem Overview — 13 Categories
+A unified directory of all FastJava modules. Categorized by functional domain, including real-world performance benchmarks.
 
 ### 1. Input
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | Global hotkeys | Win32 hooks | Alpha |
-| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | Raw keyboard reading | RawInput API | Alpha |
-| **[FastMouse](https://github.com/andrestubbe/FastMouse)** | Raw mouse reading | RawInput API | TODO |
-| FastInputHook | Global input hooks | SetWindowsHookEx | TODO |
-| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | Multi-touch & pressure | Win32 touch | Alpha |
-| **[FastStylus](https://github.com/andrestubbe/faststylus)** | Pen pressure, tilt | WM_POINTER | Alpha |
-| FastMicrophone | Mic capture | WASAPI | TODO |
-| FastCamera | Webcam capture | DirectShow | TODO |
-| FastGamepad | Controller support | XInput, DirectInput | TODO |
-| FastSTT | Speech-to-text | Whisper/Cloud | TODO |
-| FastWakeWord | Wake word detection | ONNX | TODO |
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | Text recognition | WinRT OCR | Alpha |
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastHotkey](https://github.com/andrestubbe/fasthotkey)** | **❌ Java can't** | Global hotkeys — no Java API | Win32 hooks | Alpha |
+| **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | **16×** | RawInput vs standard AWT KeyListener | RawInput API | Alpha |
+| **[FastTouch](https://github.com/andrestubbe/fasttouch)** | **❌ Java can't** | Multi-touch pressure — no Java API | Win32 touch | Alpha |
+| **[FastStylus](https://github.com/andrestubbe/faststylus)** | **❌ Java can't** | Pen tilt/eraser — no Java API exists | WM_POINTER | Alpha |
+| FastMouse | — | Raw mouse reading | RawInput API | TODO |
+| FastGamepad | — | Controller support | XInput | TODO |
 
 ### 2. Output
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | GPU-accelerated Graphics2D | DirectX, GPU | Alpha |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | DirectX image viewer | DirectX | Alpha |
-| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | Native content preview | PDFium, WebView2 | Alpha |
-| FastOverlay | Game overlays | DirectX | TODO |
-| FastTTS | Text-to-speech output | Piper/Cloud | TODO |
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | **Instant** | Native DPI/resolution/refresh-rate | Win32, DWM | Alpha |
+| FastDWM | — | VSync & timing | DWM API | TODO |
 
 ### 3. Automation
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | Screen capture & automation | DirectX, SendInput | Alpha |
-| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | GPU secondary mouse overlay | DirectComposition, D2D | Alpha |
-| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | Display/DPI monitoring | Win32, DWM | Alpha |
-| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | Window management | Win32 API | Alpha |
-| **[FastUIA](https://github.com/andrestubbe/fastuia)** | UI Automation | Native UIA | Alpha |
-| FastWindowHook | Window hooks | Win32 | TODO |
-| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | Native notifications | WinRT, Toast | Alpha |
-| FastProcess | Process management | Win32 API | TODO |
-| FastScheduler | Task scheduler | Priority queue | TODO |
-| FastHardware | Global hardware telemetry | PDH/WMI | TODO |
-| FastDWM | VSync & timing | DWM API | TODO |
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastRobot](https://github.com/andrestubbe/fastrobot)** | **10-17×** | DirectX capture vs AWT Robot | DirectX | Alpha |
+| **[FastUIA](https://github.com/andrestubbe/fastuia)** | **❌ Java can't** | Native UIA vs slow polling | Native UIA | Alpha |
+| **[FastWindow](https://github.com/andrestubbe/FastWindow)** | **8×** | Flicker-free resize vs standard JFrame | Win32 API | Alpha |
+| FastProcess | — | Process management | Win32 API | TODO |
+| FastScheduler | — | Task scheduler | Priority queue | TODO |
 
-### 4. Parsing
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | Bulk byte ops | AVX2, SSE4 | Alpha |
-| **[FastString](https://github.com/andrestubbe/faststring)** | UTF-8 string ops | SIMD, AVX2 | Alpha |
-| **[FastJSON](https://github.com/andrestubbe/fastjson)** | Zero-copy JSON | SIMD parsing | Alpha |
-| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | Code analysis | Deterministic | Alpha |
-| FastHTML | HTML parser | SIMD | TODO |
-| FastRegex | SIMD regex engine | AVX2 | TODO |
-| FastCSV | CSV parser | SIMD | TODO |
-| FastXML | XML parser | SAX/DOM | TODO |
-| FastURL | URL parser | Zero-copy | TODO |
-| FastHash | SIMD hashing | AVX2 | TODO |
-| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | SIMD float parsing | AVX2, SSE4 | Alpha |
-| **[FastMath](https://github.com/andrestubbe/fastmath)** | Math acceleration | OpenCL, SIMD | Alpha |
-| FastSIMD | SIMD operations framework | AVX2/AVX-512 | TODO |
-| FastSpeechProcessing | Audio speech processing | DSP | TODO |
+### 4. Graphics
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha |
+| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | **❌ Java can't** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha |
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha |
+| **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha |
+| FastOverlay | — | Game overlays | DirectX | TODO |
 
-### 5. Compression
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastCompress | Fast compression | LZ4/zstd | TODO |
+### 5. Audio
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **❌ No WASAPI** | Low-latency playback vs Java Sound | WASAPI | Alpha |
+| FastTTS | — | Text-to-speech | Piper/Cloud | TODO |
+| FastSTT | — | Speech-to-text | Whisper | TODO |
 
-### 6. Network
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastNet | Network operations | Zero-copy | TODO |
-| FastDNS | DNS resolver | Async | TODO |
-| FastTLS | TLS/HTTPS | OpenSSL | TODO |
-| FastCache | HTTP cache | LRU | TODO |
+### 6. Parsing
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | **2-50×** | AVX2 bulk ops vs standard Java | SIMD, AVX2 | Alpha |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha |
+| **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha |
+| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | **10-25×** | O(n) SIMD scanner vs slow Regex | Deterministic| Alpha |
+| FastHTML | — | HTML parser | SIMD | TODO |
+| FastRegex | — | SIMD regex engine | AVX2 | TODO |
 
-### 7. Scraping
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastScrape | Web scraping | SIMD parsing | TODO |
-| FastSpider | Web crawler | Async I/O | TODO |
+### 7. Math
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | **5-12×** | SIMD parsing vs Float.parseFloat() | SIMD, AVX2 | Alpha |
+| **[FastMath](https://github.com/andrestubbe/fastmath)** | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math| OpenCL, SIMD | Alpha |
+| FastSIMD | — | SIMD operations framework | AVX2/512 | TODO |
 
-### 8. System
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| **[FastIO](https://github.com/andrestubbe/fastio)** | Memory-mapped I/O | IOCP, mmap | Released |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | Native clipboard | Win32 API | Alpha |
-| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | File indexing | mmap, native scan | Alpha |
-| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | File search | Prefix trie, N-gram | Alpha |
-| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | File monitoring | USN Journal | Alpha |
-| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | Unified file system | Index + Search + Watch | Alpha |
-| FastPointer | Native pointer operations | JNI | TODO |
-| FastMemory | System/RAM access | Unsafe | TODO |
-| **[FastCore](https://github.com/andrestubbe/fastcore)** | Unified JNI loader | JNI, DLL loader | Alpha |
-| FastEventLoop | Async event loop | epoll/kqueue | TODO |
+### 8. Filesystem
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha |
+| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
+| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
 
-### 9. IPC
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastIPC | Inter-process comm | Shared memory | TODO |
-| FastSharedMemory | Shared memory | Memory-mapped | TODO |
-| FastProcess | Process management | Win32 API | TODO |
+### 9. System
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha |
+| **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha |
+| FastPointer | — | Native pointer operations | JNI | TODO |
+| FastMemory | — | System/RAM access | Unsafe | TODO |
+| FastHardware | — | Global hardware telemetry | PDH/WMI | TODO |
 
-### 10. Graphics
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | SIMD image processing | AVX2, SSE4 | Alpha |
-| FastGPU | GPU compute | OpenCL/Vulkan | TODO |
+### 10. Network
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| FastNet | — | Network operations | Zero-copy | TODO |
+| FastDNS | — | DNS resolver | Async | TODO |
+| FastTLS | — | TLS/HTTPS | OpenSSL | TODO |
 
-### 11. Audio & Video
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastAudio | Audio processing | WASAPI | TODO |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | Low-latency playback | Real WASAPI | Alpha |
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | Real-time capture | Real WASAPI + Loopback | Alpha |
-| FastVideo | Video codec | FFmpeg | TODO |
+### 11. Security
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| FastCrypto | — | Encryption | AES/SIMD | TODO |
+| FastSecureRandom | — | Secure RNG | Hardware | TODO |
+| FastKeychain | — | Credential store | Windows | TODO |
 
-### 12. Security
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastCrypto | Encryption | AES/SIMD | TODO |
-| FastSecureRandom | Secure RNG | Hardware | TODO |
-| FastKeychain | Credential store | Windows | TODO |
-| FastSecurity | Security framework | Policy | TODO |
-| FastSandbox | Process sandbox | Win32 | TODO |
+### 12. AI
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| FastAIService | — | Router/Orchestrator | API | TODO |
+| FastModel | — | Model-Runtime | ONNX | TODO |
+| FastRAG | — | Retrieval-Augmented Generation | Pipeline | TODO |
+| FastMCP | — | Model Context Protocol Adapter | MCP | TODO |
 
-### 13. AI
-| Library | Purpose | Tech | State |
-|---------|---------|------|-------|
-| FastAIService | Router/Orchestrator (lokal + Cloud) | API | TODO |
-| FastModel | Model-Runtime (llama.cpp, ONNX, etc.) | ONNX | TODO |
-| FastVision | Vision-Modelle / GPU-Kernels | GPU shaders | TODO |
-| FastEmbedding | Text → Vector | Local/Cloud | TODO |
-| FastVectorDB | Vector → Top-K (SIMD-Index) | SIMD | TODO |
-| FastRAG | RAG-Pipeline (Chunking, Retrieval, Kontext) | AI orchestration | TODO |
-| FastMCP | Model Context Protocol Adapter | MCP Standard | TODO |
-| FastMemoryAI | AI-Memory-Plugin (Embeddings, Recall) | Vector store | TODO |
-| FastTool | Einzelnes Tool | Function calling | TODO |
-| FastToolChaining | Tool-Sequenzen | Pipeline | TODO |
+### 13. Vision
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | **10× faster** | WinRT OCR vs Tesseract4J | WinRT OCR | Alpha |
+| FastVision | — | Vision-Modelle / GPU-Kernels | GPU shaders | TODO |
+
+### 14. Animation
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | **Zero overhead** | No built-in timelines — pure Java | Timeline | Alpha |
+| **[FastTween](https://github.com/andrestubbe/fasttween)** | **Zero overhead** | No built-in tweening | Pool | Alpha |
+
+### 15. UI
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
+| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
 
 ---
 
