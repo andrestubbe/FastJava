@@ -38,13 +38,14 @@
 | **FastTerminal** | 🔧 Alpha | Win32, JNI, ANSI | Double-buffered TUI engine | [→](https://github.com/andrestubbe/FastTerminal) |
 | **FastANSI** | 🔧 Alpha | Pure Java | Zero-allocation ANSI escape sequence parser | [→](https://github.com/andrestubbe/FastANSI) |
 | **FastEmojis** | 🔧 Alpha | Pure Java | Zero-allocation Unicode & Emoji width engine | [→](https://github.com/andrestubbe/FastEmojis) |
+| **FastAudioPlayer** | 🔧 Alpha | WASAPI, JNI | Low-latency audio playback (20-30x) | [→](https://github.com/andrestubbe/FastAudioPlayer) |
 
 ---
 
-## � Coming Soon (No Links Yet)
+## 🚧 Coming Soon (No Links Yet)
 
 **Q2 2026:** FastAI (Unified AI), FastMouse, FastGamepad (XInput)  
-**Q3 2026:** FastVision (GPU shaders), FastAudio (WASAPI), FastProcess, FastFileWatch  
+**Q3 2026:** FastVision (GPU shaders), FastProcess, FastFileWatch  
 **Q4 2026:** FastOverlay, FastDWM  
 **2027+:** FastHash, FastAudioCapture, FastTTS, FastSTT, FastVectorDB, FastRAG, FastMCP
 
@@ -160,11 +161,11 @@
 
 ## 📊 Stats
 
-- **Released (Alpha):** 28 modules
+- **Released (Alpha):** 31 modules
 - **Beta/Private:** 0 modules
-- **In Development:** 10 modules
-- **Planned:** 29 modules
-- **Total:** 67 modules
+- **Coming Soon:** 13 modules
+- **Planned:** 37 modules
+- **Total:** 81 modules
 
 ---
 

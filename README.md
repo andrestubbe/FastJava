@@ -52,7 +52,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **❌ No WASAPI** | Low-latency playback vs Java Sound | WASAPI | Alpha |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha |
 | FastTTS | — | Text-to-speech | Piper/Cloud | TODO |
 | FastSTT | — | Speech-to-text | Whisper | TODO |
 
@@ -201,8 +201,8 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **32 Released** — Available now on GitHub & JitPack
-- 🚧 **14 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
+- ✅ **31 Released** — Available now on GitHub & JitPack
+- 🚧 **13 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
 - 🔄 **37 Planned** — Full 81-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress
 
