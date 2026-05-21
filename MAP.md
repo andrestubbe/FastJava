@@ -1,6 +1,6 @@
 # 🗺️ FastJava Module Map
 
-> **62 native modules** for Java — from Input to AI. Zero-GC. Zero-Copy. OS-level access.
+> **65 native modules** for Java — from Input to AI. Zero-GC. Zero-Copy. OS-level access.
 
 ---
 
@@ -35,6 +35,9 @@
 | **FastUIA** | 🔧 Alpha | Native UIA | Native Windows UI Automation | [→](https://github.com/andrestubbe/FastUIA) |
 | **FastTokenizer** | 🔧 Alpha | Deterministic | Lightweight code analysis | [→](https://github.com/andrestubbe/FastTokenizer) |
 | **FastPreview** | 🔧 Alpha | PDFium, WV2 | High-speed content rendering | [→](https://github.com/andrestubbe/FastPreview) |
+| **FastTerminal** | 🔧 Alpha | Win32, JNI, ANSI | Double-buffered TUI engine | [→](https://github.com/andrestubbe/FastTerminal) |
+| **FastANSI** | 🔧 Alpha | Pure Java | Zero-allocation ANSI escape sequence parser | [→](https://github.com/andrestubbe/FastANSI) |
+| **FastEmojis** | 🔧 Alpha | Pure Java | Zero-allocation Unicode & Emoji width engine | [→](https://github.com/andrestubbe/FastEmojis) |
 
 ---
 
@@ -123,6 +126,8 @@
 │  FastRobot      │  FastWindow      │  FastDisplay      │  FastString        │
 │  FastMouse      │  FastUIA         │  FastOverlay      │  FastBytes         │
 │  FastKeyboard   │  FastFileWatch   │  FastPreview      │  FastTokenizer     │
+│                 │                  │  FastTerminal     │  FastANSI          │
+│                 │                  │                   │  FastEmojis        │
 └─────────────────┴──────────────────┴───────────────────┴────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -155,11 +160,11 @@
 
 ## 📊 Stats
 
-- **Released (Alpha):** 25 modules
+- **Released (Alpha):** 28 modules
 - **Beta/Private:** 0 modules
 - **In Development:** 10 modules
 - **Planned:** 29 modules
-- **Total:** 64 modules
+- **Total:** 67 modules
 
 ---
 

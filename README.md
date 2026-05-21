@@ -59,7 +59,9 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 6. Parsing
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
+| **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha |
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | **2-50×** | AVX2 bulk ops vs standard Java | SIMD, AVX2 | Alpha |
+| **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha |
 | **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha |
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha |
 | **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | **10-25×** | O(n) SIMD scanner vs slow Regex | Deterministic| Alpha |
@@ -128,8 +130,9 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 15. UI
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
+| **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
+| **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
 
 ---
 
@@ -198,9 +201,9 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **29 Released** — Available now on GitHub & JitPack
+- ✅ **32 Released** — Available now on GitHub & JitPack
 - 🚧 **14 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
-- 🔄 **37 Planned** — Full 78-module pipeline
+- 🔄 **37 Planned** — Full 81-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress
 
 ---
