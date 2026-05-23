@@ -62,6 +62,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha |
 | **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha |
 | **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha |
+| **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha |
 
 ### 6. Parsing
 | Module | Speed vs Java | Key Metrics | Tech | Status |
@@ -124,7 +125,6 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastRAG | — | Retrieval-Augmented Generation | Pipeline | TODO |
 | FastMCP | — | Model Context Protocol Adapter | MCP | TODO |
 | **[FastAgent](https://github.com/andrestubbe/FastAgent)** | **—** | Autonomous agent runtime | LLM Integration | Alpha |
-| **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha |
 
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status |
