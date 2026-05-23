@@ -1,4 +1,4 @@
-# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
+﻿# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
 
 > **5-50× faster than standard Java** — JNI-native libraries for automation, screen capture, graphics, math, JSON, and more.
 
