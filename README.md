@@ -1,4 +1,4 @@
-﻿# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
+# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
 
 > **5-50× faster than standard Java** — JNI-native libraries for automation, screen capture, graphics, math, JSON, and more.
 
@@ -23,14 +23,14 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | **❌ Java can't** | Multi-touch pressure — no Java API | Win32 touch | Alpha |
 | **[FastStylus](https://github.com/andrestubbe/faststylus)** | **❌ Java can't** | Pen tilt/eraser — no Java API exists | WM_POINTER | Alpha |
 | **[FastKeylogger](https://github.com/andrestubbe/FastKeylogger)** | **—** | Global asynchronous keyboard tracking | Win32 Hooks | Alpha |
-| FastMouse | — | Raw mouse reading | RawInput API | TODO |
+| **[FastMouse](https://github.com/andrestubbe/FastMouse)** | **—** | Raw mouse reading | RawInput API | Alpha |
 | FastGamepad | — | Controller support | XInput | TODO |
 
 ### 2. Output
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | **Instant** | Native DPI/resolution/refresh-rate | Win32, DWM | Alpha |
-| FastDWM | — | VSync & timing | DWM API | TODO |
+| **[FastDWM](https://github.com/andrestubbe/FastDWM)** | **—** | VSync & timing | DWM API | Alpha |
 
 ### 3. Automation
 | Module | Speed vs Java | Key Metrics | Tech | Status |
