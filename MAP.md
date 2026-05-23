@@ -1,4 +1,4 @@
-# 🗺️ FastJava Module Map
+﻿# 🗺️ FastJava Module Map
 
 > **65 native modules** for Java — from Input to AI. Zero-GC. Zero-Copy. OS-level access.
 
@@ -39,6 +39,15 @@
 | **FastANSI** | 🔧 Alpha | Pure Java | Zero-allocation ANSI escape sequence parser | [→](https://github.com/andrestubbe/FastANSI) |
 | **FastEmojis** | 🔧 Alpha | Pure Java | Zero-allocation Unicode & Emoji width engine | [→](https://github.com/andrestubbe/FastEmojis) |
 | **FastAudioPlayer** | 🔧 Alpha | WASAPI, JNI | Low-latency audio playback (20-30x) | [→](https://github.com/andrestubbe/FastAudioPlayer) |
+| **FastAgent** | 🔧 Alpha | LLM Integration | Autonomous agent runtime | [→](https://github.com/andrestubbe/FastAgent) |
+| **FastCamera** | 🔧 Alpha | DirectShow | Native low-latency webcam capture | [→](https://github.com/andrestubbe/FastCamera) |
+| **FastFileContentIndex** | 🔧 Alpha | SIMD | High-speed in-file text indexing | [→](https://github.com/andrestubbe/FastFileContentIndex) |
+| **FastKeylogger** | 🔧 Alpha | Win32 Hooks | Global asynchronous keyboard tracking | [→](https://github.com/andrestubbe/FastKeylogger) |
+| **FastScrape** | 🔧 Alpha | Native HTML | High-performance DOM scraping | [→](https://github.com/andrestubbe/FastScrape) |
+| **FastSharedMemory** | 🔧 Alpha | Win32 IPC | Zero-copy IPC memory mapped files | [→](https://github.com/andrestubbe/FastSharedMemory) |
+| **FastSpider** | 🔧 Alpha | NIO / Async | Asynchronous high-speed web crawler | [→](https://github.com/andrestubbe/FastSpider) |
+| **FastThumb** | 🔧 Alpha | Windows Shell | Native OS thumbnail extraction | [→](https://github.com/andrestubbe/FastThumb) |
+| **FastWakeWord** | 🔧 Alpha | Audio DSP | Always-on native wake-word detection | [→](https://github.com/andrestubbe/FastWakeWord) |
 
 ---
 

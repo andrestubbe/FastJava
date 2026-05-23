@@ -22,6 +22,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | **16×** | RawInput vs standard AWT KeyListener | RawInput API | Alpha |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | **❌ Java can't** | Multi-touch pressure — no Java API | Win32 touch | Alpha |
 | **[FastStylus](https://github.com/andrestubbe/faststylus)** | **❌ Java can't** | Pen tilt/eraser — no Java API exists | WM_POINTER | Alpha |
+| **[FastKeylogger](https://github.com/andrestubbe/FastKeylogger)** | **—** | Global asynchronous keyboard tracking | Win32 Hooks | Alpha |
 | FastMouse | — | Raw mouse reading | RawInput API | TODO |
 | FastGamepad | — | Controller support | XInput | TODO |
 
@@ -37,6 +38,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | **10-17×** | DirectX capture vs AWT Robot | DirectX | Alpha |
 | **[FastUIA](https://github.com/andrestubbe/fastuia)** | **❌ Java can't** | Native UIA vs slow polling | Native UIA | Alpha |
 | **[FastWindow](https://github.com/andrestubbe/FastWindow)** | **8×** | Flicker-free resize vs standard JFrame | Win32 API | Alpha |
+| **[FastScrape](https://github.com/andrestubbe/FastScrape)** | **—** | High-performance DOM scraping | Native HTML | Alpha |
+| **[FastSpider](https://github.com/andrestubbe/FastSpider)** | **—** | Asynchronous high-speed web crawler | NIO / Async | Alpha |
 | FastProcess | — | Process management | Win32 API | TODO |
 | FastScheduler | — | Task scheduler | Priority queue | TODO |
 
@@ -49,6 +52,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastPreview](https://github.com/andrestubbe/fastpreview)** | **❌ Java can't** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha |
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha |
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha |
+| **[FastThumb](https://github.com/andrestubbe/FastThumb)** | **—** | Native OS thumbnail extraction | Windows Shell | Alpha |
 | FastOverlay | — | Game overlays | DirectX | TODO |
 
 ### 5. Audio
@@ -83,6 +87,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
+| **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed in-file text indexing | SIMD | Alpha |
 | **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
 
@@ -92,6 +97,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha |
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha |
+| **[FastSharedMemory](https://github.com/andrestubbe/FastSharedMemory)** | **—** | Zero-copy IPC memory mapped files | Win32 IPC | Alpha |
 | FastPointer | — | Native pointer operations | JNI | TODO |
 | FastMemory | — | System/RAM access | Unsafe | TODO |
 | FastHardware | — | Global hardware telemetry | PDH/WMI | TODO |
@@ -117,11 +123,14 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastModel | — | Model-Runtime | ONNX | TODO |
 | FastRAG | — | Retrieval-Augmented Generation | Pipeline | TODO |
 | FastMCP | — | Model Context Protocol Adapter | MCP | TODO |
+| **[FastAgent](https://github.com/andrestubbe/FastAgent)** | **—** | Autonomous agent runtime | LLM Integration | Alpha |
+| **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha |
 
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastOCR](https://github.com/andrestubbe/FastOCR)** | **10× faster** | WinRT OCR vs Tesseract4J | WinRT OCR | Alpha |
+| **[FastCamera](https://github.com/andrestubbe/FastCamera)** | **—** | Native low-latency webcam capture | DirectShow | Alpha |
 | FastVision | — | Vision-Modelle / GPU-Kernels | GPU shaders | TODO |
 
 ### 14. Animation
