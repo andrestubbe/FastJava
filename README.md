@@ -1,11 +1,6 @@
-﻿# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
+# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
 
 > **5-50× faster than standard Java** — JNI-native libraries for automation, screen capture, graphics, math, JSON, and more.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.java.com)
-[![JitPack](https://img.shields.io/badge/JitPack-ready-green.svg)](https://jitpack.io/#andrestubbe)
-
 [![Premium Overlay Showcase](docs/screenshot.png)
 ](https://www.youtube.com/watch?v=b3X2zFjV6GU&list=PL-mASGDMkCUqJ0bXAJP28ykqPP9RqMMsA)
 
