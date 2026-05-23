@@ -60,8 +60,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha |
-| FastTTS | — | Text-to-speech | Piper/Cloud | TODO |
-| FastSTT | — | Speech-to-text | Whisper | TODO |
+| **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha |
+| **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha |
 
 ### 6. Parsing
 | Module | Speed vs Java | Key Metrics | Tech | Status |
