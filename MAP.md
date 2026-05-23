@@ -55,7 +55,6 @@
 
 **Q2 2026:** FastAI (Unified AI), FastGamepad (XInput)  
 **Q3 2026:** FastVision (GPU shaders), FastProcess, FastFileWatch  
-**Q4 2026:** FastOverlay  
 **2027+:** FastHash, FastVectorDB, FastRAG, FastMCP
 
 ---

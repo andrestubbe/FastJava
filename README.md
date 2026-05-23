@@ -1,4 +1,4 @@
-# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
+﻿# ⚡ FastJava — Native Java Performance Ecosystem [ALPHA]
 
 > **5-50× faster than standard Java** — JNI-native libraries for automation, screen capture, graphics, math, JSON, and more.
 
@@ -53,7 +53,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha |
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha |
 | **[FastThumb](https://github.com/andrestubbe/FastThumb)** | **—** | Native OS thumbnail extraction | Windows Shell | Alpha |
-| FastOverlay | — | Game overlays | DirectX | TODO |
+| **[FastOverlay](https://github.com/andrestubbe/FastOverlay)** | **—** | Game overlays | DirectX | Alpha |
 
 ### 5. Audio
 | Module | Speed vs Java | Key Metrics | Tech | Status |
