@@ -91,15 +91,15 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
 
 ### 9. System
-| Module | Speed vs Java | Key Metrics | Tech | Status |
-|--------|---------------|-------------|------|--------|
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha |
-| **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha |
-| **[FastSharedMemory](https://github.com/andrestubbe/FastSharedMemory)** | **—** | Zero-copy IPC memory mapped files | Win32 IPC | Alpha |
-| FastPointer | — | Native pointer operations | JNI | TODO |
-| FastMemory | — | System/RAM access | Unsafe | TODO |
-| FastHardware | — | Global hardware telemetry | PDH/WMI | TODO |
+| Module                                                                               | Speed vs Java | Key Metrics | Tech | Status |
+|--------------------------------------------------------------------------------------|---------------|-------------|------|--------|
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)**                    | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha |
+| **[FastIO](https://github.com/andrestubbe/fastio)**                                  | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha |
+| **[FastCore](https://github.com/andrestubbe/fastcore)**                              | **—** | Cross-platform DLL loader | JNI Loader | Alpha |
+| **[FastSharedMemory](https://github.com/andrestubbe/FastSharedMemory)**              | **—** | Zero-copy IPC memory mapped files | Win32 IPC | Alpha |
+| FastPointer                                                                          | — | Native pointer operations | JNI | TODO |
+| FastMemory                                                                           | — | System/RAM access | Unsafe | TODO |
+| **[FastHardware](https://github.com/andrestubbe/FastHardware)**  | — | Global hardware telemetry | PDH/WMI | TODO |
 
 ### 10. Network
 | Module | Speed vs Java | Key Metrics | Tech | Status |
