@@ -215,6 +215,5 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 ---
 
----
+**Part of the FastJava Ecosystem** — *Making the JVM faster. Small package. Maximum speed. Zero bloat. 🚀📋*
 
-**Keywords:** fast java, java native performance, java jni performance, fastest java libraries, java native acceleration, java windows api, java gpu acceleration, java simd acceleration, java optimization, high performance java
