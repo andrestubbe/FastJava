@@ -82,13 +82,14 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastSIMD | — | SIMD operations framework | AVX2/512 | TODO |
 
 ### 8. Filesystem
-| Module | Speed vs Java | Key Metrics | Tech | Status |
-|--------|---------------|-------------|------|--------|
-| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha |
+| Module                                                                          | Speed vs Java | Key Metrics | Tech | Status |
+|---------------------------------------------------------------------------------|---------------|-------------|------|--------|
+| **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)**               | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha |
 | **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed in-file text indexing | SIMD | Alpha |
-| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
-| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
-| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)**               | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
+| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)**             | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
+| **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha |
+| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)**             | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
 
 ### 9. System
 | Module                           | Speed vs Java | Key Metrics | Tech | Status |
