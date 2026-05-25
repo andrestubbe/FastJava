@@ -27,8 +27,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 2. Output
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | **Instant** | Native DPI/resolution/refresh-rate | Win32, DWM | Alpha |
 | **[FastDWM](https://github.com/andrestubbe/FastDWM)** | **—** | VSync & timing | DWM API | Alpha |
+| **[FastDisplay](https://github.com/andrestubbe/FastDisplay)** | **Instant** | Native DPI/resolution/refresh-rate | Win32, DWM | Alpha |
 
 ### 3. Automation
 | Module | Speed vs Java | Key Metrics | Tech | Status |
@@ -44,32 +44,32 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 4. Graphics
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha |
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
-| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha |
-| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | **❌ Java can't** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha |
-| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha |
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha |
 | **[FastThumb](https://github.com/andrestubbe/FastThumb)** | **—** | Native OS thumbnail extraction | Windows Shell | Alpha |
+| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | **❌ Java can't** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha |
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha |
 | **[FastOverlay](https://github.com/andrestubbe/FastOverlay)** | **—** | Game overlays | DirectX | Alpha |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
+| **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha |
+| **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha |
 
 ### 5. Audio
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha |
+| **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha |
 | **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha |
 | **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha |
-| **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha |
 
 ### 6. Parsing
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha |
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | **2-50×** | AVX2 bulk ops vs standard Java | SIMD, AVX2 | Alpha |
-| **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha |
 | **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha |
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha |
+| **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha |
+| **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha |
 | **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | **10-25×** | O(n) SIMD scanner vs slow Regex | Deterministic| Alpha |
 | FastHTML | — | HTML parser | SIMD | TODO |
 | FastRegex | — | SIMD regex engine | AVX2 | TODO |
@@ -85,21 +85,21 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha |
-| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
 | **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed in-file text indexing | SIMD | Alpha |
-| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
+| **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
+| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
 
 ### 9. System
-| Module                                                                               | Speed vs Java | Key Metrics | Tech | Status |
-|--------------------------------------------------------------------------------------|---------------|-------------|------|--------|
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)**                    | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha |
-| **[FastIO](https://github.com/andrestubbe/fastio)**                                  | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha |
-| **[FastCore](https://github.com/andrestubbe/fastcore)**                              | **—** | Cross-platform DLL loader | JNI Loader | Alpha |
-| **[FastSharedMemory](https://github.com/andrestubbe/FastSharedMemory)**              | **—** | Zero-copy IPC memory mapped files | Win32 IPC | Alpha |
-| FastPointer                                                                          | — | Native pointer operations | JNI | TODO |
-| FastMemory                                                                           | — | System/RAM access | Unsafe | TODO |
-| **[FastHardware](https://github.com/andrestubbe/FastHardware)**  | — | Global hardware telemetry | PDH/WMI | TODO |
+| Module                           | Speed vs Java | Key Metrics | Tech | Status |
+|----------------------------------|---------------|-------------|------|--------|
+| **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha  |
+| **[FastHardware](https://github.com/andrestubbe/FastHardware)** | — | Global hardware telemetry | PDH/WMI | TODO   |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha  |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha  |
+| FastSharedMemory              | **—** | Zero-copy IPC memory mapped files | Win32 IPC | TODO   |
+| FastPointer                      | — | Native pointer operations | JNI | TODO   |
+| FastMemory                       | — | System/RAM access | Unsafe | TODO   |
 
 ### 10. Network
 | Module | Speed vs Java | Key Metrics | Tech | Status |
@@ -127,22 +127,22 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | **10× faster** | WinRT OCR vs Tesseract4J | WinRT OCR | Alpha |
 | **[FastCamera](https://github.com/andrestubbe/FastCamera)** | **—** | Native low-latency webcam capture | DirectShow | Alpha |
+| **[FastOCR](https://github.com/andrestubbe/FastOCR)** | **10× faster** | WinRT OCR vs Tesseract4J | WinRT OCR | Alpha |
 | FastVision | — | Vision-Modelle / GPU-Kernels | GPU shaders | TODO |
 
 ### 14. Animation
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | **Zero overhead** | No built-in timelines — pure Java | Timeline | Alpha |
 | **[FastTween](https://github.com/andrestubbe/fasttween)** | **Zero overhead** | No built-in tweening | Pool | Alpha |
+| **[FastAnimation](https://github.com/andrestubbe/fastanimation)** | **Zero overhead** | No built-in timelines — pure Java | Timeline | Alpha |
 
 ### 15. UI
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
-| **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
+| **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
+| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
 
 ---
 
@@ -155,8 +155,9 @@ Java alone cannot do:
 - ❌ Hardware I/O access
 - ❌ GPU acceleration
 - ❌ Native input devices
+- ❌ ..
 
-**FastJava fixes this.** Pure C++ accelerators. JNI bindings. Zero overhead.
+**FastJava fixes this.** Mostly pure C++ accelerators. JNI bindings. Zero overhead.
 
 ---
 
