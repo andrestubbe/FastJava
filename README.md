@@ -52,6 +52,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha |
+| **[FastGPU](https://github.com/andrestubbe/FastGPU)** | **100×** | Vulkan GPU Compute vs CPU | Vulkan | Alpha |
 
 ### 5. Audio
 | Module | Speed vs Java | Key Metrics | Tech | Status |
@@ -214,7 +215,7 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **32 Released** — Available now on GitHub & JitPack
+- ✅ **33 Released** — Available now on GitHub & JitPack
 - 🚧 **13 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
 - 🔄 **37 Planned** — Full 81-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress

@@ -18,6 +18,7 @@
 | **FastImage** | 🔧 Alpha | SIMD, AVX2 | SIMD image processing | [→](https://github.com/andrestubbe/FastImage) |
 | **FastImageView** | 🔧 Alpha | DirectX | DirectX image viewer | [→](https://github.com/andrestubbe/FastImageView) |
 | **FastGraphics** | 🔧 Alpha | DirectX, GPU | GPU-accelerated Graphics2D | [→](https://github.com/andrestubbe/FastGraphics) |
+| **FastGPU** | 🔧 Alpha | Vulkan, C++ | High-Performance GPU Compute | [→](https://github.com/andrestubbe/FastGPU) |
 | **FastNotification** | 🔧 Alpha | WinRT, Toast | Native Windows notifications | [→](https://github.com/andrestubbe/FastNotification) |
 | **FastRobot** | 🔧 Alpha | DirectX, SendInput | Automation & screen capture | [→](https://github.com/andrestubbe/FastRobot) |
 | **FastDisplay** | 🔧 Alpha | Win32, DWM | Native DPI/resolution/refresh-rate monitoring | [→](https://github.com/andrestubbe/FastDisplay) |
@@ -137,7 +138,7 @@
 │  FastMouse      │  FastUIA         │  FastOverlay      │  FastBytes         │
 │  FastKeyboard   │  FastFileWatch   │  FastPreview      │  FastTokenizer     │
 │                 │                  │  FastTerminal     │  FastANSI          │
-│                 │                  │                   │  FastEmojis        │
+│                 │                  │  FastGPU          │  FastEmojis        │
 └─────────────────┴──────────────────┴───────────────────┴────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -170,7 +171,7 @@
 
 ## 📊 Stats
 
-- **Released (Alpha):** 32 modules
+- **Released (Alpha):** 33 modules
 - **Beta/Private:** 0 modules
 - **Coming Soon:** 13 modules
 - **Planned:** 37 modules
