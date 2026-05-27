@@ -89,6 +89,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)**               | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)**             | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
 | **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha |
+| **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha |
 | **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)**             | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
 
 ### 9. System
@@ -213,7 +214,7 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **31 Released** — Available now on GitHub & JitPack
+- ✅ **32 Released** — Available now on GitHub & JitPack
 - 🚧 **13 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
 - 🔄 **37 Planned** — Full 81-module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress

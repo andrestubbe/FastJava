@@ -1,4 +1,4 @@
-﻿# 🗺️ FastJava Module Map
+# 🗺️ FastJava Module Map
 
 > **65 native modules** for Java — from Input to AI. Zero-GC. Zero-Copy. OS-level access.
 
@@ -48,6 +48,7 @@
 | **FastSpider** | 🔧 Alpha | NIO / Async | Asynchronous high-speed web crawler | [→](https://github.com/andrestubbe/FastSpider) |
 | **FastThumb** | 🔧 Alpha | Windows Shell | Native OS thumbnail extraction | [→](https://github.com/andrestubbe/FastThumb) |
 | **FastWakeWord** | 🔧 Alpha | Audio DSP | Always-on native wake-word detection | [→](https://github.com/andrestubbe/FastWakeWord) |
+| **FastGLOB** | 🔧 Alpha | Win32, JNI | Native Win32 glob pattern matching (13× faster) | [→](https://github.com/andrestubbe/FastGLOB) |
 
 ---
 
@@ -169,7 +170,7 @@
 
 ## 📊 Stats
 
-- **Released (Alpha):** 31 modules
+- **Released (Alpha):** 32 modules
 - **Beta/Private:** 0 modules
 - **Coming Soon:** 13 modules
 - **Planned:** 37 modules
