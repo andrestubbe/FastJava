@@ -138,17 +138,17 @@
 │  FastMouse      │  FastUIA         │  FastOverlay      │  FastBytes         │
 │  FastKeyboard   │  FastFileWatch   │  FastPreview      │  FastTokenizer     │
 │                 │                  │  FastTerminal     │  FastANSI          │
-│                 │                  │  FastGPU          │  FastEmojis        │
+│                 │                  │                   │  FastEmojis        │
 └─────────────────┴──────────────────┴───────────────────┴────────────────────┘
 
-┌─────────────────────────────────────────────────────────────┐
-│  AUDIO          │  AI            │  UTILS        │  DEBUG   │
-├─────────────────────────────────────────────────────────────┤
-│  FastAudio      │  FastAI        │  FastTween    │  FastTest│
-│  FastTTS        │  FastEmbedding │  FastAnim     │  FastWatch│
-│  FastSTT        │  FastVectorDB  │  FastEventBus │  FastReplay│
-│  FastOCR        │  FastRAG       │  FastSort     │  FastTrace│
-└─────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│  AUDIO          │  AI            │  COMPUTE      │  UTILS    │ DEBUG   │
+├────────────────────────────────────────────────────────────────────────┤
+│  FastAudio      │  FastAI        │  FastGPU      │  FastTween│ FastTest│
+│  FastTTS        │  FastEmbedding │               │  FastAnim │FastWatch│
+│  FastSTT        │  FastVectorDB  │               │  FastEvent│FastRepla│
+│  FastOCR        │  FastRAG       │               │  FastSort │FastTrace│
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -163,7 +163,7 @@
 ├────────────────────────────────────────┤
 │  System Integration Layer              │ FastCore, FastIO, FastTheme
 ├────────────────────────────────────────┤
-│  Hardware Abstraction Layer            │ JNI, SIMD, GPU
+│  Hardware Abstraction Layer            │ JNI, SIMD, GPU Compute, Vulkan
 └────────────────────────────────────────┘
 ```
 

@@ -52,7 +52,6 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha |
-| **[FastGPU](https://github.com/andrestubbe/FastGPU)** | **100×** | Vulkan GPU Compute vs CPU | Vulkan | Alpha |
 
 ### 5. Audio
 | Module | Speed vs Java | Key Metrics | Tech | Status |
@@ -146,6 +145,11 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
 | **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
+
+### 16. Compute
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **[FastGPU](https://github.com/andrestubbe/FastGPU)** | **50–500×** | GPU Compute, SPIR-V, Vulkan Compute, Zero-Copy Buffers | Vulkan, SPIR-V, OpenCL | Alpha |
 
 ---
 
