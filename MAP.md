@@ -106,16 +106,46 @@
 ### AI & ML
 | Module | Purpose | Tech |
 |--------|---------|------|
-| FastAIService | Router/Orchestrator | API |
-| FastContext | Session-Manager | State |
-| FastMemory | AI memory/retrieval | Vector DB |
-| FastRAG | Retrieval-Augmented Generation | Pipeline |
-| FastEmbedding | Text to Vector translation | Model |
-| FastVectorDB | In-memory vector search | SIMD |
-| FastAgent | Autonomous agent runtime | LLM |
-| FastToolBridge | AI tool integration | API |
-| FastMCP | Model Context Protocol | Standard |
-| FastModel | C++ Model Engine (ONNX/gguf) | ONNX |
+| FastAIService | Provider-Router (lokal/Cloud) | API |
+| FastModel | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX |
+| FastAIStream | Token-Streaming-Engine | Pipeline |
+| FastAIToken | Tokenization, Counting, Budgeting | Tokenizer |
+| FastAICache | Antwort- & Embedding-Caching | Cache |
+| FastAIAgent | Agenten-Logik, Tool-Auswahl | LLM |
+| FastAIReasoner | Planning, Reflection | Logic |
+| FastAIWorkflow | Multi-Agent-Pipelines, Tasks | Orchestrator |
+| FastAIState | Shared Agent State / Blackboard | Memory |
+| FastAIContext | Kontext-Management, Rollen | State |
+| FastAISession | Conversation Lifecycle | History |
+| FastAIMemory | Kurzzeit- & Langzeit-Gedächtnis | Vector DB |
+| FastAIVectorDB| Vektor-Store für Memory & RAG | SIMD |
+| FastAIEmbedding| Embedding-Service | Model |
+| FastAIRAG | Retrieval-Pipeline | RAG |
+| FastAIToolBridge| Tool-Ausführungsschicht | API |
+| FastAIMCP | Model Context Protocol Adapter | MCP |
+| FastAISandbox | Code-Isolation | Security |
+| FastAIScheduler| Async Jobs, Retries, Cron | Queueing |
+| FastAIGuard | Prompt-Injection-Schutz | Security |
+| FastAIAuth | API-Keys, User-Permissions | Auth |
+| FastAITrace | Token-Flow, Tool-Tracing | Debugging |
+| FastAIEval | Automatische Antwort-Evaluation | Eval |
+| FastAIMetrics | Performance-, Latency-Metrics | Telemetry |
+| FastAIParser | Strukturierter Output-Parser | Parser |
+| FastAIPrompt | Prompt-Compiler, Templates | Compiler |
+| FastAIRegistry| Registry für Models, Tools, Agents| Registry |
+| FastAIPlugin | Plugin-/Extension-System | Plugin |
+| FastEventBus | Event-System für Tokens | Event Bus |
+| FastArtifact | Verwaltung von Dateien, Images | Storage |
+| FastAIPolicy | Declarative AI Rules / Policies | Rules |
+| FastAIReplay | Replay von Sessions | Debugging |
+| FastAICluster | Multi-GPU / Multi-Node | Orchestrator |
+| FastVision | Vision-Pipeline (OCR, Image-LLMs) | Multimodal |
+| FastSTT | Speech-to-Text | Whisper |
+| FastTTS | Text-to-Speech | Piper |
+| FastConfig | Zentrale Runtime-Konfiguration | Config |
+| FastAPI | REST/WebSocket/gRPC Layer | Network |
+| FastUI | Dashboard, Monitoring, Chat-UI | UI |
+| FastStorage | Files, Blobs, Transcripts | IO |
 
 ### Debugging & Development
 | Module | Purpose | Tech |
@@ -182,8 +212,8 @@
 - **Released (Alpha):** 33 modules
 - **Beta/Private:** 0 modules
 - **Coming Soon:** 13 modules
-- **Planned:** 37 modules
-- **Total:** 81 modules
+- **Planned:** 65 modules
+- **Total:** 111 modules
 
 ---
 
