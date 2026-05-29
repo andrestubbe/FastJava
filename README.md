@@ -118,48 +118,70 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastKeychain | — | Credential store | Windows | TODO |
 
 ### 12. AI
+
+#### AI Brain
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **FastAIService** | — | Provider-Router (lokal/Cloud) | API | TODO |
-| **FastModel** | — | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX | TODO |
-| **FastAIStream** | — | Token-Streaming-Engine | Pipeline | TODO |
-| **FastAIToken** | — | Tokenization, Counting, Budgeting | Tokenizer | TODO |
-| **FastAICache** | — | Antwort- & Embedding-Caching | Cache | TODO |
 | **FastAIAgent** | — | Agenten-Logik, Tool-Auswahl | LLM | TODO |
 | **FastAIReasoner** | — | Planning & Multi-Step-Reasoning | Logic | TODO |
 | **FastAIWorkflow** | — | Multi-Agent-Pipelines & DAG | Orchestrator | TODO |
 | **FastAIState** | — | Shared Agent State / Blackboard | Memory | TODO |
-| **FastAIContext** | — | Kontext-Management, Rollen | State | TODO |
+
+#### AI Memory
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
 | **FastAISession** | — | Conversation Lifecycle | History | TODO |
+| **FastAIContext** | — | Kontext-Management, Rollen | State | TODO |
 | **FastAIMemory** | — | Kurzzeit- & Langzeit-Gedächtnis | Vector DB | TODO |
 | **FastAIVectorDB** | — | Vektor-Store für Memory & RAG | SIMD | TODO |
 | **FastAIEmbedding** | — | Embedding-Service | Model | TODO |
 | **FastAIRAG** | — | Retrieval-Pipeline | RAG | TODO |
+
+#### AI Engine
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
+| **FastModel** | — | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX | TODO |
+| **FastAIStream** | — | Token-Streaming-Engine | Pipeline | TODO |
+| **FastAIToken** | — | Tokenization, Counting, Budgeting | Tokenizer | TODO |
+| **FastAICache** | — | Antwort- & Embedding-Caching | Cache | TODO |
+
+#### AI Hands
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
 | **FastAIToolBridge**| — | Tool-Ausführungsschicht | API | TODO |
 | **FastAIMCP** | — | Model Context Protocol Adapter | MCP | TODO |
 | **FastAISandbox** | — | Code-Isolation | Security | TODO |
 | **FastAIScheduler** | — | Async Jobs, Retries, Cron | Queueing | TODO |
+
+#### AI Guards
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
 | **FastAIGuard** | — | Prompt-Injection-Schutz | Security | TODO |
 | **FastAIAuth** | — | API-Keys, User-Permissions | Auth | TODO |
+| **FastAIPolicy** | — | Declarative AI Rules / Policies | Rules | TODO |
+
+#### AI Dashboard
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
 | **FastAITrace** | — | Token-Flow & Tool-Tracing | Debugging | TODO |
 | **FastAIEval** | — | Automatische Antwort-Evaluation | Eval | TODO |
 | **FastAIMetrics** | — | Performance- & Usage-Metrics | Telemetry | TODO |
+| **FastAIReplay** | — | Replay von Sessions | Debugging | TODO |
 | **FastAIParser** | — | Strukturierter Output-Parser | Parser | TODO |
 | **FastAIPrompt** | — | Prompt-Compiler, Templates | Compiler | TODO |
 | **FastAIRegistry** | — | Registry für Models, Tools, Agents| Registry | TODO |
 | **FastAIPlugin** | — | Plugin-/Extension-System | Plugin | TODO |
 | **FastEventBus** | — | Event-System für Tokens & Tools | Event Bus | TODO |
-| **FastArtifact** | — | Verwaltung generierter Dateien | Storage | TODO |
-| **FastAIPolicy** | — | Declarative AI Rules / Policies | Rules | TODO |
-| **FastAIReplay** | — | Replay von Sessions | Debugging | TODO |
-| **FastAICluster** | — | Multi-GPU / Multi-Node | Orchestrator | TODO |
-| **FastVision** | — | Vision-Pipeline (OCR, Image-LLMs) | Multimodal | TODO |
-| **FastSTT** | — | Speech-to-Text | Whisper | TODO |
-| **FastTTS** | — | Text-to-Speech | Piper | TODO |
-| **FastConfig** | — | Runtime-/Model-Konfiguration | Config | TODO |
+
+#### AI Infrastructure
+| Module | Speed vs Java | Key Metrics | Tech | Status |
+|--------|---------------|-------------|------|--------|
 | **FastAPI** | — | REST/WebSocket/gRPC Layer | Network | TODO |
-| **FastUI** | — | Dashboard, Monitoring, Chat-UI | UI | TODO |
+| **FastConfig** | — | Runtime-/Model-Konfiguration | Config | TODO |
+| **FastArtifact** | — | Verwaltung generierter Dateien | Storage | TODO |
 | **FastStorage** | — | Files, Blobs, Transcripts | IO | TODO |
+| **FastAICluster** | — | Multi-GPU / Multi-Node | Orchestrator | TODO |
 
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status |

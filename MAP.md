@@ -104,48 +104,70 @@
 | FastSTT | Speech-to-text | Whisper/Cloud |
 
 ### AI & ML
+
+#### AI Brain
 | Module | Purpose | Tech |
 |--------|---------|------|
 | FastAIService | Provider-Router (lokal/Cloud) | API |
-| FastModel | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX |
-| FastAIStream | Token-Streaming-Engine | Pipeline |
-| FastAIToken | Tokenization, Counting, Budgeting | Tokenizer |
-| FastAICache | Antwort- & Embedding-Caching | Cache |
 | FastAIAgent | Agenten-Logik, Tool-Auswahl | LLM |
 | FastAIReasoner | Planning, Reflection | Logic |
 | FastAIWorkflow | Multi-Agent-Pipelines, Tasks | Orchestrator |
 | FastAIState | Shared Agent State / Blackboard | Memory |
-| FastAIContext | Kontext-Management, Rollen | State |
+
+#### AI Memory
+| Module | Purpose | Tech |
+|--------|---------|------|
 | FastAISession | Conversation Lifecycle | History |
+| FastAIContext | Kontext-Management, Rollen | State |
 | FastAIMemory | Kurzzeit- & Langzeit-Gedächtnis | Vector DB |
 | FastAIVectorDB| Vektor-Store für Memory & RAG | SIMD |
 | FastAIEmbedding| Embedding-Service | Model |
 | FastAIRAG | Retrieval-Pipeline | RAG |
+
+#### AI Engine
+| Module | Purpose | Tech |
+|--------|---------|------|
+| FastModel | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX |
+| FastAIStream | Token-Streaming-Engine | Pipeline |
+| FastAIToken | Tokenization, Counting, Budgeting | Tokenizer |
+| FastAICache | Antwort- & Embedding-Caching | Cache |
+
+#### AI Hands
+| Module | Purpose | Tech |
+|--------|---------|------|
 | FastAIToolBridge| Tool-Ausführungsschicht | API |
 | FastAIMCP | Model Context Protocol Adapter | MCP |
 | FastAISandbox | Code-Isolation | Security |
 | FastAIScheduler| Async Jobs, Retries, Cron | Queueing |
+
+#### AI Guards
+| Module | Purpose | Tech |
+|--------|---------|------|
 | FastAIGuard | Prompt-Injection-Schutz | Security |
 | FastAIAuth | API-Keys, User-Permissions | Auth |
+| FastAIPolicy | Declarative AI Rules / Policies | Rules |
+
+#### AI Dashboard
+| Module | Purpose | Tech |
+|--------|---------|------|
 | FastAITrace | Token-Flow, Tool-Tracing | Debugging |
 | FastAIEval | Automatische Antwort-Evaluation | Eval |
 | FastAIMetrics | Performance-, Latency-Metrics | Telemetry |
+| FastAIReplay | Replay von Sessions | Debugging |
 | FastAIParser | Strukturierter Output-Parser | Parser |
 | FastAIPrompt | Prompt-Compiler, Templates | Compiler |
 | FastAIRegistry| Registry für Models, Tools, Agents| Registry |
 | FastAIPlugin | Plugin-/Extension-System | Plugin |
 | FastEventBus | Event-System für Tokens | Event Bus |
-| FastArtifact | Verwaltung von Dateien, Images | Storage |
-| FastAIPolicy | Declarative AI Rules / Policies | Rules |
-| FastAIReplay | Replay von Sessions | Debugging |
-| FastAICluster | Multi-GPU / Multi-Node | Orchestrator |
-| FastVision | Vision-Pipeline (OCR, Image-LLMs) | Multimodal |
-| FastSTT | Speech-to-Text | Whisper |
-| FastTTS | Text-to-Speech | Piper |
-| FastConfig | Zentrale Runtime-Konfiguration | Config |
+
+#### AI Infrastructure
+| Module | Purpose | Tech |
+|--------|---------|------|
 | FastAPI | REST/WebSocket/gRPC Layer | Network |
-| FastUI | Dashboard, Monitoring, Chat-UI | UI |
+| FastConfig | Zentrale Runtime-Konfiguration | Config |
+| FastArtifact | Verwaltung von Dateien, Images | Storage |
 | FastStorage | Files, Blobs, Transcripts | IO |
+| FastAICluster | Multi-GPU / Multi-Node | Orchestrator |
 
 ### Debugging & Development
 | Module | Purpose | Tech |
@@ -212,8 +234,8 @@
 - **Released (Alpha):** 33 modules
 - **Beta/Private:** 0 modules
 - **Coming Soon:** 13 modules
-- **Planned:** 65 modules
-- **Total:** 111 modules
+- **Planned:** 61 modules
+- **Total:** 107 modules
 
 ---
 
