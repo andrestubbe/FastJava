@@ -121,9 +121,14 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | FastAIService | — | Router/Orchestrator | API | TODO |
-| FastModel | — | Model-Runtime | ONNX | TODO |
+| FastContext | — | Session-Manager | State | TODO |
+| FastMemory | — | Long-term user storage | Vector DB | TODO |
 | FastRAG | — | Retrieval-Augmented Generation | Pipeline | TODO |
+| FastEmbedding | — | Text to Vector translation | Model | TODO |
+| FastVectorDB | — | High-speed SIMD vector search | SIMD | TODO |
+| FastToolBridge | — | Executes Java code for Agents | API | TODO |
 | FastMCP | — | Model Context Protocol Adapter | MCP | TODO |
+| FastModel | — | C++ Engine (ONNX/gguf) | ONNX | TODO |
 | **[FastAgent](https://github.com/andrestubbe/FastAgent)** | **—** | Autonomous agent runtime | LLM Integration | Alpha |
 
 ### 13. Vision

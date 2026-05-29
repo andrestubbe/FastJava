@@ -106,14 +106,16 @@
 ### AI & ML
 | Module | Purpose | Tech |
 |--------|---------|------|
-| FastAIClient | Unified AI client | REST/GRPC |
-| FastEmbedding | Text embeddings | Local/Cloud |
-| FastVectorDB | In-memory vector search | SIMD |
-| FastToolBridge | AI tool integration | MCP |
-| FastContext | Context management for AI | — |
+| FastAIService | Router/Orchestrator | API |
+| FastContext | Session-Manager | State |
 | FastMemory | AI memory/retrieval | Vector DB |
 | FastRAG | Retrieval-Augmented Generation | Pipeline |
+| FastEmbedding | Text to Vector translation | Model |
+| FastVectorDB | In-memory vector search | SIMD |
+| FastAgent | Autonomous agent runtime | LLM |
+| FastToolBridge | AI tool integration | API |
 | FastMCP | Model Context Protocol | Standard |
+| FastModel | C++ Model Engine (ONNX/gguf) | ONNX |
 
 ### Debugging & Development
 | Module | Purpose | Tech |
@@ -144,10 +146,16 @@
 ┌────────────────────────────────────────────────────────────────────────┐
 │  AUDIO          │  AI            │  COMPUTE      │  UTILS    │ DEBUG   │
 ├────────────────────────────────────────────────────────────────────────┤
-│  FastAudio      │  FastAI        │  FastGPU      │  FastTween│ FastTest│
-│  FastTTS        │  FastEmbedding │               │  FastAnim │FastWatch│
-│  FastSTT        │  FastVectorDB  │               │  FastEvent│FastRepla│
+│  FastAudio      │  FastAIService │  FastGPU      │  FastTween│ FastTest│
+│  FastTTS        │  FastAgent     │               │  FastAnim │FastWatch│
+│  FastSTT        │  FastModel     │               │  FastEvent│FastRepla│
 │  FastOCR        │  FastRAG       │               │  FastSort │FastTrace│
+│                 │  FastVectorDB  │               │           │         │
+│                 │  FastToolBridge│               │           │         │
+│                 │  FastContext   │               │           │         │
+│                 │  FastMemory    │               │           │         │
+│                 │  FastEmbedding │               │           │         │
+│                 │  FastMCP       │               │           │         │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -157,7 +165,7 @@
 
 ```
 ┌────────────────────────────────────────┐
-│  AI & Agent Layer                      │ FastAI, FastRAG, FastToolBridge
+│  AI & Agent Layer                      │ FastAIService, FastAgent, FastRAG, FastToolBridge
 ├────────────────────────────────────────┤
 │  Application Layer                     │ FastRobot, FastScreen, FastWindow
 ├────────────────────────────────────────┤
