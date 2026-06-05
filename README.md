@@ -202,6 +202,9 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
 | **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
+| **[FastUI](https://github.com/andrestubbe/FastUI)** | **—** | Core UI building blocks | Native | Alpha |
+| **[FastProportion](https://github.com/andrestubbe/FastProportion)** | **—** | Proportional layout engine | Core | Alpha |
+| **[FastGrid](https://github.com/andrestubbe/FastGrid)** | **—** | High-performance grid layout | Core | Alpha |
 
 ### 16. Compute
 | Module | Speed vs Java | Key Metrics | Tech | Status |
