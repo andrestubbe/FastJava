@@ -108,7 +108,7 @@
 #### AI Brain
 | Module | Purpose | Tech |
 |--------|---------|------|
-| FastAIService | Provider-Router (lokal/Cloud) | API |
+| FastAI | Provider-Router (lokal/Cloud) | API |
 | FastAIAgent | Agenten-Logik, Tool-Auswahl | LLM |
 | FastAIReasoner | Planning, Reflection | Logic |
 | FastAIWorkflow | Multi-Agent-Pipelines, Tasks | Orchestrator |
@@ -198,7 +198,7 @@
 ┌────────────────────────────────────────────────────────────────────────┐
 │  AUDIO          │  AI            │  COMPUTE      │  UTILS    │ DEBUG   │
 ├────────────────────────────────────────────────────────────────────────┤
-│  FastAudio      │  FastAIService │  FastGPU      │  FastTween│ FastTest│
+│  FastAudio      │  FastAI │  FastGPU      │  FastTween│ FastTest│
 │  FastTTS        │  FastAgent     │               │  FastAnim │FastWatch│
 │  FastSTT        │  FastModel     │               │  FastEvent│FastRepla│
 │  FastOCR        │  FastRAG       │               │  FastSort │FastTrace│
@@ -217,7 +217,7 @@
 
 ```
 ┌────────────────────────────────────────┐
-│  AI & Agent Layer                      │ FastAIService, FastAgent, FastRAG, FastToolBridge
+│  AI & Agent Layer                      │ FastAI, FastAgent, FastRAG, FastToolBridge
 ├────────────────────────────────────────┤
 │  Application Layer                     │ FastRobot, FastScreen, FastWindow
 ├────────────────────────────────────────┤

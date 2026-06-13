@@ -122,7 +122,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 #### AI Brain
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **FastAIService** | — | Provider-Router (lokal/Cloud) | API | TODO |
+| **FastAI** | — | Provider-Router (lokal/Cloud) | API | TODO |
 | **FastAIAgent** | — | Agenten-Logik, Tool-Auswahl | LLM | TODO |
 | **FastAIReasoner** | — | Planning & Multi-Step-Reasoning | Logic | TODO |
 | **FastAIWorkflow** | — | Multi-Agent-Pipelines & DAG | Orchestrator | TODO |
