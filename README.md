@@ -208,14 +208,14 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
-| **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
-| **[FastConPTY](https://github.com/andrestubbe/FastConPTY)** | **—** | Native Windows ConPTY connector | Win32 PTY | Alpha |
-| **[FastTUI](https://github.com/andrestubbe/FastTUI)** | **—** | Terminal UI framework for Java | Win32 Console | Alpha |
-| **[FastTerminal3D](https://github.com/andrestubbe/FastTerminal3D)** | **—** | 3D terminal renderer for Java | Terminal | Alpha |
-| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
 | **[FastUI](https://github.com/andrestubbe/FastUI)** | **—** | Core UI building blocks | Native | Alpha |
 | **[FastProportion](https://github.com/andrestubbe/FastProportion)** | **—** | Proportional layout engine | Core | Alpha |
 | **[FastGrid](https://github.com/andrestubbe/FastGrid)** | **—** | High-performance grid layout | Core | Alpha |
+| **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
+| **[FastConPTY](https://github.com/andrestubbe/FastConPTY)** | **—** | Native Windows ConPTY connector | Win32 PTY | Alpha |
+| **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
+| **[FastTerminal3D](https://github.com/andrestubbe/FastTerminal3D)** | **—** | 3D terminal renderer for Java | Terminal | Alpha |
+| **[FastTUI](https://github.com/andrestubbe/FastTUI)** | **—** | Terminal UI framework for Java | Win32 Console | Alpha |
 
 ### 16. Compute
 | Module | Speed vs Java | Key Metrics | Tech | Status |
