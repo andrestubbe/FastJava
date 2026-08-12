@@ -83,7 +83,6 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|---------|
 | **[FastFloat](https://github.com/andrestubbe/fastfloat)** | **5-12×** | SIMD parsing vs Float.parseFloat() | SIMD, AVX2 | Alpha | `v0.1.0` |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math| OpenCL, SIMD | Alpha | `v0.1.0` |
-| FastSIMD | — | SIMD operations framework | AVX2/512 | TODO | — |
 
 ### 8. Filesystem
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
@@ -98,15 +97,16 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha | `v0.1.0` |
 
 ### 9. System
-| Module                           | Speed vs Java | Key Metrics | Tech | Status | Version |
-|----------------------------------|---------------|-------------|------|--------|---------|
-| **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha  | `v0.1.0` |
-| **[FastHardware](https://github.com/andrestubbe/FastHardware)** | — | Global hardware telemetry | PDH/WMI | TODO   | `v0.1.0` |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha  | `v0.1.0` |
-| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha  | `v0.1.0` |
-| FastSharedMemory              | **—** | Zero-copy IPC memory mapped files | Win32 IPC | TODO   | — |
-| FastPointer                      | — | Native pointer operations | JNI | TODO   | — |
-| FastMemory                       | — | System/RAM access | Unsafe | TODO   | — |
+| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
+|--------|---------------|-------------|------|--------|---------|
+| **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha | `v0.1.0` |
+| **[FastHardware](https://github.com/andrestubbe/FastHardware)** | **—** | Global hardware telemetry | PDH/WMI | TODO | `v0.1.0` |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.0` |
+| **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha | `v0.1.0` |
+| FastMemory | — | System/RAM access | Unsafe | TODO | — |
+| FastPointer | — | Native pointer operations | JNI | TODO | — |
+| FastSharedMemory | — | Zero-copy IPC memory mapped files | Win32 IPC | TODO | — |
+| FastSIMD | — | Hardware SIMD vectorization | AVX2, NEON | TODO | — |
 
 ### 10. Network
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
