@@ -95,13 +95,13 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha | `v0.1.0` |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.0` |
 
 ### 9. System
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha | `v0.1.0` |
 | **[FastHardware](https://github.com/andrestubbe/FastHardware)** | **—** | Global hardware telemetry | PDH/WMI | TODO | `v0.1.0` |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.0` |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha | `v0.1.0` |
 | FastMemory | — | System/RAM access | Unsafe | TODO | — |
 | FastPointer | — | Native pointer operations | JNI | TODO | — |
