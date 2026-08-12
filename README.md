@@ -52,12 +52,14 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha |
+| **[FastSoftware3D](https://github.com/andrestubbe/FastSoftware3D)** | **—** | Software 3D rendering pipeline | AVX2 SIMD | Alpha |
 
 ### 5. Audio
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha |
+| **[FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess)** | **—** | Audio processing & formant analysis | WASAPI / DSP | Alpha |
 | **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha |
 | **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha |
 | **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha |
@@ -69,6 +71,9 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha |
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha |
 | **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha |
+| **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha |
+| **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha |
+| **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha |
 | **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | **10-25×** | O(n) SIMD scanner vs slow Regex | Deterministic| Alpha |
 | FastHTML | — | HTML parser | SIMD | TODO |
@@ -122,8 +127,10 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 #### AI Brain
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **FastAI** | — | Provider-Router (lokal/Cloud) | API | TODO |
-| **FastAIAgent** | — | Agenten-Logik, Tool-Auswahl | LLM | TODO |
+| **[FastAI](https://github.com/andrestubbe/FastAI)** | **—** | Provider-Router (lokal/Cloud) | API | Alpha |
+| **[FastAIAgent](https://github.com/andrestubbe/FastAIAgent)** | **—** | Agenten-Logik, Tool-Auswahl | LLM | Alpha |
+| **[FastAIBot](https://github.com/andrestubbe/FastAIBot)** | **—** | High-performance bot orchestrator | LLM / Runtime | Alpha |
+| **[FastAIRuntime](https://github.com/andrestubbe/FastAIRuntime)** | **—** | Deterministic execution engine | Engine | Alpha |
 | **FastAIReasoner** | — | Planning & Multi-Step-Reasoning | Logic | TODO |
 | **FastAIWorkflow** | — | Multi-Agent-Pipelines & DAG | Orchestrator | TODO |
 | **FastAIState** | — | Shared Agent State / Blackboard | Memory | TODO |
@@ -133,15 +140,16 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|
 | **FastAISession** | — | Conversation Lifecycle | History | TODO |
 | **FastAIContext** | — | Kontext-Management, Rollen | State | TODO |
-| **FastAIMemory** | — | Kurzzeit- & Langzeit-Gedächtnis | Vector DB | TODO |
-| **FastAIVectorDB** | — | Vektor-Store für Memory & RAG | SIMD | TODO |
+| **[FastAIMemory](https://github.com/andrestubbe/FastAIMemory)** | **—** | Kurzzeit- & Langzeit-Gedächtnis | Vector DB | Alpha |
+| **[FastAIVectorDB](https://github.com/andrestubbe/FastAIVectorDB)** | **—** | Vektor-Store für Memory & RAG | SIMD | Alpha |
 | **FastAIEmbedding** | — | Embedding-Service | Model | TODO |
-| **FastAIRAG** | — | Retrieval-Pipeline | RAG | TODO |
+| **[FastAIRag](https://github.com/andrestubbe/FastAIRag)** | **—** | Retrieval-Pipeline | RAG | Alpha |
 
 #### AI Engine
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
-| **FastModel** | — | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX | TODO |
+| **[FastAIModel](https://github.com/andrestubbe/FastAIModel)** | **—** | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX | Alpha |
+| **[FastContentChunk](https://github.com/andrestubbe/FastContentChunk)** | **—** | Tokenizer & chunking strategy engine | Tokenizer | Alpha |
 | **FastAIStream** | — | Token-Streaming-Engine | Pipeline | TODO |
 | **FastAIToken** | — | Tokenization, Counting, Budgeting | Tokenizer | TODO |
 | **FastAICache** | — | Antwort- & Embedding-Caching | Cache | TODO |
@@ -201,6 +209,9 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|
 | **[FastTheme](https://github.com/andrestubbe/fasttheme)** | **❌ Java can't** | Native Windows theming | WinRT, DWM | Alpha |
 | **[FastTerminal](https://github.com/andrestubbe/FastTerminal)** | **❌ Java can't** | Double-buffered TUI blitting | Win32 console, JNI | Alpha |
+| **[FastConPTY](https://github.com/andrestubbe/FastConPTY)** | **—** | Native Windows ConPTY connector | Win32 PTY | Alpha |
+| **[FastTUI](https://github.com/andrestubbe/FastTUI)** | **—** | Terminal UI framework for Java | Win32 Console | Alpha |
+| **[FastTerminal3D](https://github.com/andrestubbe/FastTerminal3D)** | **—** | 3D terminal renderer for Java | Terminal | Alpha |
 | **[FastNotification](https://github.com/andrestubbe/fastnotification)** | **❌ Broken** | SystemTray broken → native WinRT | WinRT, Toast| Alpha |
 | **[FastUI](https://github.com/andrestubbe/FastUI)** | **—** | Core UI building blocks | Native | Alpha |
 | **[FastProportion](https://github.com/andrestubbe/FastProportion)** | **—** | Proportional layout engine | Core | Alpha |
@@ -279,9 +290,9 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]** — APIs may change. Not production-ready yet.
 
-- ✅ **33 Released** — Available now on GitHub & JitPack
-- 🚧 **13 Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
-- 🔄 **37 Planned** — Full 81-module pipeline
+- ✅ **50+ Released (73 Modules)** — Available now on GitHub & JitPack
+- 🚧 **Coming Soon** — Audio, Vision, AI, Advanced System (2026-2027)
+- 🔄 **Planned** — Full 80+ module pipeline
 - ✅ Windows fully supported — Linux/macOS in progress
 
 ---
