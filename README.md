@@ -92,7 +92,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha | `v0.1.0` |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha | `v0.1.0` |
 | FastFileSystem | — | Index + Search + Watch in one API | Unified API | TODO | — |
-| **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v1.0` |
+| **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v0.1.0` |
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha | `v0.1.0` |
