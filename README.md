@@ -103,8 +103,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha | `v0.1.0` |
 | **[FastHardware](https://github.com/andrestubbe/FastHardware)** | **—** | Global hardware telemetry | PDH/WMI | TODO | `v0.1.0` |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha | `v0.1.0` |
-| FastMemory | — | System/RAM access | Unsafe | TODO | — |
-| FastPointer | — | Native pointer operations | JNI | TODO | — |
+| **[FastMemory](https://github.com/andrestubbe/FastMemory)** | **—** | SIMD 32-byte aligned RAM & page locking | Unsafe, Win32 | Alpha | `v0.1.0` |
+| **[FastPointer](https://github.com/andrestubbe/FastPointer)** | **—** | Zero-overhead native address arithmetic | JNI / Direct | Alpha | `v0.1.0` |
 | FastSharedMemory | — | Zero-copy IPC memory mapped files | Win32 IPC | TODO | — |
 | FastSIMD | — | Hardware SIMD vectorization | AVX2, NEON | TODO | — |
 
