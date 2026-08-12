@@ -140,7 +140,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|
 | **FastAISession** | — | Conversation Lifecycle | History | TODO |
 | **FastAIContext** | — | Kontext-Management, Rollen | State | TODO |
-| **[FastAIMemory](https://github.com/andrestubbe/FastAIMemory)** | **—** | Kurzzeit- & Langzeit-Gedächtnis | Vector DB | Alpha |
+| **[FastAIMemory](https://github.com/andrestubbe/FastAIMemory)** | **—** | Kurzzeit- & Langzeit-Gedächtnis | Context / History | Alpha |
 | **[FastAIVectorDB](https://github.com/andrestubbe/FastAIVectorDB)** | **—** | Vektor-Store für Memory & RAG | SIMD | Alpha |
 | **FastAIEmbedding** | — | Embedding-Service | Model | TODO |
 | **[FastAIRag](https://github.com/andrestubbe/FastAIRag)** | **—** | Retrieval-Pipeline | RAG | Alpha |
