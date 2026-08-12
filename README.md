@@ -106,7 +106,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastMemory](https://github.com/andrestubbe/FastMemory)** | **—** | SIMD 32-byte aligned RAM & page locking | Unsafe, Win32 | Alpha | `v0.1.0` |
 | **[FastPointer](https://github.com/andrestubbe/FastPointer)** | **—** | Zero-overhead native address arithmetic | JNI / Direct | Alpha | `v0.1.0` |
 | FastSharedMemory | — | Zero-copy IPC memory mapped files | Win32 IPC | TODO | — |
-| FastSIMD | — | Hardware SIMD vectorization | AVX2, NEON | TODO | — |
+| **[FastSIMD](https://github.com/andrestubbe/FastSIMD)** | **—** | Hardware SIMD vectorization | AVX2, NEON | Alpha | `v0.1.0` |
 
 ### 10. Network
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
