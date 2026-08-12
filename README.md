@@ -45,8 +45,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status |
 |--------|---------------|-------------|------|--------|
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha |
-| **[FastThumb](https://github.com/andrestubbe/FastThumb)** | **—** | Native OS thumbnail extraction | Windows Shell | Alpha |
-| **[FastPreview](https://github.com/andrestubbe/fastpreview)** | **❌ Java can't** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha |
+| FastThumb | — | Native OS thumbnail extraction | Windows Shell | TODO |
+| FastPreview | — | Native rasterization vs slow Swing | PDFium, WV2 | TODO |
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha |
 | **[FastOverlay](https://github.com/andrestubbe/FastOverlay)** | **—** | Game overlays | DirectX | Alpha |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha |
@@ -72,10 +72,9 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha |
 | **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha |
 | **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha |
-| **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha |
 | **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha |
-| **[FastTokenizer](https://github.com/andrestubbe/fasttokenizer)** | **10-25×** | O(n) SIMD scanner vs slow Regex | Deterministic| Alpha |
+| FastTokenizer | — | O(n) SIMD scanner vs slow Regex | Deterministic | TODO |
 | FastHTML | — | HTML parser | SIMD | TODO |
 | FastRegex | — | SIMD regex engine | AVX2 | TODO |
 
@@ -90,12 +89,13 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module                                                                          | Speed vs Java | Key Metrics | Tech | Status |
 |---------------------------------------------------------------------------------|---------------|-------------|------|--------|
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)**               | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha |
-| **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed in-file text indexing | SIMD | Alpha |
+| **[FastCompress](https://github.com/andrestubbe/FastCompress)**                 | **—** | Ultra-fast native compression | Native | Alpha |
+| FastFileContentIndex                                                            | — | High-speed in-file text indexing | SIMD | TODO |
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)**               | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)**             | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha |
 | **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha |
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha |
-| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)**             | **Unified** | Index + Search + Watch in one API | Unified API | Alpha |
+| FastFileSystem                                                                  | — | Index + Search + Watch in one API | Unified API | TODO |
 
 ### 9. System
 | Module                           | Speed vs Java | Key Metrics | Tech | Status |
