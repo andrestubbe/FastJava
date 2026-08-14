@@ -47,7 +47,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha | `v0.1.0` |
 | FastThumb | — | Native OS thumbnail extraction | Windows Shell | TODO | — |
 | FastPreview | — | Native rasterization vs slow Swing | PDFium, WV2 | TODO | — |
-| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha | `v1.0.0` |
+| **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha | `v1.0.0-SNAPSHOT` |
 | **[FastOverlay](https://github.com/andrestubbe/FastOverlay)** | **—** | Game overlays | DirectX | Alpha | `v0.1.0` |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha | `v0.1.0` |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha | `v0.1.0` |
@@ -67,11 +67,11 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 6. Parsing
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
-| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | **2-50×** | AVX2 bulk ops vs standard Java | SIMD, AVX2 | Alpha | `v0.1.0` |
-| **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha | `v0.1.2` |
-| **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha | `v0.1.0` |
+| **[FastBytes](https://github.com/andrestubbe/fastbytes)** | **2-50×** | AVX2 bulk ops vs standard Java | SIMD, AVX2 | Alpha | `v0.1.1` |
+| **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha | `v0.1.3` |
+| **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha | `v0.1.1` |
 | **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha | `v0.1.2` |
-| **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha | `v0.1.0` |
+| **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha | `vmain-SNAPSHOT` |
 | **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha | `v0.1.3` |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha | `v0.1.0` |
 | FastTokenizer | — | O(n) SIMD scanner vs slow Regex | Deterministic | TODO | — |
@@ -91,7 +91,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha | `v0.1.0` |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha | `v0.1.0` |
 | FastFileSystem | — | Index + Search + Watch in one API | Unified API | TODO | — |
-| **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v0.1.0` |
+| **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v1.0-SNAPSHOT` |
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha | `v0.1.0` |
@@ -103,10 +103,10 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastCore](https://github.com/andrestubbe/fastcore)** | **—** | Cross-platform DLL loader | JNI Loader | Alpha | `v0.1.0` |
 | **[FastHardware](https://github.com/andrestubbe/FastHardware)** | **—** | Global hardware telemetry | PDH/WMI | TODO | `v0.1.0` |
 | **[FastClipboard](https://github.com/andrestubbe/fastclipboard)** | **2-3×** | Native vs AWT, zero bugs | Win32 API | Alpha | `v0.1.0` |
-| **[FastMemory](https://github.com/andrestubbe/FastMemory)** | **—** | SIMD 32-byte aligned RAM & page locking | Unsafe, Win32 | Alpha | `v0.1.0` |
-| **[FastPointer](https://github.com/andrestubbe/FastPointer)** | **—** | Zero-overhead native address arithmetic | JNI / Direct | Alpha | `v0.1.0` |
-| **[FastSharedMemory](https://github.com/andrestubbe/FastSharedMemory)** | **—** | Zero-copy IPC memory mapped files | Win32 IPC | Alpha | `v0.1.0` |
-| **[FastSIMD](https://github.com/andrestubbe/FastSIMD)** | **—** | Hardware SIMD vectorization | AVX2, NEON | Alpha | `v0.1.0` |
+| **[FastMemory](https://github.com/andrestubbe/FastMemory)** | **—** | SIMD 32-byte aligned RAM & page locking | Unsafe, Win32 | Alpha | `v0.1.1` |
+| **[FastPointer](https://github.com/andrestubbe/FastPointer)** | **—** | Zero-overhead native address arithmetic | JNI / Direct | Alpha | `v0.1.1` |
+| **[FastSharedMemory](https://github.com/andrestubbe/FastSharedMemory)** | **—** | Zero-copy IPC memory mapped files | Win32 IPC | Alpha | `v0.1.1` |
+| **[FastSIMD](https://github.com/andrestubbe/FastSIMD)** | **—** | Hardware SIMD vectorization | AVX2, NEON | Alpha | `v0.1.3` |
 
 ### 10. Network
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
@@ -141,7 +141,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **FastAISession** | — | Conversation Lifecycle | History | TODO | — |
 | **FastAIContext** | — | Kontext-Management, Rollen | State | TODO | — |
 | **[FastAIMemory](https://github.com/andrestubbe/FastAIMemory)** | **—** | Kurzzeit- & Langzeit-Gedächtnis | Context / History | Alpha | `v0.1.3` |
-| **[FastAIVectorDB](https://github.com/andrestubbe/FastAIVectorDB)** | **—** | Vektor-Store für Memory & RAG | SIMD | Alpha | `v0.1.3` |
+| **[FastAIVectorDB](https://github.com/andrestubbe/FastAIVectorDB)** | **—** | Vektor-Store für Memory & RAG | SIMD | Alpha | `v0.1.4` |
 | **FastAIEmbedding** | — | Embedding-Service | Model | TODO | — |
 | **[FastAIRag](https://github.com/andrestubbe/FastAIRag)** | **—** | Retrieval-Pipeline | RAG | Alpha | `v0.1.1` |
 
@@ -149,7 +149,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
 | **[FastAIModel](https://github.com/andrestubbe/FastAIModel)** | **—** | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX | Alpha | `v0.1.2` |
-| **[FastContentChunk](https://github.com/andrestubbe/FastContentChunk)** | **—** | Tokenizer & chunking strategy engine | Tokenizer | Alpha | `v0.1.2` |
+| **[FastContentChunk](https://github.com/andrestubbe/FastContentChunk)** | **—** | Tokenizer & chunking strategy engine | Tokenizer | Alpha | `v0.1.3` |
 | **FastAIStream** | — | Token-Streaming-Engine | Pipeline | TODO | — |
 | **FastAIToken** | — | Tokenization, Counting, Budgeting | Tokenizer | TODO | — |
 | **FastAICache** | — | Antwort- & Embedding-Caching | Cache | TODO | — |
