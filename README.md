@@ -49,7 +49,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastPreview | — | Native rasterization vs slow Swing | PDFium, WV2 | TODO | — |
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha | `v1.0.0-SNAPSHOT` |
 | **[FastOverlay](https://github.com/andrestubbe/FastOverlay)** | **—** | Game overlays | DirectX | Alpha | `v0.1.0` |
-| **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha | `v0.1.0` |
+| **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha | `v0.1.1` |
 | **[FastImageView](https://github.com/andrestubbe/fastimageview)** | **10×** | 200ms startup vs 2s Swing | DirectX | Alpha | `v0.1.0` |
 | **[FastGraphics](https://github.com/andrestubbe/fastgraphics)** | **600%** | GPU DirectX vs Java2D software | DirectX, GPU | Alpha | `v1.0.0` |
 | **[FastSoftware3D](https://github.com/andrestubbe/FastSoftware3D)** | **—** | Software 3D rendering pipeline | AVX2 SIMD | Alpha | `v0.1.0` |
@@ -59,7 +59,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|---------|
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha | `v0.1.0` |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha | `v0.1.1` |
-| **[FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess)** | **—** | Audio processing & formant analysis | WASAPI / DSP | Alpha | `v0.1.0` |
+| **[FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess)** | **—** | Audio processing & formant analysis | WASAPI / DSP | Alpha | `v0.1.1` |
 | **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha | `v0.1.0` |
 | **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha | `v0.1.1` |
 | **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha | `v0.1.1` |
@@ -81,7 +81,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 7. Math
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
-| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | **5-12×** | SIMD parsing vs Float.parseFloat() | SIMD, AVX2 | Alpha | `v0.1.0` |
+| **[FastFloat](https://github.com/andrestubbe/fastfloat)** | **5-12×** | SIMD parsing vs Float.parseFloat() | SIMD, AVX2 | Alpha | `v0.1.1` |
 | **[FastMath](https://github.com/andrestubbe/fastmath)** | **3-8×** | JNI SIMD + OpenCL GPU vs java.lang.Math| OpenCL, SIMD | Alpha | `v0.1.0` |
 
 ### 8. Filesystem
@@ -95,7 +95,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha | `v0.1.0` |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.0` |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
 
 ### 9. System
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
