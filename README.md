@@ -62,7 +62,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess)** | **—** | Audio processing & formant analysis | WASAPI / DSP | Alpha | `v0.1.1` |
 | **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha | `v0.1.0` |
 | **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha | `v0.1.1` |
-| **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha | `v0.1.1` |
+| **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha | `v0.1.2` |
 
 ### 6. Parsing
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
@@ -94,7 +94,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v1.0-SNAPSHOT` |
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
-| **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | Native | Alpha | `v0.1.0` |
+| **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | SIMD, AVX2 | Alpha | `v0.1.1` |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
 
 ### 9. System
