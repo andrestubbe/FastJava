@@ -57,11 +57,11 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 5. Audio
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
-| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI | Alpha | `v0.1.0` |
-| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI | Alpha | `v0.1.1` |
+| **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **❌ No WASAPI** | Real-time capture vs Java Sound | WASAPI, AVX2 | Alpha | `v0.1.1` |
+| **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20-30×** | Low-latency playback vs Java Sound | WASAPI, AVX2 | Alpha | `v0.1.2` |
 | **[FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess)** | **—** | Audio processing & formant analysis | WASAPI / DSP | Alpha | `v0.1.1` |
 | **[FastWakeWord](https://github.com/andrestubbe/FastWakeWord)** | **—** | Always-on native wake-word detection | Audio DSP | Alpha | `v0.1.0` |
-| **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | Piper/Cloud | Alpha | `v0.1.1` |
+| **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **—** | Text-to-speech | SIMD, Piper/Cloud | Alpha | `v0.1.2` |
 | **[FastSTT](https://github.com/andrestubbe/FastSTT)** | **—** | Speech-to-text | Whisper | Alpha | `v0.1.2` |
 
 ### 6. Parsing
