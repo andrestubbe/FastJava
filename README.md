@@ -71,10 +71,10 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha | `v0.1.3` |
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha | `v0.1.1` |
 | **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha | `v0.1.2` |
-| **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha | `vmain-SNAPSHOT` |
+| **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha | `v0.1.0` |
 | **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha | `v0.1.3` |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha | `v0.1.0` |
-| FastTokenizer | — | O(n) SIMD scanner vs slow Regex | Deterministic | TODO | — |
+| **[FastTokenize](https://github.com/andrestubbe/FastTokenize)** | **Sub-µs** | $O(n)$ multi-language scanner & style stream | Zero-Alloc | Alpha | `v0.1.0` |
 | FastHTML | — | HTML parser | SIMD | TODO | — |
 | FastRegex | — | SIMD regex engine | AVX2 | TODO | — |
 
