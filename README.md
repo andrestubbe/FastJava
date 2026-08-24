@@ -20,7 +20,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastKeyboard](https://github.com/andrestubbe/FastKeyboard)** | **16×** | RawInput vs standard AWT KeyListener | RawInput API | Alpha | `v0.1.0` |
 | **[FastTouch](https://github.com/andrestubbe/fasttouch)** | **❌ Java can't** | Multi-touch pressure — no Java API | Win32 touch | Alpha | `v0.1.0` |
 | **[FastStylus](https://github.com/andrestubbe/faststylus)** | **❌ Java can't** | Pen tilt/eraser — no Java API exists | WM_POINTER | Alpha | `v0.1.0` |
-| **[FastKeylogger](https://github.com/andrestubbe/FastKeylogger)** | **—** | Global asynchronous keyboard tracking | Win32 Hooks | Alpha | `v0.1.0` |
+| **[FastKeylogger](https://github.com/andrestubbe/FastKeylogger)** | **—** | Global asynchronous keyboard tracking | Win32 Hooks | Alpha | `v0.1.2` |
 | **[FastMouse](https://github.com/andrestubbe/FastMouse)** | **—** | Raw mouse reading | RawInput API | Alpha | `v0.1.0` |
 | FastGamepad | — | Controller support | XInput | TODO | — |
 
