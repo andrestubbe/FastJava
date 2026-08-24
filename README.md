@@ -68,6 +68,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
 | **[FastBytes](https://github.com/andrestubbe/fastbytes)** | **2-50×** | AVX2 bulk ops vs standard Java | SIMD, AVX2 | Alpha | `v0.1.1` |
+| **[FastBinary](https://github.com/andrestubbe/FastBinary)** | **—** | Zero-bloat bit-packing, VarInt & endianness | Zero-Alloc | Alpha | `v0.1.0` |
 | **[FastJSON](https://github.com/andrestubbe/fastjson)** | **50×** | 50× faster than Jackson/Gson | SIMD, Zero-GC| Alpha | `v0.1.3` |
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha | `v0.1.1` |
 | **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha | `v0.1.2` |
@@ -87,6 +88,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 8. Filesystem
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
+| **[FastFileFormat](https://github.com/andrestubbe/FastFileFormat)** | **—** | Dual text/binary streaming format with aliases | Binary / Text | Alpha | `v0.1.0` |
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha | `v0.1.1` |
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha | `v0.1.0` |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha | `v0.1.0` |
@@ -95,7 +98,6 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | SIMD, AVX2 | Alpha | `v0.1.1` |
-| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
 
 ### 9. System
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |

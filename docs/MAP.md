@@ -26,6 +26,8 @@
 | **FastFloat** | 🔧 Alpha | SIMD, AVX2 | Float/double parsing (5-12×) | [→](https://github.com/andrestubbe/FastFloat) |
 | **FastString** | 🔧 Alpha | SIMD, UTF-8 | String ops (10-100×) | [→](https://github.com/andrestubbe/FastString) |
 | **FastBytes** | 🔧 Alpha | SIMD, AVX2 | Byte operations (2-50×) | [→](https://github.com/andrestubbe/FastBytes) |
+| **FastBinary** | 🔧 Alpha | VarInt, BitPack | Zero-bloat bit-packing & VarInt compression | [→](https://github.com/andrestubbe/FastBinary) |
+| **FastFileFormat** | 🔧 Alpha | Binary, Parser | Dual-format binary/text serialization engine | [→](https://github.com/andrestubbe/FastFileFormat) |
 | **FastJSON** | 🔧 Alpha | SIMD, Zero-copy | JSON parser (50×) | [→](https://github.com/andrestubbe/FastJSON) |
 | **FastMath** | 🔧 Alpha | OpenCL, SIMD | GPU + SIMD math (3-8×) | [→](https://github.com/andrestubbe/FastMath) |
 | **FastIO** | 🔧 Alpha | AVX2, DMA, mmap | SIMD-Search & Fast I/O (2-11×) | [→](https://github.com/andrestubbe/FastIO) |
