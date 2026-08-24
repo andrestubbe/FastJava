@@ -142,7 +142,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastAIHybrid](https://github.com/andrestubbe/FastAIHybrid)** | **—** | Hybrid dense & sparse retrieval fusion | Fusion Engine | Alpha | `v0.1.0` |
 | **[FastAIState](https://github.com/andrestubbe/FastAIState)** | **—** | Lock-free shared agent state & blackboard memory | Shared Memory | Alpha | `v0.1.1` |
 | **[FastAIMetrics](https://github.com/andrestubbe/FastAIMetrics)** | **—** | Token usage, latency profiling, cost & evaluation | Telemetry / VarInt | Alpha | `v0.1.0` |
-| FastVision | — | Local GPU multimodal vision & UI grounding pipeline | DirectML / Vulkan | Planned | — |
+| **[FastAIVision](https://github.com/andrestubbe/FastAIVision)** | **—** | Local multimodal vision & UI grounding pipeline | Qwen2-VL / SmolVLM | Alpha | `v0.1.0` |
 
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
