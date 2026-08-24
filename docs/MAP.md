@@ -106,70 +106,24 @@
 | FastSTT | Speech-to-text | Whisper/Cloud |
 
 ### AI & ML
-
-#### AI Brain
 | Module | Purpose | Tech |
 |--------|---------|------|
-| FastAI | Provider-Router (lokal/Cloud) | API |
-| FastAIAgent | Agenten-Logik, Tool-Auswahl | LLM |
-| FastAIReasoner | Planning, Reflection | Logic |
-| FastAIWorkflow | Multi-Agent-Pipelines, Tasks | Orchestrator |
-| FastAIState | Shared Agent State / Blackboard | Memory |
-
-#### AI Memory
-| Module | Purpose | Tech |
-|--------|---------|------|
-| FastAISession | Conversation Lifecycle | History |
-| FastAIContext | Kontext-Management, Rollen | State |
-| FastAIMemory | Kurzzeit- & Langzeit-Gedächtnis | Vector DB |
-| FastAIVectorDB| Vektor-Store für Memory & RAG | SIMD |
-| FastAIEmbedding| Embedding-Service | Model |
-| FastAIRAG | Retrieval-Pipeline | RAG |
-
-#### AI Engine
-| Module | Purpose | Tech |
-|--------|---------|------|
-| FastModel | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX |
-| FastAIStream | Token-Streaming-Engine | Pipeline |
-| FastAIToken | Tokenization, Counting, Budgeting | Tokenizer |
-| FastAICache | Antwort- & Embedding-Caching | Cache |
-
-#### AI Hands
-| Module | Purpose | Tech |
-|--------|---------|------|
-| FastAIToolBridge| Tool-Ausführungsschicht | API |
-| FastAIMCP | Model Context Protocol Adapter | MCP |
-| FastAISandbox | Code-Isolation | Security |
-| FastAIScheduler| Async Jobs, Retries, Cron | Queueing |
-
-#### AI Guards
-| Module | Purpose | Tech |
-|--------|---------|------|
-| FastAIGuard | Prompt-Injection-Schutz | Security |
-| FastAIAuth | API-Keys, User-Permissions | Auth |
-| FastAIPolicy | Declarative AI Rules / Policies | Rules |
-
-#### AI Dashboard
-| Module | Purpose | Tech |
-|--------|---------|------|
-| FastAITrace | Token-Flow, Tool-Tracing | Debugging |
-| FastAIEval | Automatische Antwort-Evaluation | Eval |
-| FastAIMetrics | Performance-, Latency-Metrics | Telemetry |
-| FastAIReplay | Replay von Sessions | Debugging |
-| FastAIParser | Strukturierter Output-Parser | Parser |
-| FastAIPrompt | Prompt-Compiler, Templates | Compiler |
-| FastAIRegistry| Registry für Models, Tools, Agents| Registry |
-| FastAIPlugin | Plugin-/Extension-System | Plugin |
-| FastEventBus | Event-System für Tokens | Event Bus |
-
-#### AI Infrastructure
-| Module | Purpose | Tech |
-|--------|---------|------|
-| FastAPI | REST/WebSocket/gRPC Layer | Network |
-| FastConfig | Zentrale Runtime-Konfiguration | Config |
-| FastArtifact | Verwaltung von Dateien, Images | Storage |
-| FastStorage | Files, Blobs, Transcripts | IO |
-| FastAICluster | Multi-GPU / Multi-Node | Orchestrator |
+| FastAI | Multi-provider router & LLM client layer | Multi-Provider API |
+| FastAIAgent | Autonomous agent logic, tools & planning loop | Agent Runtime |
+| FastAIBot | High-performance bot orchestrator & session manager | LLM Engine |
+| FastAIRuntime | Deterministic execution engine & FastAIEventBus | Runtime / Events |
+| FastAIModel | Local ONNX/GGUF matrix inference runtime | ONNX / DirectML |
+| FastAIRag | High-speed retrieval augmented generation pipeline | RAG / Hybrid |
+| FastAIMemory | Short-term & long-term conversational memory | Context Store |
+| FastAIVectorDB | Zero-allocation vector store with built-in Embedder | AVX2 / JNI |
+| FastAIMCP | Model Context Protocol client & stdio tool bridge | MCP |
+| FastAIReasoner | Multi-step reasoning, CoT & heuristic planning | Tree-of-Thoughts |
+| FastAIGraph | In-memory knowledge graph & multi-hop traversal | Entity Linking |
+| FastAIRerank | Cross-encoder relevance scoring & ranking | Reranker |
+| FastAIHybrid | Hybrid dense & sparse retrieval fusion | Fusion Engine |
+| FastAIState | Lock-free shared agent state & blackboard memory | Shared Memory |
+| FastAIMetrics | Token usage, latency profiling, cost & evaluation | Telemetry |
+| FastVision | Local GPU multimodal vision & UI grounding pipeline | DirectML / Vulkan |
 
 ### Debugging & Development
 | Module | Purpose | Tech |

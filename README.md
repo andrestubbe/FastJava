@@ -125,73 +125,24 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastKeychain | — | Credential store | Windows | TODO | — |
 
 ### 12. AI
-
-#### AI Brain
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
-| **[FastAI](https://github.com/andrestubbe/FastAI)** | **—** | Provider-Router (lokal/Cloud) | API | Alpha | `v0.1.5` |
-| **[FastAIAgent](https://github.com/andrestubbe/FastAIAgent)** | **—** | Agenten-Logik, Tool-Auswahl | LLM | Alpha | `v0.1.5` |
+| **[FastAI](https://github.com/andrestubbe/FastAI)** | **—** | Unified provider routing & LLM client layer | Multi-Provider | Alpha | `v0.1.5` |
+| **[FastAIAgent](https://github.com/andrestubbe/FastAIAgent)** | **—** | Autonomous agent logic, tools & planning | Agent Loop | Alpha | `v0.1.5` |
 | **[FastAIBot](https://github.com/andrestubbe/FastAIBot)** | **—** | High-performance bot orchestrator | LLM / Runtime | Alpha | `v0.1.2` |
-| **[FastAIRuntime](https://github.com/andrestubbe/FastAIRuntime)** | **—** | Deterministic execution engine | Engine | Alpha | `v0.1.0` |
-| **FastAIReasoner** | — | Planning & Multi-Step-Reasoning | Logic | TODO | — |
-| **FastAIWorkflow** | — | Multi-Agent-Pipelines & DAG | Orchestrator | TODO | — |
-| **FastAIState** | — | Shared Agent State / Blackboard | Memory | TODO | — |
-
-#### AI Memory
-| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
-|--------|---------------|-------------|------|--------|---------|
-| **FastAISession** | — | Conversation Lifecycle | History | TODO | — |
-| **FastAIContext** | — | Kontext-Management, Rollen | State | TODO | — |
-| **[FastAIMemory](https://github.com/andrestubbe/FastAIMemory)** | **—** | Kurzzeit- & Langzeit-Gedächtnis | Context / History | Alpha | `v0.1.3` |
-| **[FastAIVectorDB](https://github.com/andrestubbe/FastAIVectorDB)** | **—** | Vektor-Store für Memory & RAG | SIMD | Alpha | `v0.1.4` |
-| **FastAIEmbedding** | — | Embedding-Service | Model | TODO | — |
-| **[FastAIRag](https://github.com/andrestubbe/FastAIRag)** | **—** | Retrieval-Pipeline | RAG | Alpha | `v0.1.1` |
-
-#### AI Engine
-| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
-|--------|---------------|-------------|------|--------|---------|
-| **[FastAIModel](https://github.com/andrestubbe/FastAIModel)** | **—** | Lokale Inferenz-Runtime (gguf/ONNX) | ONNX | Alpha | `v0.1.2` |
-| **[FastContentChunk](https://github.com/andrestubbe/FastContentChunk)** | **—** | Tokenizer & chunking strategy engine | Tokenizer | Alpha | `v0.1.3` |
-| **FastAIStream** | — | Token-Streaming-Engine | Pipeline | TODO | — |
-| **FastAIToken** | — | Tokenization, Counting, Budgeting | Tokenizer | TODO | — |
-| **FastAICache** | — | Antwort- & Embedding-Caching | Cache | TODO | — |
-
-#### AI Hands
-| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
-|--------|---------------|-------------|------|--------|---------|
-| **FastAIToolBridge**| — | Tool-Ausführungsschicht | API | TODO | — |
-| **FastAIMCP** | — | Model Context Protocol Adapter | MCP | TODO | — |
-| **FastAISandbox** | — | Code-Isolation | Security | TODO | — |
-| **FastAIScheduler** | — | Async Jobs, Retries, Cron | Queueing | TODO | — |
-
-#### AI Guards
-| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
-|--------|---------------|-------------|------|--------|---------|
-| **FastAIGuard** | — | Prompt-Injection-Schutz | Security | TODO | — |
-| **FastAIAuth** | — | API-Keys, User-Permissions | Auth | TODO | — |
-| **FastAIPolicy** | — | Declarative AI Rules / Policies | Rules | TODO | — |
-
-#### AI Dashboard
-| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
-|--------|---------------|-------------|------|--------|---------|
-| **FastAITrace** | — | Token-Flow & Tool-Tracing | Debugging | TODO | — |
-| **FastAIEval** | — | Automatische Antwort-Evaluation | Eval | TODO | — |
-| **FastAIMetrics** | — | Performance- & Usage-Metrics | Telemetry | TODO | — |
-| **FastAIReplay** | — | Replay von Sessions | Debugging | TODO | — |
-| **FastAIParser** | — | Strukturierter Output-Parser | Parser | TODO | — |
-| **FastAIPrompt** | — | Prompt-Compiler, Templates | Compiler | TODO | — |
-| **FastAIRegistry** | — | Registry für Models, Tools, Agents| Registry | TODO | — |
-| **FastAIPlugin** | — | Plugin-/Extension-System | Plugin | TODO | — |
-| **FastEventBus** | — | Event-System für Tokens & Tools | Event Bus | TODO | — |
-
-#### AI Infrastructure
-| Module | Speed vs Java | Key Metrics | Tech | Status | Version |
-|--------|---------------|-------------|------|--------|---------|
-| **FastAPI** | — | REST/WebSocket/gRPC Layer | Network | TODO | — |
-| **FastConfig** | — | Runtime-/Model-Konfiguration | Config | TODO | — |
-| **FastArtifact** | — | Verwaltung generierter Dateien | Storage | TODO | — |
-| **FastStorage** | — | Files, Blobs, Transcripts | IO | TODO | — |
-| **FastAICluster** | — | Multi-GPU / Multi-Node | Orchestrator | TODO | — |
+| **[FastAIRuntime](https://github.com/andrestubbe/FastAIRuntime)** | **—** | Deterministic execution engine & FastAIEventBus | Runtime | Alpha | `v0.1.0` |
+| **[FastAIModel](https://github.com/andrestubbe/FastAIModel)** | **—** | Local ONNX & GGUF matrix inference runtime | ONNX / DirectML | Alpha | `v0.1.2` |
+| **[FastAIRag](https://github.com/andrestubbe/FastAIRag)** | **—** | High-speed retrieval augmented generation pipeline | RAG / Hybrid | Alpha | `v0.1.1` |
+| **[FastAIMemory](https://github.com/andrestubbe/FastAIMemory)** | **—** | Short-term & long-term conversational memory | Context Store | Alpha | `v0.1.3` |
+| **[FastAIVectorDB](https://github.com/andrestubbe/FastAIVectorDB)** | **—** | Zero-allocation vector database with built-in Embedder | AVX2 / JNI | Alpha | `v0.1.4` |
+| **[FastAIMCP](https://github.com/andrestubbe/FastAIMCP)** | **—** | Model Context Protocol client & stdio tool bridge | MCP | Alpha | `v0.1.0` |
+| **[FastAIReasoner](https://github.com/andrestubbe/FastAIReasoner)** | **—** | Multi-step reasoning, CoT & heuristic planning | Tree-of-Thoughts | Alpha | `v0.1.0` |
+| **[FastAIGraph](https://github.com/andrestubbe/FastAIGraph)** | **—** | In-memory knowledge graph & multi-hop traversal | Entity Linking | Alpha | `v0.1.0` |
+| **[FastAIRerank](https://github.com/andrestubbe/FastAIRerank)** | **—** | Cross-encoder relevance scoring & ranking | Reranker | Alpha | `v0.1.0` |
+| **[FastAIHybrid](https://github.com/andrestubbe/FastAIHybrid)** | **—** | Hybrid dense & sparse retrieval fusion | Fusion Engine | Alpha | `v0.1.0` |
+| FastAIState | — | Lock-free shared agent state & blackboard memory | Shared Memory | Planned | — |
+| FastAIMetrics | — | Token usage, latency profiling, cost & evaluation | Telemetry | Planned | — |
+| FastVision | — | Local GPU multimodal vision & UI grounding pipeline | DirectML / Vulkan | Planned | — |
 
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
