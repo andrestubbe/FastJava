@@ -140,7 +140,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastAIGraph](https://github.com/andrestubbe/FastAIGraph)** | **—** | In-memory knowledge graph & multi-hop traversal | Entity Linking | Alpha | `v0.1.0` |
 | **[FastAIRerank](https://github.com/andrestubbe/FastAIRerank)** | **—** | Cross-encoder relevance scoring & ranking | Reranker | Alpha | `v0.1.0` |
 | **[FastAIHybrid](https://github.com/andrestubbe/FastAIHybrid)** | **—** | Hybrid dense & sparse retrieval fusion | Fusion Engine | Alpha | `v0.1.0` |
-| FastAIState | — | Lock-free shared agent state & blackboard memory | Shared Memory | Planned | — |
+| **[FastAIState](https://github.com/andrestubbe/FastAIState)** | **—** | Lock-free shared agent state & blackboard memory | Shared Memory | Alpha | `v0.1.0` |
 | FastAIMetrics | — | Token usage, latency profiling, cost & evaluation | Telemetry | Planned | — |
 | FastVision | — | Local GPU multimodal vision & UI grounding pipeline | DirectML / Vulkan | Planned | — |
 
