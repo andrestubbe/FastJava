@@ -46,7 +46,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 |--------|---------------|-------------|------|--------|---------|
 | **[FastGhostMouse](https://github.com/andrestubbe/FastGhostMouse)** | **120Hz GPU** | Secondary mouse overlay | DComposition | Alpha | `v0.1.0` |
 | **[FastThumb](https://github.com/andrestubbe/FastThumb)** | **—** | Native OS thumbnail extraction | Windows Shell | Alpha | `v0.1.0` |
-| **[FastPreview](https://github.com/andrestubbe/FastPreview)** | **—** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha | `v0.1.0` |
+| **[FastPreview](https://github.com/andrestubbe/FastPreview)** | **—** | Native rasterization vs slow Swing | PDFium, WV2 | Alpha | `v0.1.1` |
 | **[FastScreen](https://github.com/andrestubbe/fastscreen)** | **500-2000 FPS** | DXGI zero-copy vs 60 FPS Robot | DXGI, DX | Alpha | `v1.0.0-SNAPSHOT` |
 | **[FastOverlay](https://github.com/andrestubbe/FastOverlay)** | **—** | Game overlays | DirectX | Alpha | `v0.1.0` |
 | **[FastImage](https://github.com/andrestubbe/fastimage)** | **10-50×** | SIMD resize/blur vs BufferedImage | SIMD, AVX2 | Alpha | `v0.1.1` |
