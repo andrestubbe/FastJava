@@ -73,7 +73,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastString](https://github.com/andrestubbe/faststring)** | **10-100×** | UTF-8 ops vs Java String | SIMD, UTF-8 | Alpha | `v0.1.1` |
 | **[FastANSI](https://github.com/andrestubbe/FastANSI)** | **45-48×** | Zero-allocation ANSI state parser | State Machine | Alpha | `v0.1.2` |
 | **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha | `v0.1.0` |
-| **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha | `v0.1.3` |
+| **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha | `v0.1.4` |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha | `v0.1.0` |
 | **[FastTokenize](https://github.com/andrestubbe/FastTokenize)** | **Sub-µs** | $O(n)$ multi-language scanner & style stream | Zero-Alloc | Alpha | `v0.1.0` |
 | **[FastRegex](https://github.com/andrestubbe/FastRegex)** | **2.5–13.2×** | Zero-allocation pattern scanner & SIMD normalizer | Zero-Alloc, SIMD | Alpha | `v0.1.0` |
@@ -142,8 +142,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastAIHybrid](https://github.com/andrestubbe/FastAIHybrid)** | **—** | Hybrid dense & sparse retrieval fusion | Fusion Engine | Alpha | `v0.1.0` |
 | **[FastAIState](https://github.com/andrestubbe/FastAIState)** | **—** | Lock-free shared agent state & blackboard memory | Shared Memory | Alpha | `v0.1.1` |
 | **[FastAIMetrics](https://github.com/andrestubbe/FastAIMetrics)** | **—** | Token usage, latency profiling, cost & evaluation | Telemetry / VarInt | Alpha | `v0.1.0` |
-| **[FastAIVision](https://github.com/andrestubbe/FastAIVision)** | **—** | Local multimodal vision & UI grounding pipeline | Qwen2-VL / SmolVLM | Alpha | `v0.1.0` |
-| **[FastAIMatcher](https://github.com/andrestubbe/FastAIMatcher)** | **—** | Automated SOX compliance & hybrid rule matching | Rule Engine / VarInt | Alpha | `v0.1.0` |
+| **[FastAIVision](https://github.com/andrestubbe/FastAIVision)** | **—** | Local multimodal vision & UI grounding pipeline | Qwen2-VL / SmolVLM | Alpha | `v0.1.1` |
+| **[FastAIMatcher](https://github.com/andrestubbe/FastAIMatcher)** | **—** | Automated SOX compliance & hybrid rule matching | Rule Engine / VarInt | Alpha | `v0.1.1` |
 
 ### 13. Vision
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
