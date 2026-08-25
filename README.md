@@ -76,8 +76,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha | `v0.1.3` |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha | `v0.1.0` |
 | **[FastTokenize](https://github.com/andrestubbe/FastTokenize)** | **Sub-µs** | $O(n)$ multi-language scanner & style stream | Zero-Alloc | Alpha | `v0.1.0` |
+| **[FastRegex](https://github.com/andrestubbe/FastRegex)** | **2.5–13.2×** | Zero-allocation pattern scanner & SIMD normalizer | Zero-Alloc, SIMD | Alpha | `v0.1.0` |
 | FastHTML | — | HTML parser | SIMD | TODO | — |
-| FastRegex | — | SIMD regex engine | AVX2 | TODO | — |
 
 ### 7. Math
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
