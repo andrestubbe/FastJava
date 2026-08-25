@@ -36,8 +36,8 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastRobot](https://github.com/andrestubbe/fastrobot)** | **10-17×** | DirectX capture vs AWT Robot | DirectX | Alpha | `v0.1.0` |
 | **[FastUIA](https://github.com/andrestubbe/fastuia)** | **❌ Java can't** | Native UIA vs slow polling | Native UIA | Alpha | `v0.1.0` |
 | **[FastWindow](https://github.com/andrestubbe/FastWindow)** | **8×** | Flicker-free resize vs standard JFrame | Win32 API | Alpha | `v0.1.0` |
-| **[FastScrape](https://github.com/andrestubbe/FastScrape)** | **—** | High-performance DOM scraping | Native HTML | Alpha | `v0.1.0` |
-| **[FastSpider](https://github.com/andrestubbe/FastSpider)** | **—** | Asynchronous high-speed web crawler | NIO / Async | Alpha | `v0.1.0` |
+| **[FastScrape](https://github.com/andrestubbe/FastScrape)** | **—** | High-performance DOM scraping | Native HTML | Alpha | `v0.1.1` |
+| **[FastSpider](https://github.com/andrestubbe/FastSpider)** | **—** | Asynchronous high-speed web crawler | NIO / Async | Alpha | `v0.1.1` |
 | FastProcess | — | Process management | Win32 API | TODO | — |
 | FastScheduler | — | Task scheduler | Priority queue | TODO | — |
 
@@ -75,7 +75,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastASCII](https://github.com/andrestubbe/FastASCII)** | **—** | Zero-allocation ASCII & UTF-8 byte engine | SIMD, Byte | Alpha | `v0.1.0` |
 | **[FastContentParse](https://github.com/andrestubbe/FastContentParse)** | **—** | Standardized content normalization & extraction | Parser | Alpha | `v0.1.4` |
 | **[FastEmojis](https://github.com/andrestubbe/FastEmojis)** | **34-56×** | Zero-allocation Emoji width engine | East Asian Width | Alpha | `v0.1.0` |
-| **[FastTokenize](https://github.com/andrestubbe/FastTokenize)** | **Sub-µs** | $O(n)$ multi-language scanner & style stream | Zero-Alloc | Alpha | `v0.1.0` |
+| **[FastTokenize](https://github.com/andrestubbe/FastTokenize)** | **Sub-µs** | $O(n)$ multi-language scanner & style stream | Zero-Alloc | Alpha | `v0.1.1` |
 | **[FastRegex](https://github.com/andrestubbe/FastRegex)** | **2.5–13.2×** | Zero-allocation pattern scanner & SIMD normalizer | Zero-Alloc, SIMD | Alpha | `v0.1.0` |
 | FastHTML | — | HTML parser | SIMD | TODO | — |
 
@@ -96,7 +96,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | FastFileSystem | — | Index + Search + Watch in one API | Unified API | TODO | — |
 | **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v1.0-SNAPSHOT` |
 | **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
-| FastFileContentIndex | — | High-speed in-file text indexing | SIMD | TODO | — |
+| **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed 3-gram bloom filter & in-file text index | SIMD, Bloom | Alpha | `v0.1.1` |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | SIMD, AVX2 | Alpha | `v0.1.1` |
 
 ### 9. System
