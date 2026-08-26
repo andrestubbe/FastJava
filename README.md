@@ -88,15 +88,15 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 ### 8. Filesystem
 | Module | Speed vs Java | Key Metrics | Tech | Status | Version |
 |--------|---------------|-------------|------|--------|---------|
-| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
 | **[FastFileFormat](https://github.com/andrestubbe/FastFileFormat)** | **—** | Dual text/binary streaming format with aliases | Binary / Text | Alpha | `v0.1.0` |
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha | `v0.1.1` |
-| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha | `v0.1.0` |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha | `v0.1.0` |
+| **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha | `v0.1.0` |
 | FastFileSystem | — | Index + Search + Watch in one API | Unified API | TODO | — |
 | **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v1.0-SNAPSHOT` |
-| **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed 3-gram bloom filter & in-file text index | SIMD, Bloom | Alpha | `v0.1.1` |
+| **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
+| **[FastGLOB](https://github.com/andrestubbe/FastGLOB)** | **13×** | Native Win32 globbing vs PathMatcher | Win32, C++ | Alpha | `v0.1.0` |
 | **[FastCompress](https://github.com/andrestubbe/FastCompress)** | **—** | Ultra-fast native compression | SIMD, AVX2 | Alpha | `v0.1.1` |
 
 ### 9. System
