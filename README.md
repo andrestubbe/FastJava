@@ -92,7 +92,7 @@ A unified directory of all FastJava modules. Categorized by functional domain, i
 | **[FastFileIndex](https://github.com/andrestubbe/FastFileIndex)** | **8×** | Native mmap scan vs Files.walk() | mmap, scan | Alpha | `v0.1.1` |
 | **[FastFileSearch](https://github.com/andrestubbe/FastFileSearch)** | **100-1000×** | Indexed trie vs linear search | Prefix trie | Alpha | `v0.1.0` |
 | **[FastFileWatch](https://github.com/andrestubbe/FastFileWatch)** | **10-100×** | USN Journal vs WatchService | USN Journal | Alpha | `v0.1.0` |
-| FastFileSystem | — | Index + Search + Watch in one API | Unified API | TODO | — |
+| **[FastFileSystem](https://github.com/andrestubbe/FastFileSystem)** | **8-15×** | Index + Search + Watch in one API | Unified API | Alpha | `v0.1.0` |
 | **[FastFileScrape](https://github.com/andrestubbe/FastFileScrape)** | **5–10×** | Native file scraping vs Java IO | Tree + Content | Alpha | `v1.0-SNAPSHOT` |
 | **[FastFileContentIndex](https://github.com/andrestubbe/FastFileContentIndex)** | **—** | High-speed 3-gram bloom filter & in-file text index | SIMD, Bloom | Alpha | `v0.1.1` |
 | **[FastIO](https://github.com/andrestubbe/fastio)** | **2.5-11×** | AVX2 Search, DMA Copy, mmap | AVX2, DMA | Alpha | `v0.1.1` |
