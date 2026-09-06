@@ -15,13 +15,16 @@ FastJava is not a framework — it is a modular, full-stack performance ecosyste
 
 Where the standard JVM abstracts, stalls, or lacks native interfaces entirely, FastJava provides thin, near-zero-overhead JNI bridges directly into DirectX, Win32, AVX2/AVX-512 SIMD, and native OS subsystems.
 
-- ⌨️ **Input & Windowing** — Global low-latency hotkeys (e.g. `FastHotkey`), RawInput (`FastKeyboard`, `FastMouse`), Stylus/Touch, native window controls (`FastWindow`).
-- 🖥️ **Graphics & Screen** — DXGI sub-millisecond desktop capture (`FastScreen`), bit-perfect grabber (`FastScreenCapture`), GPU overlays (`FastOverlay`, `FastGhostMouse`).
-- ⚡ **Compute & Memory** — AVX2/AVX-512 vectorization (`FastSIMD`), page-locked off-heap RAM (`FastMemory`), pointer arithmetic (`FastPointer`), GPU Compute (`FastGPU`).
-- 📁 **Filesystem & I/O** — USN Journal change journal (`FastFileWatch`), mmap multi-threading (`FastFileIndex`, `FastIO`), Trie-search (`FastFileSearch`).
-- 🎧 **Audio & Media** — WASAPI hardware capture & loopback (`FastAudioCapture`, `FastAudioPlayer`), real-time STT/TTS, wake-word detection (`FastWakeWord`).
-- 🏎️ **Parsing & Strings** — SIMD-accelerated JSON (`FastJSON`), UTF-8 processing (`FastString`), state-machine ANSI (`FastANSI`), zero-alloc regex (`FastRegex`).
-- 🧠 **AI & Machine Learning** — Local matrix inference (`FastAIModel`), zero-alloc vector database (`FastAIVectorDB`), autonomous agents (`FastAIAgent`), knowledge graphs (`FastAIMemoryGraph`).
+- ⚡ **Native & Foundation** — Cross-platform DLL loader (`FastCore`), pointer math (`FastPointer`), 32-byte aligned RAM (`FastMemory`), AVX2/AVX-512 vectorization (`FastSIMD`), shared memory (`FastSharedMemory`).
+- 🤖 **AI & Autonomous Agents** — Local matrix inference (`FastAIModel`), zero-alloc vector DB (`FastAIVectorDB`), agents (`FastAIAgent`), memory graphs (`FastAIMemoryGraph`), RAG (`FastAIRag`).
+- 📁 **Filesystem & Storage** — USN Journal change journal (`FastFileWatch`), mmap indexing (`FastFileIndex`, `FastIO`), Trie-search (`FastFileSearch`), dual text/binary format (`FastFileFormat`).
+- ⚙️ **Parsing & Data Formats** — SIMD JSON (`FastJSON`), UTF-8 engine (`FastString`), VarInt packing (`FastBinary`), ANSI state machine (`FastANSI`), zero-alloc regex (`FastRegex`).
+- 🔢 **Compute & Math** — GPU Compute & SPIR-V (`FastGPU`), fast math kernels (`FastMath`), vector quantization (`FastQuant`).
+- ⌨️ **Input & Automation** — Global hotkeys (`FastHotkey`), RawInput (`FastKeyboard`, `FastMouse`), Touch/Stylus, DirectX capture (`FastRobot`), native UIA (`FastUIA`).
+- 👁️ **Vision & Screen Capture** — DXGI zero-copy capture (`FastScreen`), bit-perfect grabber & 60 FPS video pipe (`FastScreenCapture`), webcam (`FastCamera`), WinRT OCR (`FastOCR`).
+- 🔊 **Audio & Voice** — WASAPI hardware capture & loopback (`FastAudioCapture`, `FastAudioPlayer`), real-time STT/TTS, VAD (`FastVAD`), wake-word (`FastWakeWord`).
+- 🎨 **Graphics & Animation** — GPU overlays (`FastOverlay`, `FastGhostMouse`), SIMD image ops (`FastImage`), DirectComposition windowing (`FastWindow`), 60/120 FPS timelines (`FastAnimation`, `FastTween`).
+- 📟 **Terminal & Display** — Double-buffered TUI (`FastTerminal`), ConPTY (`FastConPTY`), per-monitor DPI (`FastDisplay`), native Windows themes (`FastTheme`).
 
 👉 **Full module directory, architecture layers & real-world benchmarks:**  
 🔗 **[docs/ECOSYSTEM.md](docs/ECOSYSTEM.md)**
