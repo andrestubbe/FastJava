@@ -225,6 +225,7 @@ Each module targets a specific boundary layer where Java SE abstracts, stalls, o
 | **[FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture)** | **Not available via standard Java SE** | Real-time WASAPI hardware loopback vs Java Sound | WASAPI, AVX2 | Alpha | `v0.1.1` |
 | **[FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer)** | **20–30× lower latency** | Low-latency playback vs Java Sound | WASAPI, AVX2 | Alpha | `v0.1.2` |
 | **[FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess)** | **Real-time** | Audio DSP processing & formant analysis | WASAPI / DSP | Alpha | `v0.1.4` |
+| **[FastChiptune](https://github.com/andrestubbe/FastChiptune)** | **Zero allocation** | 4-channel generative chiptune synthesizer & tension curve engine | 8-bit / Tracker DSP | Alpha | `v0.1.0` |
 | **[FastVAD](https://github.com/andrestubbe/FastVAD)** | **Zero latency** | High-accuracy Voice Activity Detection | VAD Core | Alpha | `v0.1.0` |
 | **[FastTurn](https://github.com/andrestubbe/FastTurn)** | **Real-time** | Conversational turn-taking & interruption engine | Turn Manager | Alpha | `v0.1.0` |
 | **[FastTTS](https://github.com/andrestubbe/FastTTS)** | **Low latency** | High-speed text-to-speech | SIMD, Piper / Cloud | Alpha | `v0.1.2` |
