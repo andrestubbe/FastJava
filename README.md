@@ -47,7 +47,7 @@ Where the standard JVM abstracts, stalls, or lacks native interfaces entirely, F
 - 🎨 **Graphics & Animation**: GPU overlays (`FastOverlay`, `FastGhostMouse`), SIMD image ops (`FastImage`), DirectComposition windowing (`FastWindow`), 60/120 FPS timelines (`FastAnimation`, `FastTween`).
 - 📟 **Terminal & Display**: Double-buffered TUI (`FastTerminal`), ConPTY (`FastConPTY`), per-monitor DPI (`FastDisplay`), native Windows themes (`FastTheme`).
 
-👉 **Full 108-module directory, live traffic stats & JitPack matrix:**  
+👉 **Full 117-module directory, live traffic stats & JitPack matrix:**  
 🔗 **[github.com/andrestubbe](https://github.com/andrestubbe)**
 
 ---
