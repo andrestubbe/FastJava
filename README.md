@@ -46,6 +46,63 @@ Java alone cannot do:
 
 ---
 
+## ⚖️ Why Java? Why C++? Why Both?
+
+A common question: *Why not write everything in pure C++? Or pure Java? Or Rust / C#?*
+
+FastJava is founded on a deliberate split of concerns: **Java is the portable control plane. C++ is the hardware engine.**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│ Java 21+ Control Plane (Orchestration & Application Logic)             │
+│  • Runs Everywhere: Windows, macOS, Linux, ARM64 (Unified API)          │
+│  • Memory-Safe High-Level APIs, Concurrency, Virtual Threads & Ecosystem│
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │ Zero-Copy FFM / Critical JNI (~2-5 ns)
+┌────────────────────────────────────▼────────────────────────────────────┐
+│ Platform-Neutral C++ Engine (90-95% Shared Codebase)                    │
+│  • Direct Memory, SIMD (AVX2/AVX-512/NEON), Ring Buffers, GPU Compute   │
+│  • Lock-free Data Structures, Custom Fast-Allocators, Zero GC Overhead  │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │ Thin Native OS Hooks (<5-10%)
+            ┌────────────────────────┼────────────────────────┐
+            ▼                        ▼                        ▼
+     Windows (Win32)           macOS (Quartz/Metal)      Linux (X11/Wayland)
+   DirectX / RawInput          CoreGraphics / IOKit       libinput / evdev
+```
+
+### ☕ Why Java?
+* **Write Once, Orchestrate Everywhere:** Java runs seamlessly on Windows, Linux, macOS, cloud instances, and edge ARM boards. One single JAR can target all desktop & server targets.
+* **World-Class Tooling & Ecosystem:** Unmatched IDEs, profilers (Async-Profiler, JFR), mature package registries (Maven Central, JitPack), and instant build pipelines.
+* **Modern Memory Safety & Concurrency:** High-level agent loops, business logic, and complex state management without buffer-overflows, use-after-free bugs, or compiler-specific ABI drift. Virtual Threads (Project Loom) handle millions of concurrent tasks with ease.
+
+### ⚡ Why C++?
+* **Uncompromising Bare-Metal Speed:** Direct CPU vectorization (AVX2, AVX-512, ARM NEON), bit-exact structs, and cache-line aligned allocations.
+* **Hardware-Level Subsystems:** Direct access to Win32 hooks, DirectX/DXGI screen buffers, macOS Quartz/CoreGraphics, Linux `libinput`/`evdev`, and Vulkan/GPU queues that the standard JVM simply cannot reach.
+* **Predictable Determinism:** Zero GC pauses, zero JIT warm-up latency, and sub-microsecond response times on critical input and media pipelines.
+
+### 🌐 Cross-Platform C++: How It Works
+We don't rewrite code 3 times:
+1. **Portable Core Engine (90-95%):** Pure modern C++17/C++20 (math kernels, ring buffers, parsers, image manipulators, AI vector ops) compiles identically with MSVC, Clang, and GCC across all operating systems.
+2. **Thin OS Drivers (5-10%):** A strictly isolated native platform layer binds directly to OS-specific APIs:
+   - **Windows:** Win32 RawInput, DirectX/DXGI, DirectComposition, DWM.
+   - **macOS:** Quartz Event Taps, CoreGraphics, Metal.
+   - **Linux:** X11 / Wayland, `libinput`, `evdev`, V4L2.
+
+---
+
+### 🔬 Architecture Comparison: The Right Tool for the Job
+
+| Metric / Capability | Pure Java | Pure C++ | C# / .NET | Rust | **FastJava (Java + C++)** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Cross-Platform JAR Distribution** | ✅ Single JAR | ❌ Recompile & build per OS | ⚠️ Runtime dependent | ❌ Recompile per target | **✅ Single portable JAR + auto-extract binaries** |
+| **OS-Level Subsystem Access** *(Hooks, DXGI, Wasapi)* | ❌ Impossible | ✅ Direct | ⚠️ Windows-heavy | ✅ Direct | **✅ Direct (<5 ns JNI / FFM call gate)** |
+| **SIMD & Zero-GC Off-Heap Throughput** | ⚠️ JIT dependent | ✅ Full control | ⚠️ CLR dependent | ✅ Full control | **✅ 100% Deterministic (C++ Engine)** |
+| **Developer Ergonomics & Ecosystem** | ✅ Huge | ❌ Complex package mgmt | ⚠️ Locked to .NET | ⚠️ Steep curve | **✅ Instant Maven/JitPack dependency import** |
+| **Real-Time Input Latency** | ~15–50 ms | < 1 ms | ~5–20 ms | < 1 ms | **< 1 ms (Hardware Native)** |
+
+---
+
 ## 🌌 Origin Story
 
 ### 🌒 WHY — The Restlessness Before the First Module
