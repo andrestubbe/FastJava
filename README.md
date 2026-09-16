@@ -31,7 +31,7 @@ Where the standard JVM abstracts, stalls, or lacks native interfaces entirely, F
 │  FastGPU & FastMath (Vulkan Compute, SPIR-V, OpenCL)                   │
 ├────────────────────────────────────────────────────────────────────────┤
 │                       Off-Heap Foundation Layer                        │
-│  FastMemory (32-Byte Aligned RAM) │ FastPointer (Direct Address Math) │
+│  FastMemory (32-Byte Aligned RAM) │ FastPointer (Direct Address Math)  │
 │  FastSIMD (AVX2 / AVX-512)        │ FastCore (Native DLL Auto-Loader)  │
 └────────────────────────────────────────────────────────────────────────┘
 ```
@@ -158,16 +158,8 @@ Maximum performance through minimal overhead. JNI where it matters. Pure Java wh
 
 ## ⚡ The Truth About Speed
 
-I run the benchmarks myself. I don't negotiate with numbers. I don't sweet-talk performance. I don't pretend something is fast because I want it to be. Speed doesn't care about opinions, only measurements. I can't lie to myself, because the CPU won't lie back. Faster is faster. Slower is slower. Reality is binary at that level.
-
-This isn't about money.
-This isn't about hype.
-This isn't about selling anything.
-
-This is about quality, the kind you can't fake, can't market, can't decorate.
-The kind you can only prove.
-
-FastJava exists because truth shows up in microseconds, not in slogans.
+I run the benchmarks myself. I don't negotiate with numbers. I don't sweet-talk performance. I don't pretend something is fast because I want it to be. Speed doesn't care about opinions, only measurements. I can't lie to myself, because the CPU won't lie back. Faster is faster. Slower is slower. Reality is binary at that level. This isn't about money. This isn't about hype.This isn't about selling anything. This is about quality, the kind you can't fake, can't market, can't decorate.
+The kind you can only prove. FastJava exists because truth shows up in microseconds, not in slogans.
 
 ---
 
@@ -175,7 +167,7 @@ FastJava exists because truth shows up in microseconds, not in slogans.
 
 **[ALPHA]**: APIs may change. Not production-ready yet.
 
-- ✅ **108 Active Repositories**: Available now on GitHub & JitPack.
+- ✅ **117 (/131) Active Repositories**: Available now on GitHub & JitPack.
 - 🚧 **Roadmap**: Security, Network, Diagnostics, Compute, and more in active development.
 - ✅ **Platform Support**: Windows 10/11 fully supported (x64). Linux and macOS support in progress.
 
