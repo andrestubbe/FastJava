@@ -15,6 +15,27 @@ FastJava is not a framework, it is a modular, full-stack performance ecosystem d
 
 Where the standard JVM abstracts, stalls, or lacks native interfaces entirely, FastJava provides thin, near-zero-overhead JNI bridges directly into DirectX, Win32, AVX2/AVX-512 SIMD, and native OS subsystems.
 
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        FastJava User Application                       │
+├───────────────────┬───────────────────┬────────────────────────────────┤
+│   AI & Agents     │    Input & UI     │     Filesystem & Data Parsing  │
+│  FastAI / Agent   │  FastHotkey       │  FastJSON / FastBytes          │
+│  FastAIModel      │  FastKeyboard     │  FastFileIndex / FastFileWatch │
+│  FastAIMemoryGraph│  FastWindow       │  FastString / FastContentParse │
+├───────────────────┴───────────────────┴────────────────────────────────┤
+│                       Hardware & Media Engines                         │
+│  FastScreen & FastScreenCapture (DXGI Desktop Duplication)             │
+│  FastAudioCapture & FastAudioPlayer (WASAPI Hardware DSP)              │
+│  FastGraphics & FastOverlay (DirectX 11 / DirectComposition)           │
+│  FastGPU & FastMath (Vulkan Compute, SPIR-V, OpenCL)                   │
+├────────────────────────────────────────────────────────────────────────┤
+│                       Off-Heap Foundation Layer                        │
+│  FastMemory (32-Byte Aligned RAM) │ FastPointer (Direct Address Math) │
+│  FastSIMD (AVX2 / AVX-512)        │ FastCore (Native DLL Auto-Loader)  │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
 - ⚡ **Native & Foundation**: Cross-platform DLL loader (`FastCore`), pointer math (`FastPointer`), 32-byte aligned RAM (`FastMemory`), AVX2/AVX-512 vectorization (`FastSIMD`), shared memory (`FastSharedMemory`).
 - 🤖 **AI & Autonomous Agents**: Local matrix inference (`FastAIModel`), zero-alloc vector DB (`FastAIVectorDB`), agents (`FastAIAgent`), memory graphs (`FastAIMemoryGraph`), RAG (`FastAIRag`).
 - 📁 **Filesystem & Storage**: USN Journal change journal (`FastFileWatch`), mmap indexing (`FastFileIndex`, `FastIO`), Trie-search (`FastFileSearch`), dual text/binary format (`FastFileFormat`).
@@ -26,8 +47,8 @@ Where the standard JVM abstracts, stalls, or lacks native interfaces entirely, F
 - 🎨 **Graphics & Animation**: GPU overlays (`FastOverlay`, `FastGhostMouse`), SIMD image ops (`FastImage`), DirectComposition windowing (`FastWindow`), 60/120 FPS timelines (`FastAnimation`, `FastTween`).
 - 📟 **Terminal & Display**: Double-buffered TUI (`FastTerminal`), ConPTY (`FastConPTY`), per-monitor DPI (`FastDisplay`), native Windows themes (`FastTheme`).
 
-👉 **Full module directory, architecture layers & real-world benchmarks:**  
-🔗 **[docs/ECOSYSTEM.md](docs/ECOSYSTEM.md)**
+👉 **Full 108-module directory, live traffic stats & JitPack matrix:**  
+🔗 **[github.com/andrestubbe](https://github.com/andrestubbe)**
 
 ---
 
